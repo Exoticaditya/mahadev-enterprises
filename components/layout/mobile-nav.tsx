@@ -26,10 +26,7 @@ export function MobileNav() {
               </Link>
             ))}
           </div>
-          <div className="flex items-center justify-between border-t border-border/60 pt-6">
-            <Link href={site.instagram} target="_blank" rel="noreferrer" className="text-lg font-medium transition hover:text-brand-brass">
-              Instagram
-            </Link>
+          <div className="flex items-center justify-end border-t border-border/60 pt-6">
             <ThemeToggle />
           </div>
         </div>

@@ -65,7 +65,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className={`${inter.variable} ${cormorant.variable} font-sans`}>
         <ThemeProvider>
           <LenisProvider>
-            <div className="relative min-h-screen overflow-hidden bg-background text-foreground">
+            <div className="relative min-h-screen overflow-hidden text-foreground">
               <Header />
               <main>{children}</main>
               <Footer />

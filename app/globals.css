@@ -92,6 +92,9 @@ body {
     radial-gradient(circle at top left, rgba(176, 138, 87, 0.16), transparent 28%),
     radial-gradient(circle at top right, rgba(94, 102, 83, 0.12), transparent 24%),
     linear-gradient(180deg, rgba(250, 247, 243, 1) 0%, rgba(246, 242, 235, 1) 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .dark body {

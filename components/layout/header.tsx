@@ -32,9 +32,6 @@ export function Header() {
         <div className="hidden items-center gap-3 md:flex">
           <ThemeToggle />
           <CatalogueLink />
-          <Link href={site.instagram} target="_blank" rel="noreferrer" className="text-sm text-muted-foreground transition hover:text-brand-brass">
-            Instagram
-          </Link>
           <Button asChild size="sm">
             <Link href="/contact">Enquire Now</Link>
           </Button>

@@ -8,7 +8,7 @@ import { site, stats, trustSignals } from "@/data/site";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-12 md:pt-20 isolate">
+    <section className="relative overflow-hidden pt-32 md:pt-40 -mt-20 isolate">
       {/* Background Video with Translucent Blur Overlay */}
       <div className="absolute inset-0 -z-10">
         <video
