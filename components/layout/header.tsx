@@ -5,6 +5,7 @@ import { navigation, site } from "@/data/site";
 import { CatalogueLink } from "@/components/catalogue-link";
 import { Button } from "@/components/ui/button";
 import { MobileNav } from "@/components/layout/mobile-nav";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 export function Header() {
   return (
@@ -29,6 +30,7 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
+          <ThemeToggle />
           <CatalogueLink />
           <Link href={site.instagram} target="_blank" rel="noreferrer" className="text-sm text-muted-foreground transition hover:text-brand-brass">
             Instagram

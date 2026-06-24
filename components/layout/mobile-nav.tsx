@@ -6,6 +6,7 @@ import { Menu } from "lucide-react";
 import { navigation, site } from "@/data/site";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 export function MobileNav() {
   return (
@@ -25,10 +26,11 @@ export function MobileNav() {
               </Link>
             ))}
           </div>
-          <div className="grid gap-3 border-t border-border/60 pt-6">
+          <div className="flex items-center justify-between border-t border-border/60 pt-6">
             <Link href={site.instagram} target="_blank" rel="noreferrer" className="text-lg font-medium transition hover:text-brand-brass">
               Instagram
             </Link>
+            <ThemeToggle />
           </div>
         </div>
         <Button asChild size="lg" className="w-full">
