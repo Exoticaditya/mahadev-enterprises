@@ -12,7 +12,7 @@ export function Hero() {
       <div className="container grid gap-14 pb-24 pt-10 md:pb-32 lg:grid-cols-[1.2fr_0.8fr] lg:items-end lg:gap-12">
         <div className="max-w-4xl space-y-8">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-muted-foreground">Rishikesh, India · Wellness supply</p>
-          <h1 className="max-w-4xl text-balance text-6xl leading-[0.92] md:text-7xl xl:text-[6.5rem]">
+          <h1 className="max-w-4xl text-balance text-5xl font-serif leading-[1.05] tracking-tight md:text-6xl lg:text-7xl xl:text-[5.5rem]">
             Premium Pilates equipment and wellness products for studios that expect more.
           </h1>
           <p className="max-w-2xl text-balance text-lg leading-8 text-muted-foreground md:text-xl">

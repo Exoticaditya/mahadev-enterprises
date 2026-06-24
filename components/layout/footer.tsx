@@ -11,7 +11,7 @@ export function Footer() {
       <div className="container py-16 md:py-20">
         <div className="grid gap-8 xl:grid-cols-[1.05fr_0.95fr]">
           <div className="overflow-hidden rounded-[2rem] border border-border/70 bg-[linear-gradient(135deg,rgba(176,138,87,0.18),rgba(246,242,235,0.78))] shadow-haze">
-            <div className="grid gap-6 p-6 md:p-8 lg:grid-cols-[auto_1fr] lg:items-center">
+            <div className="grid gap-6 p-6 md:p-8 lg:grid-cols-[auto_1fr] lg:items-start">
               <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-3xl border border-border/70 bg-background/80 shadow-soft">
                 <Image src="/logo.png" alt="Mahadev Enterprises logo" width={80} height={80} className="h-full w-full object-contain p-2" />
               </div>
@@ -37,7 +37,7 @@ export function Footer() {
           <div className="overflow-hidden rounded-[2rem] border border-border/70 bg-background/70 shadow-haze">
             <div className="relative aspect-[16/10] min-h-[240px]">
               <Image
-                src="/footer/footer-sunrise.jpg.png"
+                src="/footer/footer-sunrise.jpg"
                 alt="Sunrise over the mountains near Rishikesh"
                 fill
                 className="object-cover"
@@ -56,9 +56,9 @@ export function Footer() {
 
         <div className="mt-12 grid gap-12 md:grid-cols-2 xl:grid-cols-4">
           <div className="space-y-4 xl:col-span-2">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">Brand links</p>
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">Brand philosophy</p>
             <p className="max-w-lg text-sm leading-7 text-muted-foreground md:text-base">
-              Use the logo and sunrise visual together to anchor the footer in the brand identity and local geography.
+              Rooted in the calm strength and spiritual heritage of Rishikesh, we design and manufacture Pilates apparatus that balances structural integrity with design-led precision.
             </p>
           </div>
 
