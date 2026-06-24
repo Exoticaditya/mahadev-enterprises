@@ -7,7 +7,7 @@ import { Separator } from "@/components/ui/separator";
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-border/40 text-white overflow-hidden">
+    <footer className="relative border-t border-border/40 text-white overflow-hidden isolate">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 -z-10">
         <Image

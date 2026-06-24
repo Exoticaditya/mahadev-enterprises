@@ -38,16 +38,17 @@ export function Hero() {
 
         <div className="space-y-4">
           <div className="relative overflow-hidden rounded-[2rem] border border-border/70 bg-card/70 shadow-haze backdrop-blur-md">
-            <div className="relative aspect-[4/5] md:aspect-[5/6] overflow-hidden">
+            <div className="relative aspect-[4/5] md:aspect-[5/6] lg:aspect-[4/3] overflow-hidden">
               <video
-                src="/videos/hero-loop.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
                 className="absolute inset-0 h-full w-full object-cover"
                 poster="/hero/hero-desktop.jpg"
-              />
+              >
+                <source src="/videos/hero-loop.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
           <div className="grid gap-4 rounded-[2rem] border border-border/70 bg-card/70 p-6 shadow-haze backdrop-blur-md md:p-8">

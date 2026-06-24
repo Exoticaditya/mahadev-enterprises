@@ -34,7 +34,15 @@ export function ProductGrid() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm leading-7 text-muted-foreground">{product.summary}</p>
-                <div className="flex flex-wrap gap-2">
+                
+                <div className="space-y-1">
+                  <p className="text-[10px] uppercase tracking-wider text-brand-brass font-medium">Ideal for:</p>
+                  <p className="text-xs text-muted-foreground leading-normal">
+                    {product.idealFor.slice(0, 2).join(" · ")}
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap gap-2 pt-1">
                   {product.features.slice(0, 3).map((feature) => (
                     <span key={feature} className="rounded-full bg-muted px-3 py-1 text-xs text-muted-foreground">
                       {feature}

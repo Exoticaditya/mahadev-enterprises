@@ -21,6 +21,12 @@ export function ProductHighlights() {
                 <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">{product.model} · {product.category}</p>
                 <h3 className="text-2xl md:text-3xl">{product.title}</h3>
                 <p className="text-sm leading-7 text-muted-foreground">{product.summary}</p>
+                <div className="space-y-1">
+                  <p className="text-[10px] uppercase tracking-wider text-brand-brass font-medium">Ideal for:</p>
+                  <p className="text-xs text-muted-foreground leading-normal">
+                    {product.idealFor.slice(0, 2).join(" · ")}
+                  </p>
+                </div>
               </CardContent>
               <Button asChild variant="outline" className="w-fit">
                 <Link href={`/products/${product.slug}`}>View details</Link>
