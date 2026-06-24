@@ -1,9 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { CatalogueLink } from "@/components/catalogue-link";
-import { stats, trustSignals } from "@/data/site";
+import { site, stats, trustSignals } from "@/data/site";
 
 export function Hero() {
   return (
@@ -35,19 +36,41 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="grid gap-4 rounded-[2rem] border border-border/70 bg-card/70 p-6 shadow-haze backdrop-blur-md md:p-8">
-          <div className="grid grid-cols-2 gap-4">
-            {stats.map((stat) => (
-              <div key={stat.label} className="rounded-[1.5rem] border border-border/60 bg-background/70 p-5">
-                <p className="text-3xl font-semibold tracking-tight text-brand-brass">{stat.value}</p>
-                <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
-              </div>
-            ))}
+        <div className="space-y-4">
+          <div className="relative overflow-hidden rounded-[2rem] border border-border/70 bg-card/70 shadow-haze backdrop-blur-md">
+            <div className="relative aspect-[4/5] md:aspect-[5/6]">
+              <Image
+                src={site.heroImages.mobile}
+                alt="Mahadev Enterprises Pilates studio hero"
+                fill
+                priority
+                className="object-cover md:hidden"
+                sizes="100vw"
+              />
+              <Image
+                src={site.heroImages.desktop}
+                alt="Mahadev Enterprises Pilates studio hero"
+                fill
+                priority
+                className="hidden object-cover md:block"
+                sizes="(min-width: 1024px) 38vw, 100vw"
+              />
+            </div>
           </div>
-          <div className="rounded-[1.5rem] border border-border/60 bg-[linear-gradient(180deg,rgba(255,255,255,0.65),rgba(255,255,255,0.42))] p-5 dark:bg-[linear-gradient(180deg,rgba(19,21,20,0.88),rgba(19,21,20,0.62))]">
-            <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Positioning</p>
-            <p className="mt-3 text-2xl leading-tight">Luxury wellness supply with commercial discipline.</p>
-            <p className="mt-3 text-sm leading-7 text-muted-foreground">Built for buyers who need product credibility, graceful presentation, and a frictionless enquiry path.</p>
+          <div className="grid gap-4 rounded-[2rem] border border-border/70 bg-card/70 p-6 shadow-haze backdrop-blur-md md:p-8">
+            <div className="grid grid-cols-2 gap-4">
+              {stats.map((stat) => (
+                <div key={stat.label} className="rounded-[1.5rem] border border-border/60 bg-background/70 p-5">
+                  <p className="text-3xl font-semibold tracking-tight text-brand-brass">{stat.value}</p>
+                  <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
+                </div>
+              ))}
+            </div>
+            <div className="rounded-[1.5rem] border border-border/60 bg-[linear-gradient(180deg,rgba(255,255,255,0.65),rgba(255,255,255,0.42))] p-5 dark:bg-[linear-gradient(180deg,rgba(19,21,20,0.88),rgba(19,21,20,0.62))]">
+              <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Positioning</p>
+              <p className="mt-3 text-2xl leading-tight">Luxury wellness supply with commercial discipline.</p>
+              <p className="mt-3 text-sm leading-7 text-muted-foreground">Built for buyers who need product credibility, graceful presentation, and a frictionless enquiry path.</p>
+            </div>
           </div>
         </div>
       </div>

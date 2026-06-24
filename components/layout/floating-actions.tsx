@@ -12,7 +12,7 @@ export function FloatingActions() {
       <Button asChild className="shadow-glow">
         <Link href={site.whatsapp} target="_blank" rel="noreferrer">
           <MessageCircle className="h-4 w-4" />
-          WhatsApp
+          WhatsApp {site.phone}
         </Link>
       </Button>
     </div>

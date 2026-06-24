@@ -20,7 +20,13 @@ export function ProductGrid() {
           {products.slice(0, 6).map((product) => (
             <Card key={product.slug} className="overflow-hidden transition duration-300 hover:-translate-y-1 hover:shadow-haze">
               <div className="relative aspect-[4/3] overflow-hidden border-b border-border/60 bg-secondary/30">
-                <Image src="/catalogue/product-placeholder.svg" alt={product.title} fill className="object-cover transition duration-500 hover:scale-[1.03]" />
+                  <Image
+                    src={product.image}
+                    alt={product.title}
+                    fill
+                    className="object-cover transition duration-500 hover:scale-[1.03]"
+                    sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
               </div>
               <CardHeader>
                 <CardDescription>{product.model} · {product.category}</CardDescription>

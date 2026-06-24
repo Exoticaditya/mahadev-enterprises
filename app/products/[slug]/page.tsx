@@ -71,7 +71,13 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             </div>
             <Card className="overflow-hidden">
               <div className="relative aspect-[4/3] bg-secondary/30">
-                <Image src="/catalogue/product-placeholder.svg" alt={product.title} fill className="object-cover" />
+                <Image
+                  src={product.image}
+                  alt={product.title}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 48vw, 100vw"
+                />
               </div>
             </Card>
           </div>

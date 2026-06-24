@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Menu } from "lucide-react";
 
-import { navigation } from "@/data/site";
+import { navigation, site } from "@/data/site";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -24,6 +24,11 @@ export function MobileNav() {
                 {item.label}
               </Link>
             ))}
+          </div>
+          <div className="grid gap-3 border-t border-border/60 pt-6">
+            <Link href={site.instagram} target="_blank" rel="noreferrer" className="text-lg font-medium transition hover:text-brand-brass">
+              Instagram
+            </Link>
           </div>
         </div>
         <Button asChild size="lg" className="w-full">

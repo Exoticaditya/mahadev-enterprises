@@ -7,9 +7,14 @@ export const site = {
   email: "indiamahadeventerprises@gmail.com",
   phone: "+91 90121 12527",
   whatsapp: "https://wa.me/919012112527",
+  instagram: "https://www.instagram.com/mahadev_enterprises_india?igsh=enJqOXFhMjl5bXA=",
   address: "Rishikesh, Uttarakhand, India",
   catalogueHref: "/catalogue/mahadev-enterprises-catalogue.pdf",
-  socialImage: "/social/og-home.png",
+  socialImage: "/social/og-home.svg",
+  heroImages: {
+    desktop: "/hero/hero-desktop.jpg",
+    mobile: "/hero/hero-mobile.jpg",
+  },
 } as const;
 
 export const navigation = [
@@ -55,7 +60,7 @@ export const products = [
     dimensions: "228 x 73 x 34.7 cm",
     weight: "92 kg",
     idealFor: ["Pilates studios", "Luxury wellness centres", "Physiotherapy-led movement spaces"],
-    image: "/catalogue/m-01-maple-reformer-with-tower.png",
+    image: "/catalogue/products/m-01-maple-reformer.jpg",
   },
   {
     slug: "reformer-with-tower",
@@ -75,7 +80,7 @@ export const products = [
     dimensions: "230 x 75 x 34.5 cm",
     weight: "119 kg",
     idealFor: ["Boutique Pilates studios", "Rehab studios", "Performance movement spaces"],
-    image: "/catalogue/m-02-reformer-with-tower.png",
+    image: "/catalogue/products/m-02-reformer-tower.jpg",
   },
   {
     slug: "aluminium-reformer-with-tower",
@@ -95,7 +100,7 @@ export const products = [
     dimensions: "240 x 70 x 200 cm",
     weight: "65-85 kg",
     idealFor: ["Rehab clinics", "Clinical Pilates studios", "Hybrid wellness spaces"],
-    image: "/catalogue/m-03-aluminium-reformer-with-tower.png",
+    image: "/catalogue/products/m-03-aluminium-reformer.jpg",
   },
   {
     slug: "foldable-reformer",
@@ -115,7 +120,7 @@ export const products = [
     dimensions: "230 x 69 x 58 cm",
     weight: "65-85 kg",
     idealFor: ["Home studios", "Compact studios", "Temporary training spaces"],
-    image: "/catalogue/m-04-foldable-reformer.png",
+    image: "/catalogue/products/m-04-cadillac-frame.jpg",
   },
   {
     slug: "the-cadillac",
@@ -135,7 +140,7 @@ export const products = [
     dimensions: "217 x 69 x 57 cm",
     weight: "65-85 kg",
     idealFor: ["Advanced Pilates studios", "Rehabilitation centres", "Luxury movement labs"],
-    image: "/catalogue/m-05-the-cadillac.png",
+    image: "/catalogue/products/m-05-cadillac-with-reformer.jpg",
   },
   {
     slug: "3-in-1-caformer",
@@ -155,7 +160,7 @@ export const products = [
     dimensions: "228 x 85 x 57 cm",
     weight: "165-169 kg",
     idealFor: ["Premium studios", "Studio owners with limited space", "High-intent commercial buyers"],
-    image: "/catalogue/m-06-3-in-1-caformer.png",
+    image: "/catalogue/products/m-06-ladder-barrel.jpg",
   },
   {
     slug: "ladder-barrel",
@@ -175,7 +180,7 @@ export const products = [
     dimensions: "112 x 63 x 89 cm",
     weight: "30-40 kg",
     idealFor: ["Pilates studios", "Mobility work", "Flexibility programmes"],
-    image: "/catalogue/m-07-ladder-barrel.png",
+    image: "/catalogue/products/m-07-wunda-chair.jpg",
   },
   {
     slug: "wunda-chair",
@@ -195,7 +200,7 @@ export const products = [
     dimensions: "79 x 65 x 60 cm",
     weight: "25-30 kg",
     idealFor: ["Small studios", "Accessory programming", "Strength and control work"],
-    image: "/catalogue/m-08-wunda-chair.png",
+    image: "/catalogue/products/m-08-mat-system.jpg",
   },
   {
     slug: "aluminium-wunda-chair",
@@ -215,7 +220,7 @@ export const products = [
     dimensions: "80 x 70 x 130 cm",
     weight: "40-50 kg",
     idealFor: ["Premium studios", "High-turnover commercial use", "Lower maintenance environments"],
-    image: "/catalogue/m-09-aluminium-wunda-chair.png",
+    image: "/catalogue/products/m-09-props-kit.jpg",
   },
   {
     slug: "aluminium-ladder-barrel",
@@ -235,7 +240,7 @@ export const products = [
     dimensions: "120 x 90 x 100 cm",
     weight: "35-50 kg",
     idealFor: ["Pilates studios", "Rehab spaces", "Commercial movement centres"],
-    image: "/catalogue/m-10-aluminium-ladder-barrel.png",
+    image: "/catalogue/products/m-10-ball-collection.jpg",
   },
   {
     slug: "spine-corrector",
@@ -255,9 +260,20 @@ export const products = [
     dimensions: "95 x 45 x 34 cm",
     weight: "10-12 kg",
     idealFor: ["Mobile trainers", "Smaller studios", "Postural education"],
-    image: "/catalogue/m-11-spine-corrector.png",
+    image: "/catalogue/products/m-11-starter-bundle.jpg",
   },
 ] as const;
+
+export const solutionImages = {
+  pilatesStudios: "/solutions/pilates-studio.jpg",
+  yogaStudios: "/solutions/yoga-studio.jpg",
+  yogaSchools: "/solutions/therapy-clinic.jpg",
+  hotelsAndResorts: "/solutions/hotel-wellness.jpg",
+  retreatCentres: "/solutions/retreat-centre.jpg",
+  wellnessBrands: "/solutions/residential-wellness.jpg",
+  interiorDesigners: "/solutions/international-hospitality.jpg",
+  internationalBuyers: "/solutions/corporate-wellness.jpg",
+} as const;
 
 export const solutions = [
   {
@@ -265,48 +281,56 @@ export const solutions = [
     title: "Pilates Studios",
     summary: "Premium studio apparatus, spatial coherence, and commercial-grade reliability.",
     benefits: ["Studio-grade equipment", "Consistent material language", "Professional enquiry handling"],
+    image: solutionImages.pilatesStudios,
   },
   {
     slug: "yoga-studios",
     title: "Yoga Studios",
     summary: "Calm, durable wellness equipment that supports teaching and client trust.",
     benefits: ["Premium support products", "Bulk ordering options", "Calm brand alignment"],
+    image: solutionImages.yogaStudios,
   },
   {
     slug: "yoga-schools",
     title: "Yoga Schools",
     summary: "Reliable supply for training spaces, workshops, and teacher development environments.",
     benefits: ["Training-friendly support", "Repeat procurement", "Scalable supply logic"],
+    image: solutionImages.yogaSchools,
   },
   {
     slug: "hotels-and-resorts",
     title: "Hotels and Resorts",
     summary: "Elevated wellness furnishing for guest-facing experiences and signature spaces.",
     benefits: ["Elegant guest perception", "Procurement confidence", "Commercial suitability"],
+    image: solutionImages.hotelsAndResorts,
   },
   {
     slug: "retreat-centres",
     title: "Retreat Centres",
     summary: "Refined, calming equipment that supports immersive and premium retreat programming.",
     benefits: ["Atmospheric alignment", "Bulk supply support", "International buyer trust"],
+    image: solutionImages.retreatCentres,
   },
   {
     slug: "wellness-brands",
     title: "Wellness Brands",
     summary: "Consistent, design-led product supply for branded wellness ecosystems.",
     benefits: ["Brand coherence", "Repeatable supply", "Premium visual language"],
+    image: solutionImages.wellnessBrands,
   },
   {
     slug: "interior-designers",
     title: "Interior Designers",
     summary: "Specification-ready equipment and material clarity for commercial wellness spaces.",
     benefits: ["Finish clarity", "Styling context", "Specification support"],
+    image: solutionImages.interiorDesigners,
   },
   {
     slug: "international-buyers",
     title: "International Buyers",
     summary: "Export-ready communication for partners evaluating premium Indian wellness supply.",
     benefits: ["Clear export path", "Fast response", "Brand trust signals"],
+    image: solutionImages.internationalBuyers,
   },
 ] as const;
 
@@ -412,4 +436,5 @@ export const contactPoints = [
   { label: "Phone", value: site.phone, href: "tel:+919012112527" },
   { label: "Email", value: site.email, href: `mailto:${site.email}` },
   { label: "WhatsApp", value: "Chat on WhatsApp", href: site.whatsapp },
+  { label: "Instagram", value: "@mahadev_enterprises_india", href: site.instagram },
 ] as const;
