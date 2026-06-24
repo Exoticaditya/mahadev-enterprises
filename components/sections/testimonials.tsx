@@ -8,8 +8,8 @@ export function TestimonialsSection() {
       <div className="container space-y-10">
         <SectionHeading
           eyebrow="Trust"
-          title="Proof that the brand is built for premium commercial work."
-          description="Testimonials are kept short and specific so they read as evidence rather than marketing copy."
+          title="Trusted by industry professionals worldwide."
+          description="Hear from the studio owners, hospitality directors, and interior designers who rely on Mahadev Enterprises for high-end wellness supply."
           align="center"
         />
         <div className="grid gap-6 md:grid-cols-3">

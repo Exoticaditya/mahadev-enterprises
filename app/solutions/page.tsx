@@ -29,8 +29,8 @@ export default function SolutionsPage() {
       />
       <PageShell
         eyebrow="Solutions"
-        title="Built around the people who actually buy wellness equipment."
-        description="Each solution page is tuned to a buyer segment so the site can speak clearly to procurement, design, and hospitality needs."
+        title="Premium spatial solutions for commercial wellness brands."
+        description="We partner with boutique studios, leading hospitality groups, luxury retreat centers, and interior designers to supply tailored, high-performance wellness environments."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Solutions", href: "/solutions" }]}
       >
         <SolutionsGrid />

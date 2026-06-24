@@ -11,8 +11,8 @@ export function JournalPreview() {
       <div className="container space-y-10">
         <SectionHeading
           eyebrow="Journal"
-          title="SEO content with authority, not filler."
-          description="Articles are positioned as premium buying guidance and trust-building content for commercial wellness procurement."
+          title="Insights from the Journal"
+          description="Read our latest guides on model selection, spatial design tips for wellness studios, and key standards for commercial procurement."
         />
         <div className="grid gap-6 md:grid-cols-3">
           {journalPosts.map((post) => (

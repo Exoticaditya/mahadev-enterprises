@@ -15,8 +15,8 @@ export default function ContactPage() {
   return (
     <PageShell
       eyebrow="Contact"
-      title="Begin a premium enquiry with the team."
-      description="The enquiry flow is concise, calm, and designed to support serious buyers without unnecessary friction."
+      title="Get in Touch with Our Procurement Team"
+      description="Contact us directly to request custom pricing, discuss volume discounts, or arrange a private consultation for your wellness studio or project."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact", href: "/contact" }]}
     >
       <section className="py-10 md:py-20">

@@ -11,8 +11,8 @@ export function ProductHighlights() {
       <div className="container space-y-10">
         <SectionHeading
           eyebrow="Catalog overview"
-          title="A focused product family, organized for serious decision-making."
-          description="The catalogue balances studio apparatus and compact support tools so the premium positioning feels commercially credible."
+          title="Essential tools for spinal alignment and strength."
+          description="Complement your reformer setup with our secondary apparatus—engineered for targeted flexibility, posture correction, and compact studio layouts."
         />
         <div className="grid gap-6 lg:grid-cols-2">
           {products.slice(6).map((product) => (

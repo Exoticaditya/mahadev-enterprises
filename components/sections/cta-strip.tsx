@@ -11,7 +11,7 @@ export function CtaStrip() {
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground">Next step</p>
             <h2 className="text-4xl leading-tight md:text-6xl">Request the catalogue or speak to the team.</h2>
             <p className="text-balance text-base leading-7 text-muted-foreground md:text-lg">
-              Every enquiry route is designed to feel calm, direct, and commercially serious.
+              Get in touch with our team today to request a custom quote, obtain detailed technical specifications, or discuss bulk procurement discounts.
             </p>
           </div>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">

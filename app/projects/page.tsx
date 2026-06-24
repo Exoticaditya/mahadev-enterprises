@@ -13,8 +13,8 @@ export default function ProjectsPage() {
   return (
     <PageShell
       eyebrow="Projects"
-      title="Commercial wellness projects presented with clarity and restraint."
-      description="This section will showcase hospitality, studio, and retreat applications to support trust and conversion."
+      title="Our Featured Project Collaborations"
+      description="Explore a selection of our premium custom installations for leading boutique Pilates studios, luxury wellness resorts, and holistic retreat centers."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Projects", href: "/projects" }]}
     >
       <section className="py-10 md:py-20">

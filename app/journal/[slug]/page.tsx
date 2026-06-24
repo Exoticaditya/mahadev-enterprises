@@ -50,7 +50,7 @@ export default async function JournalPostPage({ params }: { params: Promise<{ sl
             <Card>
               <CardContent className="space-y-5 p-6 md:p-8">
                 <p className="text-sm leading-7 text-muted-foreground">
-                  This article will expand into a premium, SEO-focused editorial page that supports procurement questions, internal linking, and buyer trust.
+                  For detailed guidance on product dimensions, wood frame selections, or customized branding options for your Pilates studio, connect with our product specialists today.
                 </p>
                 <Button asChild>
                   <Link href="/contact">Ask a question</Link>

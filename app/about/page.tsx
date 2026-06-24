@@ -11,19 +11,19 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <PageShell
-      eyebrow="About"
-      title="A premium Indian supplier focused on wellness, clarity, and trust."
-      description="Mahadev Enterprises exists to serve commercial buyers who need elegant presentation and serious product reliability."
-      breadcrumbs={[{ label: "Home", href: "/" }, { label: "About", href: "/about" }]}
-    >
-      <section className="py-10 md:py-20">
-        <div className="container grid gap-6 lg:grid-cols-3">
-          {[
-            ["Vision", "Create a refined procurement experience for premium wellness buyers."],
-            ["Commitment", "Deliver credible product information, premium visuals, and responsive enquiry handling."],
-            ["Base", "Rishikesh, India, with a position that serves domestic and international demand."],
-          ].map(([title, copy]) => (
+      <PageShell
+        eyebrow="About"
+        title="A premium Indian supplier focused on craftsmanship, design, and longevity."
+        description="Mahadev Enterprises is dedicated to designing and manufacturing professional-grade Pilates reformers, yoga props, and custom wellness solutions that elevate boutique spaces."
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "About", href: "/about" }]}
+      >
+        <section className="py-10 md:py-20">
+          <div className="container grid gap-6 lg:grid-cols-3">
+            {[
+              ["Vision", "To elevate global wellness spaces with high-precision Pilates and yoga apparatus that balances functional reliability and luxury design."],
+              ["Commitment", "To maintain the highest standards of materials, craftsmanship, and export-ready client service for our B2B partners worldwide."],
+              ["Base", "Located in Rishikesh, India—serving premium domestic and international wellness demand with reliable logistics."],
+            ].map(([title, copy]) => (
             <Card key={title}>
               <CardContent className="p-6">
                 <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">{title}</p>

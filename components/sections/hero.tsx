@@ -16,7 +16,7 @@ export function Hero() {
             Premium Pilates equipment and wellness products for studios that expect more.
           </h1>
           <p className="max-w-2xl text-balance text-lg leading-8 text-muted-foreground md:text-xl">
-            Mahadev Enterprises supplies studio-grade reformers, compact strength tools, and commercial wellness solutions with a calm, editorial presentation built to convert serious buyers.
+            Mahadev Enterprises designs and supplies studio-grade reformers, custom strength tools, and commercial wellness solutions. Engineered for durability, refined for modern spaces, and trusted by leading studios worldwide.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg">

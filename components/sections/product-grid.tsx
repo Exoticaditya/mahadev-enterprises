@@ -12,8 +12,8 @@ export function ProductGrid() {
       <div className="container space-y-10">
         <SectionHeading
           eyebrow="Featured Products"
-          title="Studio-grade equipment with a calm, premium presentation."
-          description="The catalogue is organized around actual buying intent so product exploration remains fast, elegant, and commercially useful."
+          title="Precision-crafted equipment for the modern studio."
+          description="Explore our flagship range of professional Pilates reformers, Cadillac frames, and alignment tools built to withstand rigorous daily commercial use."
         />
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">

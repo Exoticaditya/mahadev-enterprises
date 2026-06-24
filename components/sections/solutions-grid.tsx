@@ -12,8 +12,8 @@ export function SolutionsGrid() {
       <div className="container space-y-10">
         <SectionHeading
           eyebrow="Solutions"
-          title="Built around the way premium buyers actually purchase."
-          description="Each solution page speaks to a distinct audience so the site can convert studio founders, hospitality buyers, and specifiers without diluting the message."
+          title="Tailored wellness solutions for every commercial space."
+          description="From boutique Pilates studios and premium retreat centers to luxury hospitality wellness suites, we design and supply spaces that inspire your clients."
         />
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {solutions.map((solution) => (

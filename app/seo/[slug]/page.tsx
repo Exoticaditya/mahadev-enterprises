@@ -45,7 +45,7 @@ export default async function SeoLandingPage({ params }: { params: Promise<{ slu
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "SEO", href: "/seo" }, { label: page.title, href: `/seo/${page.slug}` }]} />
           <div className="grid gap-10 lg:grid-cols-[1fr_0.8fr] lg:items-start">
             <div className="space-y-6">
-              <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">SEO landing page</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Specialized Supply</p>
               <h1 className="text-balance text-5xl leading-[0.95] md:text-7xl">{page.title}</h1>
               <p className="max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">{page.summary}</p>
               <div className="flex flex-wrap gap-3">
@@ -59,9 +59,9 @@ export default async function SeoLandingPage({ params }: { params: Promise<{ slu
             </div>
             <Card className="bg-background/70">
               <CardContent className="space-y-4 p-6">
-                <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Purpose</p>
+                <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">B2B Supply & Customization</p>
                 <p className="text-sm leading-7 text-muted-foreground">
-                  This page is part of the technical SEO architecture and will support canonical URLs, schema, and commercially relevant search intent.
+                  We specialize in custom orders, wood staining options, and international shipping configurations to meet the specific requirements of commercial projects.
                 </p>
               </CardContent>
             </Card>

@@ -31,7 +31,7 @@ export default function ProductsPage() {
       <PageShell
         eyebrow="Catalogue"
         title="A focused product range built for premium wellness environments."
-        description="The product catalogue is structured to make evaluation easy for buyers who care about material quality, studio fit, and long-term reliability."
+        description="Explore our curated selection of professional Pilates reformers, Cadillac frames, and spatial wellness props engineered for high-performance studios, hotels, and luxury retreats."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Products", href: "/products" }]}
       >
         <ProductGrid />

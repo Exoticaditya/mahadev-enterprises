@@ -15,8 +15,8 @@ export default function SeoIndexPage() {
   return (
     <PageShell
       eyebrow="SEO"
-      title="High-intent landing pages built for discovery."
-      description="These pages support premium commercial search targets and guide the user directly to product and enquiry flows."
+      title="Specialized B2B Procurement Hub"
+      description="Explore our target solutions and regional offerings optimized for global exports, hospitality partnerships, and professional yoga or Pilates installations."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "SEO", href: "/seo" }]}
     >
       <section className="py-10 md:py-20">

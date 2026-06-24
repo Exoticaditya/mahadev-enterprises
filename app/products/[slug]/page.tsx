@@ -129,9 +129,9 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             </CardContent>
           </Card>
           <div className="space-y-5">
-            <h2 className="text-3xl md:text-5xl">Why it matters</h2>
+            <h2 className="text-3xl md:text-5xl">The Mahadev Guarantee</h2>
             <p className="max-w-2xl text-lg leading-8 text-muted-foreground">
-              This product page is designed to answer procurement questions quickly, reinforce trust, and keep the path to enquiry calm and direct.
+              We are committed to delivering studio-grade equipment that holds up to the highest standards of daily commercial use. Every detail is refined to offer your clients an exceptional movement experience.
             </p>
             <Button asChild>
               <Link href="/contact">Enquire about {product.title}</Link>

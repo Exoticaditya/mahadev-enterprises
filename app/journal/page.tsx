@@ -13,8 +13,8 @@ export default function JournalPage() {
   return (
     <PageShell
       eyebrow="Journal"
-      title="Editorial content that earns search visibility and trust."
-      description="The journal supports high-intent search queries with practical, premium guidance for buyers."
+      title="The Mahadev Enterprises Journal"
+      description="Read professional perspectives on Pilates equipment selection, studio layout design, and wellness industry procurement standards."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Journal", href: "/journal" }]}
     >
       <JournalPreview />
