@@ -24,9 +24,9 @@ export function Footer() {
 
       <div className="container py-16 md:py-24">
         {/* Brand Header Section */}
-        <div className="grid gap-8 lg:grid-cols-[auto_1fr] lg:items-start border-b border-white/10 pb-12">
-          <div className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-3xl border border-white/20 bg-white/95 shadow-soft">
-            <Image src="/logo.png" alt="Mahadev Enterprises logo" width={80} height={80} className="h-full w-full object-contain p-2" />
+        <div className="grid gap-10 lg:grid-cols-[auto_1fr] lg:items-start lg:gap-16 border-b border-white/10 pb-12">
+          <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-3xl border border-white/20 bg-white/95 shadow-soft shrink-0">
+            <Image src="/logo.png" alt="Mahadev Enterprises logo" width={96} height={96} className="h-full w-full object-contain p-2" />
           </div>
           <div className="space-y-4">
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-brass">Mahadev Enterprises</p>

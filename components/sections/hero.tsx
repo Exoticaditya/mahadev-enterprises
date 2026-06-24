@@ -8,7 +8,22 @@ import { site, stats, trustSignals } from "@/data/site";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-12 md:pt-20">
+    <section className="relative overflow-hidden pt-12 md:pt-20 isolate">
+      {/* Background Video with Translucent Blur Overlay */}
+      <div className="absolute inset-0 -z-10">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover"
+          poster="/hero/hero-desktop.jpg"
+        >
+          <source src="/videos/hero-loop.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-[3px]" />
+      </div>
+
       <div className="container grid gap-14 pb-24 pt-10 md:pb-32 lg:grid-cols-[1.2fr_0.8fr] lg:items-end lg:gap-12">
         <div className="max-w-4xl space-y-8">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-muted-foreground">Rishikesh, India · Wellness supply</p>
@@ -39,16 +54,14 @@ export function Hero() {
         <div className="space-y-4">
           <div className="relative overflow-hidden rounded-[2rem] border border-border/70 bg-card/70 shadow-haze backdrop-blur-md">
             <div className="relative aspect-[4/5] md:aspect-[5/6] lg:aspect-[4/3] overflow-hidden">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="absolute inset-0 h-full w-full object-cover"
-                poster="/hero/hero-desktop.jpg"
-              >
-                <source src="/videos/hero-loop.mp4" type="video/mp4" />
-              </video>
+              <Image
+                src={site.heroImages.desktop}
+                alt="Mahadev Enterprises Pilates studio reformer"
+                fill
+                priority
+                className="object-cover"
+                sizes="(min-width: 1024px) 38vw, 100vw"
+              />
             </div>
           </div>
           <div className="grid gap-4 rounded-[2rem] border border-border/70 bg-card/70 p-6 shadow-haze backdrop-blur-md md:p-8">
