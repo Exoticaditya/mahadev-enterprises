@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { CtaStrip } from "@/components/sections/cta-strip";
 import { ProductSchema } from "@/components/sections/product-schema";
+import { ProductDetailActions } from "@/components/sections/product-detail-actions";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { products, site } from "@/data/site";
@@ -60,14 +61,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               </p>
               <h1 className="text-balance text-5xl leading-[0.95] md:text-7xl">{product.title}</h1>
               <p className="max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">{product.description}</p>
-              <div className="flex flex-wrap gap-3">
-                <Button asChild>
-                  <Link href="/contact">Request Pricing</Link>
-                </Button>
-                <Button asChild variant="outline">
-                  <Link href="/catalogue/mahadev-enterprises-catalogue.pdf">Download Catalogue</Link>
-                </Button>
-              </div>
+              <ProductDetailActions product={product} />
             </div>
             <Card className="overflow-hidden">
               <div className="relative aspect-[4/3] bg-secondary/30">

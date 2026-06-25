@@ -18,21 +18,6 @@ export function PageShell({
   return (
     <>
       <Section className="relative overflow-hidden pt-32 md:pt-40 -mt-20 isolate border-b border-border/30">
-        {/* Subtle Background Video with Heavy Overlay (Less Opacity) */}
-        <div className="absolute inset-0 -z-10">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 h-full w-full object-cover"
-            poster="/hero/hero-desktop.jpg"
-          >
-            <source src="/videos/hero-loop.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-background/82 backdrop-blur-[2px] dark:bg-background/86" />
-        </div>
-
         <div className="container space-y-6">
           <Breadcrumbs items={breadcrumbs} />
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-brass">{eyebrow}</p>

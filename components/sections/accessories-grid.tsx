@@ -7,8 +7,10 @@ import { Search } from "lucide-react";
 import { accessories } from "@/data/site";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/section-heading";
+import { useCart } from "@/components/providers/cart-context";
 
 export function AccessoriesGrid() {
+  const { addToCart } = useCart();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
 
@@ -109,10 +111,20 @@ export function AccessoriesGrid() {
                     ))}
                   </div>
 
-                  <Button asChild size="sm" variant="outline" className="rounded-full hover:bg-brand-brass hover:text-white">
-                    <Link href={`/contact?subject=Enquiry for ${encodeURIComponent(item.title)}`}>
-                      Enquire
-                    </Link>
+                  <Button
+                    onClick={() =>
+                      addToCart({
+                        id: item.slug,
+                        type: "accessory",
+                        title: item.title,
+                        quantity: 1,
+                      })
+                    }
+                    size="sm"
+                    variant="outline"
+                    className="rounded-full hover:bg-brand-brass hover:text-white"
+                  >
+                    Add to Quote
                   </Button>
                 </div>
               </div>
