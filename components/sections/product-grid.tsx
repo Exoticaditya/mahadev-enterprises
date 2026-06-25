@@ -3,12 +3,14 @@ import Link from "next/link";
 
 import { SectionHeading } from "@/components/section-heading";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { products } from "@/data/site";
 
 export function ProductGrid() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="relative py-20 md:py-28">
+      {/* Decorative ambient glowing light orb */}
+      <div className="glow-orb left-[5%] top-[15%] h-[400px] w-[400px] bg-brand-brass/5" />
+
       <div className="container space-y-10">
         <SectionHeading
           eyebrow="Featured Products"
@@ -18,42 +20,56 @@ export function ProductGrid() {
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {products.slice(0, 6).map((product) => (
-            <Card key={product.slug} className="overflow-hidden transition duration-300 hover:-translate-y-1 hover:shadow-haze">
-              <div className="relative aspect-[4/3] overflow-hidden border-b border-border/60 bg-secondary/30">
+            <div
+              key={product.slug}
+              className="luxury-card group flex flex-col justify-between"
+            >
+              <div>
+                <div className="relative aspect-[4/3] overflow-hidden border-b border-border/60 bg-secondary/20">
                   <Image
                     src={product.image}
                     alt={product.title}
                     fill
-                    className="object-cover transition duration-500 hover:scale-[1.03]"
+                    className="object-cover transition duration-700 ease-out group-hover:scale-105"
                     sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
-              </div>
-              <CardHeader>
-                <CardDescription>{product.model} · {product.category}</CardDescription>
-                <CardTitle className="text-2xl">{product.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-sm leading-7 text-muted-foreground">{product.summary}</p>
-                
-                <div className="space-y-1">
-                  <p className="text-[10px] uppercase tracking-wider text-brand-brass font-medium">Ideal for:</p>
-                  <p className="text-xs text-muted-foreground leading-normal">
-                    {product.idealFor.slice(0, 2).join(" · ")}
-                  </p>
                 </div>
+                <div className="p-6 md:p-8 space-y-5">
+                  <div className="space-y-1">
+                    <p className="text-[10px] font-semibold uppercase tracking-wider text-brand-brass">
+                      {product.model} · {product.category}
+                    </p>
+                    <h3 className="text-2xl font-serif text-foreground leading-tight">{product.title}</h3>
+                  </div>
 
-                <div className="flex flex-wrap gap-2 pt-1">
-                  {product.features.slice(0, 3).map((feature) => (
-                    <span key={feature} className="rounded-full bg-muted px-3 py-1 text-xs text-muted-foreground">
-                      {feature}
-                    </span>
-                  ))}
+                  <p className="text-sm leading-6 text-muted-foreground">{product.summary}</p>
+                  
+                  <div className="space-y-1">
+                    <p className="text-[10px] uppercase tracking-wider text-brand-brass/75 font-semibold">Ideal for:</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      {product.idealFor.slice(0, 2).join(" · ")}
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 pt-2">
+                    {product.features.slice(0, 3).map((feature) => (
+                      <span
+                        key={feature}
+                        className="rounded-full border border-brand-brass/25 bg-brand-brass/5 px-2.5 py-0.5 text-[10px] text-brand-brass font-medium whitespace-nowrap"
+                      >
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <Button asChild variant="outline" className="w-full">
+              </div>
+
+              <div className="p-6 md:p-8 pt-0">
+                <Button asChild variant="outline" className="w-full rounded-full transition-all duration-300 hover:bg-brand-brass hover:text-white hover:border-brand-brass">
                   <Link href={`/products/${product.slug}`}>View Details</Link>
                 </Button>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>

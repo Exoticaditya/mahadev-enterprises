@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { ProductGrid } from "@/components/sections/product-grid";
 import { ProductHighlights } from "@/components/sections/product-highlights";
+import { AccessoriesGrid } from "@/components/sections/accessories-grid";
 import { PageShell } from "@/components/page-shell";
 import { products, site } from "@/data/site";
 import { JsonLd } from "@/components/json-ld";
@@ -36,6 +37,7 @@ export default function ProductsPage() {
       >
         <ProductGrid />
         <ProductHighlights />
+        <AccessoriesGrid />
       </PageShell>
     </>
   );

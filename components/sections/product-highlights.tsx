@@ -2,12 +2,14 @@ import Link from "next/link";
 
 import { SectionHeading } from "@/components/section-heading";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { products } from "@/data/site";
 
 export function ProductHighlights() {
   return (
-    <section className="py-20 md:py-28">
+    <section className="relative py-20 md:py-28">
+      {/* Local decorative ambient light glow */}
+      <div className="glow-orb right-[5%] bottom-[15%] h-[350px] w-[350px] bg-brand-sage/5" />
+
       <div className="container space-y-10">
         <SectionHeading
           eyebrow="Catalog overview"
@@ -16,22 +18,31 @@ export function ProductHighlights() {
         />
         <div className="grid gap-6 lg:grid-cols-2">
           {products.slice(6).map((product) => (
-            <Card key={product.slug} className="flex flex-col justify-between gap-6 p-6 md:p-7">
-              <CardContent className="space-y-4 p-0">
-                <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">{product.model} · {product.category}</p>
-                <h3 className="text-2xl md:text-3xl">{product.title}</h3>
+            <div
+              key={product.slug}
+              className="luxury-card flex flex-col justify-between p-6 md:p-8"
+            >
+              <div className="space-y-4">
+                <p className="text-[10px] font-semibold uppercase tracking-wider text-brand-brass">
+                  {product.model} · {product.category}
+                </p>
+                <h3 className="text-3xl font-serif text-foreground leading-tight">{product.title}</h3>
                 <p className="text-sm leading-7 text-muted-foreground">{product.summary}</p>
-                <div className="space-y-1">
-                  <p className="text-[10px] uppercase tracking-wider text-brand-brass font-medium">Ideal for:</p>
-                  <p className="text-xs text-muted-foreground leading-normal">
+                
+                <div className="space-y-1 border-t border-border/30 pt-4">
+                  <p className="text-[10px] uppercase tracking-wider text-brand-brass/75 font-semibold">Ideal for:</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
                     {product.idealFor.slice(0, 2).join(" · ")}
                   </p>
                 </div>
-              </CardContent>
-              <Button asChild variant="outline" className="w-fit">
-                <Link href={`/products/${product.slug}`}>View details</Link>
-              </Button>
-            </Card>
+              </div>
+
+              <div className="mt-8">
+                <Button asChild variant="outline" className="rounded-full transition-all duration-300 hover:bg-brand-brass hover:text-white hover:border-brand-brass">
+                  <Link href={`/products/${product.slug}`}>View details</Link>
+                </Button>
+              </div>
+            </div>
           ))}
         </div>
       </div>

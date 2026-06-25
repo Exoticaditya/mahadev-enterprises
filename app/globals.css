@@ -149,3 +149,29 @@ body {
     @apply text-lg md:text-xl;
   }
 }
+
+/* Luxury B2B Theme Enhancements */
+.text-gradient-brass {
+  @apply bg-gradient-to-r from-brand-brass via-[#d0b48c] to-brand-clay bg-clip-text text-transparent;
+}
+
+.luxury-card {
+  @apply relative overflow-hidden rounded-[2rem] border border-border/45 bg-card/65 shadow-soft transition-all duration-500 ease-out backdrop-blur-md;
+}
+
+.luxury-card:hover {
+  @apply -translate-y-1.5 border-brand-brass/35 shadow-glow;
+}
+
+.dark .luxury-card {
+  @apply border-white/5 bg-[#121413]/60 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.5)];
+}
+
+.dark .luxury-card:hover {
+  @apply border-brand-brass/30 shadow-[0_0_30px_-5px_rgba(176,138,87,0.20),0_12px_40px_-12px_rgba(0,0,0,0.5)];
+}
+
+.glow-orb {
+  @apply absolute -z-10 rounded-full mix-blend-multiply filter blur-[80px] opacity-40 dark:opacity-20 animate-pulse pointer-events-none;
+  animation-duration: 8s;
+}
