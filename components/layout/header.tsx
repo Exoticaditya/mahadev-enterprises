@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ShoppingBag } from "lucide-react";
@@ -14,10 +15,39 @@ import { CartDrawer } from "@/components/layout/cart-drawer";
 
 export function Header() {
   const { cartCount, setIsOpen } = useCart();
+  const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setScrolled(currentScrollY > 20);
+
+      // Hide header when scrolling down, show when scrolling up
+      if (currentScrollY > lastScrollY && currentScrollY > 120) {
+        setVisible(false); // Scrolling down
+      } else {
+        setVisible(true); // Scrolling up
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/40 bg-background/55 backdrop-blur-3xl shadow-glass transition-all duration-300">
-      <div className="container flex h-24 items-center justify-between gap-4">
+    <header
+      className={`sticky top-0 z-40 border-b transition-all duration-500 ease-in-out ${
+        scrolled
+          ? "border-border/40 bg-background/60 backdrop-blur-3xl shadow-glass"
+          : "border-border/20 bg-background/40 backdrop-blur-xl"
+      } ${
+        visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
+      }`}
+    >
+      <div className={`container flex items-center justify-between gap-4 transition-all duration-500 ease-in-out ${scrolled ? "h-20" : "h-26"}`}>
         <Link href="/" className="flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-border/70 bg-background/80 shadow-soft">
             <Image src="/logo.png" alt="Mahadev Enterprises logo" width={44} height={44} className="h-full w-full object-contain p-1" priority />

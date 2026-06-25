@@ -75,7 +75,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                     loop
                     muted
                     playsInline
-                    className="h-full w-full object-cover opacity-[0.08] dark:opacity-[0.12]"
+                    className="h-full w-full object-cover opacity-[0.12] dark:opacity-[0.16]"
                     poster="/hero/hero-desktop.jpg"
                   >
                     <source src="/videos/hero-loop.mp4" type="video/mp4" />

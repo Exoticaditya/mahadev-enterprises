@@ -18,11 +18,11 @@ export function ProductGrid() {
           description="Explore our flagship range of professional Pilates reformers, Cadillac frames, and alignment tools built to withstand rigorous daily commercial use."
         />
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="flex gap-6 overflow-x-auto pb-6 scrollbar-none snap-x snap-mandatory md:grid md:grid-cols-2 xl:grid-cols-3 md:overflow-x-visible md:pb-0">
           {products.slice(0, 6).map((product) => (
             <div
               key={product.slug}
-              className="luxury-card group flex flex-col justify-between"
+              className="luxury-card group flex flex-col justify-between w-[85vw] shrink-0 snap-center md:w-auto md:shrink"
             >
               <div>
                 <div className="relative aspect-[4/3] overflow-hidden border-b border-border/60 bg-secondary/20">

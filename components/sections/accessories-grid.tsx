@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Search } from "lucide-react";
 
 import { accessories } from "@/data/site";
@@ -71,35 +72,46 @@ export function AccessoriesGrid() {
 
         {/* Grid list of Accessories */}
         {filteredAccessories.length > 0 ? (
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="flex gap-6 overflow-x-auto pb-6 scrollbar-none snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-x-visible md:pb-0">
             {filteredAccessories.map((item) => (
               <div
                 key={item.slug}
-                className="luxury-card flex flex-col justify-between p-6 md:p-8"
+                className="luxury-card group flex flex-col justify-between w-[85vw] shrink-0 snap-center md:w-auto md:shrink"
               >
-                <div className="space-y-4">
-                  <div className="flex items-start justify-between gap-4">
-                    <span className="rounded-full border border-brand-brass/35 bg-brand-brass/5 px-3 py-1 text-[10px] font-medium uppercase tracking-wider text-brand-brass">
-                      {item.category}
-                    </span>
+                <div>
+                  <div className="relative aspect-[4/3] overflow-hidden border-b border-border/60 bg-secondary/20">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      className="object-cover transition duration-700 ease-out group-hover:scale-105"
+                      sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
                   </div>
-
-                  <h3 className="text-2xl font-serif text-foreground">{item.title}</h3>
-                  <p className="text-sm leading-7 text-muted-foreground">{item.description}</p>
-
-                  <div className="space-y-2 border-t border-border/30 pt-4">
-                    <div className="flex items-center gap-2">
-                      <span className="text-[10px] font-semibold uppercase tracking-wider text-brand-brass">
-                        Materials:
+                  <div className="p-6 md:p-8 space-y-4">
+                    <div className="flex items-start justify-between gap-4">
+                      <span className="rounded-full border border-brand-brass/35 bg-brand-brass/5 px-3 py-1 text-[10px] font-medium uppercase tracking-wider text-brand-brass">
+                        {item.category}
                       </span>
-                      <span className="text-xs text-muted-foreground">
-                        {item.materials.join(" · ")}
-                      </span>
+                    </div>
+
+                    <h3 className="text-2xl font-serif text-foreground">{item.title}</h3>
+                    <p className="text-sm leading-7 text-muted-foreground">{item.description}</p>
+
+                    <div className="space-y-2 border-t border-border/30 pt-4">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="text-[10px] font-semibold uppercase tracking-wider text-brand-brass">
+                          Materials:
+                        </span>
+                        <span className="text-xs text-muted-foreground">
+                          {item.materials.join(" · ")}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-8 flex flex-wrap gap-2 items-center justify-between">
+                <div className="p-6 md:p-8 pt-0 mt-auto flex flex-wrap gap-3 items-center justify-between">
                   <div className="flex flex-wrap gap-1">
                     {item.features.slice(0, 2).map((feat) => (
                       <span
@@ -117,6 +129,7 @@ export function AccessoriesGrid() {
                         id: item.slug,
                         type: "accessory",
                         title: item.title,
+                        image: item.image,
                         quantity: 1,
                       })
                     }

@@ -77,7 +77,6 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
       return [...prevCart, { ...newItem, quantity: qtyToAdd } as CartItem];
     });
-    setIsOpen(true); // Auto-open cart drawer when item is added
   };
 
   const removeFromCart = (id: string, woodFinish?: string, upholsteryColor?: string) => {

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { Plus, Minus, Trash2, ShoppingBag } from "lucide-react";
+import { Plus, Minus, Trash2, ShoppingBag, ArrowLeft } from "lucide-react";
 
 import { useCart } from "@/components/providers/cart-context";
 import { Button } from "@/components/ui/button";
@@ -13,7 +13,8 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
 export function CartDrawer() {
-  const { cart, isOpen, setIsOpen, updateQuantity, removeFromCart, clearCart, cartCount } = useCart();
+  const { cart, isOpen, setIsOpen, updateQuantity, removeFromCart, clearCart } = useCart();
+  const [step, setStep] = useState<"cart" | "checkout">("cart");
   const [name, setName] = useState("");
   const [studio, setStudio] = useState("");
   const [location, setLocation] = useState("");
@@ -54,17 +55,26 @@ export function CartDrawer() {
     // Open WhatsApp URL
     window.open(whatsappUrl, "_blank");
 
-    // Reset form and clear cart
+    // Reset form, clear cart and return to Step 1
     setName("");
     setStudio("");
     setLocation("");
     setNotes("");
     clearCart();
+    setStep("cart");
     setIsOpen(false);
   };
 
+  // Reset step to 'cart' when the drawer closes
+  const handleOpenChange = (open: boolean) => {
+    setIsOpen(open);
+    if (!open) {
+      setTimeout(() => setStep("cart"), 300);
+    }
+  };
+
   return (
-    <Sheet open={isOpen} onOpenChange={setIsOpen}>
+    <Sheet open={isOpen} onOpenChange={handleOpenChange}>
       <SheetContent className="flex w-full flex-col p-0 sm:max-w-lg bg-background/85 backdrop-blur-2xl border-l border-border/40 shadow-glass">
         <div className="p-6 border-b border-border/30">
           <div className="flex items-center gap-3">
@@ -72,9 +82,13 @@ export function CartDrawer() {
               <ShoppingBag className="h-5 w-5" />
             </div>
             <div>
-              <h2 className="font-serif text-2xl font-semibold text-foreground">Your Quote Cart</h2>
+              <h2 className="font-serif text-2xl font-semibold text-foreground">
+                {step === "cart" ? "Your Quote Cart" : "Request B2B Quote"}
+              </h2>
               <p className="text-xs text-muted-foreground">
-                Compile items to send a direct quote request on WhatsApp
+                {step === "cart" 
+                  ? "Compile items to send a direct quote request on WhatsApp" 
+                  : "Enter details to generate your customized proposal"}
               </p>
             </div>
           </div>
@@ -91,12 +105,13 @@ export function CartDrawer() {
               Continue Browsing
             </Button>
           </div>
-        ) : (
+        ) : step === "cart" ? (
           <>
+            {/* Step 1: Cart Items List */}
             <ScrollArea className="flex-1 px-6">
               <div className="divide-y divide-border/30">
                 {cart.map((item) => (
-                  <div key={`${item.id}-${item.woodFinish || ""}-${item.upholsteryColor || ""}`} className="flex py-6 gap-4">
+                  <div key={`${item.id}-${item.woodFinish || ""}-${item.upholsteryColor || ""}`} className="flex py-6 gap-4 animate-fadeIn">
                     <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-xl border border-border/40 bg-secondary/10">
                       {item.image ? (
                         <Image
@@ -174,74 +189,103 @@ export function CartDrawer() {
               </div>
             </ScrollArea>
 
-            {/* B2B Checkout Form */}
-            <form onSubmit={handleCheckout} className="border-t border-border/30 bg-muted/30 p-6 space-y-4">
-              <div className="space-y-1">
-                <p className="text-[10px] font-semibold text-brand-brass uppercase tracking-wider">Checkout & Enquire</p>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  Enter your details to generate a direct quote enquiry for our Rishikesh design consultants.
-                </p>
-              </div>
+            <div className="border-t border-border/30 bg-muted/30 p-6 space-y-3">
+              <Button 
+                onClick={() => setStep("checkout")} 
+                className="w-full h-11 rounded-full font-medium tracking-wide shadow-glow transition-transform hover:-translate-y-0.5"
+              >
+                Proceed to Enquiry
+              </Button>
+              <Button 
+                variant="ghost" 
+                onClick={() => setIsOpen(false)}
+                className="w-full text-xs text-muted-foreground hover:text-foreground"
+              >
+                Continue Browsing & Add More Items
+              </Button>
+            </div>
+          </>
+        ) : (
+          <>
+            {/* Step 2: Checkout Form */}
+            <div className="px-6 pt-4">
+              <button 
+                onClick={() => setStep("cart")} 
+                className="text-xs text-brand-brass hover:underline flex items-center gap-1 font-medium transition-colors hover:text-brand-brass/80"
+              >
+                <ArrowLeft className="h-3.5 w-3.5" />
+                <span>Back to Quote list</span>
+              </button>
+            </div>
 
-              <div className="grid gap-3 sm:grid-cols-2">
+            <ScrollArea className="flex-1 px-6">
+              <form onSubmit={handleCheckout} className="py-4 space-y-4">
+                <div className="space-y-1">
+                  <p className="text-[10px] font-semibold text-brand-brass uppercase tracking-wider">Recipient: Mahadev Enterprises</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Provide your contact details so we can estimate shipping and custom manufacturing options from Rishikesh.
+                  </p>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="space-y-1.5">
+                    <Label htmlFor="checkout-name" className="text-xs font-medium">Your Name</Label>
+                    <Input
+                      id="checkout-name"
+                      required
+                      placeholder="e.g. Sarah Jenkins"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      className="h-10 rounded-xl bg-background/60 border-border/40 text-sm focus:border-brand-brass focus:ring-brand-brass"
+                    />
+                  </div>
+                  <div className="space-y-1.5">
+                    <Label htmlFor="checkout-studio" className="text-xs font-medium">Studio / Company Name</Label>
+                    <Input
+                      id="checkout-studio"
+                      required
+                      placeholder="e.g. CoreBalance Pilates"
+                      value={studio}
+                      onChange={(e) => setStudio(e.target.value)}
+                      className="h-10 rounded-xl bg-background/60 border-border/40 text-sm"
+                    />
+                  </div>
+                </div>
+
                 <div className="space-y-1.5">
-                  <Label htmlFor="checkout-name" className="text-xs font-medium">Your Name</Label>
+                  <Label htmlFor="checkout-location" className="text-xs font-medium">Delivery Location / City</Label>
                   <Input
-                    id="checkout-name"
+                    id="checkout-location"
                     required
-                    placeholder="e.g. Sarah Jenkins"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    className="h-9 rounded-xl bg-background/60 border-border/40 text-sm focus:border-brand-brass focus:ring-brand-brass"
+                    placeholder="e.g. Mumbai, India or Dubai, UAE"
+                    value={location}
+                    onChange={(e) => setLocation(e.target.value)}
+                    className="h-10 rounded-xl bg-background/60 border-border/40 text-sm"
                   />
                 </div>
+
                 <div className="space-y-1.5">
-                  <Label htmlFor="checkout-studio" className="text-xs font-medium">Studio / Company Name</Label>
-                  <Input
-                    id="checkout-studio"
-                    required
-                    placeholder="e.g. CoreBalance Pilates"
-                    value={studio}
-                    onChange={(e) => setStudio(e.target.value)}
-                    className="h-9 rounded-xl bg-background/60 border-border/40 text-sm"
+                  <Label htmlFor="checkout-notes" className="text-xs font-medium">Custom Requests / Notes</Label>
+                  <Textarea
+                    id="checkout-notes"
+                    placeholder="e.g. Custom upholstery shades, delivery timeline questions, or accessory specifications..."
+                    value={notes}
+                    onChange={(e) => setNotes(e.target.value)}
+                    rows={4}
+                    className="rounded-xl bg-background/60 border-border/40 text-sm resize-none"
                   />
                 </div>
-              </div>
 
-              <div className="space-y-1.5">
-                <Label htmlFor="checkout-location" className="text-xs font-medium">Delivery Location / City</Label>
-                <Input
-                  id="checkout-location"
-                  required
-                  placeholder="e.g. Mumbai, India or Dubai, UAE"
-                  value={location}
-                  onChange={(e) => setLocation(e.target.value)}
-                  className="h-9 rounded-xl bg-background/60 border-border/40 text-sm"
-                />
-              </div>
-
-              <div className="space-y-1.5">
-                <Label htmlFor="checkout-notes" className="text-xs font-medium">Custom Requests / Notes</Label>
-                <Textarea
-                  id="checkout-notes"
-                  placeholder="e.g. Upholstery color requests, timing deadlines, or shipping instructions..."
-                  value={notes}
-                  onChange={(e) => setNotes(e.target.value)}
-                  rows={2}
-                  className="rounded-xl bg-background/60 border-border/40 text-sm resize-none"
-                />
-              </div>
-
-              <div className="pt-2">
-                <Button type="submit" className="w-full h-11 rounded-full font-medium tracking-wide shadow-glow transition-transform hover:-translate-y-0.5">
-                  Send WhatsApp Enquiry
-                </Button>
-              </div>
-
-              <p className="text-[10px] text-center text-muted-foreground leading-relaxed">
-                Handcrafted in Rishikesh · Standard dispatch: 4–6 weeks · Shipping quotes are calculated upon enquiry submission
-              </p>
-            </form>
+                <div className="pt-4 space-y-4">
+                  <Button type="submit" className="w-full h-11 rounded-full font-medium tracking-wide shadow-glow transition-transform hover:-translate-y-0.5">
+                    Send WhatsApp Enquiry
+                  </Button>
+                  <p className="text-[10px] text-center text-muted-foreground leading-relaxed max-w-xs mx-auto">
+                    Handcrafted in Rishikesh · Standard dispatch: 4–6 weeks · Shipping quotes are calculated upon enquiry submission
+                  </p>
+                </div>
+              </form>
+            </ScrollArea>
           </>
         )}
       </SheetContent>

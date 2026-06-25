@@ -442,6 +442,7 @@ export const accessories = [
     description: "Built with aerospace-grade aluminium and steel fasteners, this wall-mounted stretching ladder offers lightweight durability, corrosion resistance, and safety for demanding studio environments.",
     materials: ["Aerospace Aluminium", "Stainless steel hardware"],
     features: ["Corrosion-resistant", "Multi-point mounting brackets", "Textured grip rungs"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "ladder-maple",
@@ -451,6 +452,7 @@ export const accessories = [
     description: "Crafted from sustainably sourced solid maple wood, this traditional stretching ladder provides a warm, organic feel, high structural strength, and hand-finished rounded rungs for a comfortable studio grip.",
     materials: ["Solid Maple Wood", "Reinforced wall anchors"],
     features: ["Sustainably sourced wood", "Hand-sanded comfort finish", "Supports high-weight capacity"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "ladder-barrel-accessory",
@@ -460,6 +462,7 @@ export const accessories = [
     description: "Designed for active spinal decompression and core flexibility work. Features premium antibacterial leather wrapping and dual integrated grab handles for easy mobility.",
     materials: ["High-density foam", "Premium leather upholstery", "Maple base support"],
     features: ["Ergonomic curvature", "Sweat-resistant antibacterial leather", "Dual side carry handles"],
+    image: "/Gallary/product-gallery/m-06-ladder-barrel.jpg",
   },
   {
     slug: "standing-plate",
@@ -469,6 +472,7 @@ export const accessories = [
     description: "A solid wooden extension platform that locks safely into the reformer footbar frame, providing a stable, high-grip standing surface for lateral alignment and standing exercises.",
     materials: ["Solid wood base", "Textured vulcanized rubber layer"],
     features: ["Heavy-duty non-slip grip", "Precision-engineered slot alignment", "Protective rubber bumpers"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "wooden-pole",
@@ -478,6 +482,47 @@ export const accessories = [
     description: "A lightweight, hand-sanded solid maple pole used during reformer and mat exercises to help clients maintain alignment, shoulder spacing, and verify posture.",
     materials: ["Sustainably sourced Maple wood"],
     features: ["Hand-finished ultra-smooth surface", "Lightweight for low fatigue", "Consistent studio length"],
+    image: "/catalogue/product-placeholder.svg",
+  },
+  {
+    slug: "mat-system",
+    title: "Mat System",
+    category: "Studio Accessories",
+    summary: "Professional high-density Pilates mat system with postural alignment grid.",
+    description: "A studio-grade Pilates mat system offering exceptional cushioning and alignment guides. Built with eco-friendly, high-density materials and designed for intensive floorwork, postural correction, and classical exercises.",
+    materials: ["Eco-TPE core", "Non-slip textured surface", "Nylon carry strap"],
+    features: ["Postural alignment markings", "High-density joint protection", "Water-resistant, easy-to-sanitize"],
+    image: "/Gallary/product-gallery/m-08-mat-system.jpg",
+  },
+  {
+    slug: "props-kit",
+    title: "Props Kit",
+    category: "Studio Accessories",
+    summary: "Essential Pilates studio prop package featuring blocks, bands, and rings.",
+    description: "A complete selection of studio props curated for resistance training, flexibility enhancement, and exercise progression. Features high-tensile resistance bands, durable yoga blocks, and a classic Pilates ring.",
+    materials: ["Fiberglass ring", "EVA foam blocks", "Natural latex bands"],
+    features: ["Curated studio essentials", "High-durability materials", "Suitable for all client levels"],
+    image: "/Gallary/product-gallery/m-09-props-kit.jpg",
+  },
+  {
+    slug: "ball-collection",
+    title: "Ball Collection",
+    category: "Studio Accessories",
+    summary: "Set of high-grade stability and therapy balls for core balance and rehab.",
+    description: "A collection of premium stability and soft therapy balls designed to improve balance, target core stability, and support rehabilitation exercises. Includes anti-burst technology and tactile finish.",
+    materials: ["Anti-burst PVC", "Hypoallergenic rubber", "Inflation pump included"],
+    features: ["Anti-burst safety rating", "Tactile non-slip surface", "Varying sizes for diverse training"],
+    image: "/Gallary/product-gallery/m-10-ball-collection.jpg",
+  },
+  {
+    slug: "starter-bundle",
+    title: "Starter Bundle",
+    category: "Studio Accessories",
+    summary: "The ultimate introductory kit for boutique studios and home setups.",
+    description: "A comprehensive package combining a premium mat, essential props, and therapy balls to jumpstart any personal Pilates studio or home practice. Tailored for quality, consistency, and professional performance.",
+    materials: ["Premium studio materials", "Eco-friendly components"],
+    features: ["Complete training set", "Cost-effective studio startup", "Standardized manufacturer warranty"],
+    image: "/Gallary/product-gallery/m-11-starter-bundle.jpg",
   },
   {
     slug: "screw-kit",
@@ -487,6 +532,7 @@ export const accessories = [
     description: "A comprehensive replacement hardware package containing high-tensile steel screws, locking bolts, wash caps, and structural spacers to maintain reformer stability and frame integrity.",
     materials: ["High-tensile steel", "Zinc-coated anti-rust washers"],
     features: ["Universal model thread compatibility", "Industrial durability rating", "Organized hardware storage case"],
+    image: "/catalogue/product-placeholder.svg",
   },
 
   // Reformer Spare Parts (Page 2)
@@ -498,6 +544,7 @@ export const accessories = [
     description: "A premium structural frame replacement made of anodized aluminium. Precision-machined wheel tracks ensure a completely silent, smooth carriage slide, ideal for moisture-rich or high-humidity wellness spaces.",
     materials: ["Anodized Aerospace Aluminium", "Steel structural joints"],
     features: ["Rust-proof", "Precision track geometry", "Pre-drilled mounting holes"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "frame-maple",
@@ -507,6 +554,7 @@ export const accessories = [
     description: "A replacement reformer body frame handcrafted from solid maple wood. Double-reinforced joints and commercial-grade structural varnish ensure maximum stability, rigidity, and quiet performance.",
     materials: ["Premium Maple Wood", "Internal steel tension plates"],
     features: ["Handcrafted B2B joinery", "Double-lacquered scratch protection", "Natural vibration absorption"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "carriage-bed",
@@ -516,6 +564,7 @@ export const accessories = [
     description: "Premium replacement carriage platform. Multi-layered high-density foam provides client comfort, wrapped in heavy-duty commercial leather. Includes pre-drilled brackets for wheel sets.",
     materials: ["Reinforced wood base", "Orthopaedic foam", "Commercial-grade vinyl leather"],
     features: ["Sweat-resistant cover", "Pre-aligned runner slots", "Durable double-stitched seams"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "risers",
@@ -525,6 +574,7 @@ export const accessories = [
     description: "A pair of solid maple replacement riser blocks to guide reformer ropes. Equipped with industrial silent swivel pulleys and brass adjustment pins for rope height adjustment.",
     materials: ["Solid Maple Wood", "Brass locking fixtures", "Stainless steel rollers"],
     features: ["Silent swivel action", "Multi-stage height locks", "Universal rope path alignment"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "jumping-board",
@@ -534,6 +584,7 @@ export const accessories = [
     description: "Introduces dynamic, low-impact cardio routines to your reformer workouts. This padded board slots securely into the reformer footbar sockets and provides a broad, stable surface for foot push-offs.",
     materials: ["Heavy-duty wood base", "Comfort foam padding", "Cleanable leather cover"],
     features: ["Tension-lock safety pins", "Anti-slip cover texture", "Impact-absorbing core"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "extension-board",
@@ -543,6 +594,7 @@ export const accessories = [
     description: "Designed for taller clients or advanced standing flows. This extensions board sits flush with the carriage level, providing extra support surface at the head or foot end of the reformer.",
     materials: ["Wood frame", "Commercial vinyl wrap"],
     features: ["Flush-fit lock-in mechanism", "High load-bearing capacity", "Textured grip surface"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "carriage-springs",
@@ -552,6 +604,7 @@ export const accessories = [
     description: "Complete replacement set of 5 heavy-duty steel springs, color-coded for precise resistance tracking (2 Heavy/Red, 2 Medium/Blue, 1 Light/Yellow). Calibrated for uniform tension curves.",
     materials: ["Calibrated high-tensile spring steel", "Zinc plating"],
     features: ["Rust-resistant finish", "Color-coded resistance ratings", "Quiet spring hook inserts"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "reformer-box-accessory",
@@ -561,6 +614,7 @@ export const accessories = [
     description: "Commercial-grade reformer box to raise client height. Sturdy wood interior support covered in plush orthopaedic foam and antibacterial vinyl leather. Equipped with dual side handles for easy adjustment.",
     materials: ["Heavy-duty plywood frame", "High-rebound foam", "Premium leather wrap"],
     features: ["Dual chrome handles", "Ultra-stable structure", "Lightweight internal framework"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "shoulder-handles",
@@ -570,6 +624,7 @@ export const accessories = [
     description: "A pair of replacement soft handles. Features double-loop configurations for both hand and foot exercises, wrapped in sweat-resistant, textured foam sleeves to reduce wrist pressure.",
     materials: ["Reinforced nylon webbing", "High-density foam sleeves"],
     features: ["Dual-loop configuration", "Comfort foam padding", "High-tensile D-ring clips"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "pulley-kit",
@@ -579,6 +634,7 @@ export const accessories = [
     description: "Industrial replacement pulleys with built-in sealed ball bearings to ensure zero drag, rope friction, or metal squeaks during client workouts. 360-degree swivel mounts.",
     materials: ["Chromed steel brackets", "Reinforced polymer rollers"],
     features: ["Sealed ball bearings", "360-degree swivel path", "Wear-resistant guide track"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "shoulder-rests",
@@ -588,6 +644,7 @@ export const accessories = [
     description: "Comfortable, ergonomically contoured replacement shoulder rests. Easily slots and locks into the carriage frame to support correct shoulder placement and prevent slippage under resistance.",
     materials: ["Solid steel brackets", "Dual-density foam padding", "Leather cover"],
     features: ["Quick-release lock pins", "Contoured shoulder cup shape", "Sanitized wipe-clean cover"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "reformer-rope",
@@ -597,6 +654,7 @@ export const accessories = [
     description: "A pair of replacement ropes for reformer carriage control. Crafted from marine-grade low-stretch braided nylon, designed to prevent squeaks and rope stretch over years of use.",
     materials: ["Braided marine-grade nylon"],
     features: ["Squeak-free outer sheath", "Ultra-low stretch profile", "Finished heat-sealed ends"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "foot-straps",
@@ -606,6 +664,7 @@ export const accessories = [
     description: "Replacement foot and leg loops, lined with soft plush backing to prevent skin chafing while maintaining structural strength. Double-stitched nylon loop connectors.",
     materials: ["Heavy-duty cotton webbing", "Plush microfiber lining"],
     features: ["Skin-friendly backing", "Heavy duty double-stitching", "Washable fabric construction"],
+    image: "/catalogue/product-placeholder.svg",
   },
   {
     slug: "padded-headrest",
@@ -615,6 +674,7 @@ export const accessories = [
     description: "Replacement headrest block offering three height position angles to accommodate cervical neck support, wrapped in durable antibacterial leather.",
     materials: ["Wood core", "Medium-density foam", "Antibacterial vinyl leather"],
     features: ["3-stage lift adjustments", "Hygienic leather cover", "Pre-drilled hinge mount"],
+    image: "/catalogue/product-placeholder.svg",
   },
 ] as const;
 
