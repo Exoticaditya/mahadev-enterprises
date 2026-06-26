@@ -3,7 +3,7 @@ export const site = {
   slogan: "Premium Pilates equipment and wellness studio solutions from Rishikesh.",
   description:
     "Mahadev Enterprises designs and supplies premium Pilates equipment, wellness products, and studio solutions for luxury yoga, fitness, hospitality, and export buyers.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://mahadev-enterprises.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://mahadeventerprisesindia.com",
   email: "indiamahadeventerprises@gmail.com",
   phone: "+91 90121 12527",
   whatsapp: "https://wa.me/919012112527",
@@ -384,6 +384,66 @@ export const faqs = [
 ] as const;
 
 export const journalPosts = [
+  {
+    slug: "pilates-equipment-price-list-india-2026",
+    title: "Pilates Equipment Price List India 2026 — Complete Studio Setup Cost Guide",
+    summary: "A complete price guide for all 11 studio-grade Pilates equipment models and recommended packages for Indian studios.",
+    date: "2026-06-26",
+  },
+  {
+    slug: "maple-vs-aluminium-pilates-reformer",
+    title: "Maple vs Aluminium Pilates Reformer — Which Should You Buy in India?",
+    summary: "An in-depth material comparison guide detailing durability, maintenance, and aesthetics of Pilates reformers.",
+    date: "2026-06-26",
+  },
+  {
+    slug: "how-to-set-up-a-pilates-studio-in-india",
+    title: "How to Set Up a Pilates Studio in India — Complete Equipment Checklist",
+    summary: "A step-by-step blueprint, footprint guidelines, and checklists for starting a Pilates studio in India.",
+    date: "2026-06-26",
+  },
+  {
+    slug: "pilates-reformer-vs-cadillac",
+    title: "Pilates Reformer vs Cadillac — Key Differences Explained for Indian Studios",
+    summary: "Compare the exercises, target patients, and clinical value of Pilates reformers vs. Cadillac tables.",
+    date: "2026-06-26",
+  },
+  {
+    slug: "what-is-a-wunda-chair",
+    title: "What is a Wunda Chair? Complete Pilates Chair Guide for Indian Buyers",
+    summary: "Discover the history, split-pedal variations, and commercial balance exercises of the Wunda Chair.",
+    date: "2026-06-26",
+  },
+  {
+    slug: "pilates-equipment-for-physiotherapy-clinics-india",
+    title: "Pilates Equipment for Physiotherapy Clinics India — Complete Buyer's Guide",
+    summary: "Evaluate clinical-grade reformers, chairs, and Cadillacs for injury recovery and physical therapy practices.",
+    date: "2026-06-26",
+  },
+  {
+    slug: "top-pilates-equipment-manufacturers-in-india-2026",
+    title: "Top Pilates Equipment Manufacturers in India 2026 — Honest Review",
+    summary: "Evaluate frame construction, spring quality, and direct manufacturer service for top Indian Pilates brands.",
+    date: "2026-06-26",
+  },
+  {
+    slug: "how-to-choose-a-pilates-reformer-for-your-studio",
+    title: "How to Choose a Pilates Reformer for Your Studio — 7 Key Factors",
+    summary: "Learn what to look for in frame materials, spring tension curves, and structural warranties before buying.",
+    date: "2026-06-26",
+  },
+  {
+    slug: "valley-of-wellness-why-rishikesh-made-pilates-equipment-stands-apart",
+    title: "Valley of Wellness: Why Rishikesh-Made Pilates Equipment Stands Apart",
+    summary: "The story of how Tapovan and Laxman Jhula design traditions shape our silent, high-precision Pilates apparatus.",
+    date: "2026-06-26",
+  },
+  {
+    slug: "pilates-studio-equipment-setup-cost-in-india-city-wise-breakdown-2026",
+    title: "Pilates Studio Equipment Setup Cost in India — City-Wise Breakdown 2026",
+    summary: "Calculate real estate rents and commercial Pilates equipment budgets across Mumbai, Delhi, and Bangalore.",
+    date: "2026-06-26",
+  },
   {
     slug: "choosing-the-right-pilates-reformer-for-your-studio",
     title: "Choosing the Right Pilates Reformer for Your Studio",

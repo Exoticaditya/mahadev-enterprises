@@ -4,8 +4,8 @@ import { PageShell } from "@/components/page-shell";
 import { FAQSection } from "@/components/sections/faq";
 
 export const metadata: Metadata = {
-  title: "FAQ",
-  description: "Frequently asked questions about Mahadev Enterprises products and enquiry flow.",
+  title: "FAQ | Pilates Equipment Questions Answered",
+  description: "Frequently asked questions about Pilates equipment — pricing, delivery, materials, customization, bulk orders & studio setup guidance from Mahadev Enterprises.",
   alternates: { canonical: "/faq" },
 };
 

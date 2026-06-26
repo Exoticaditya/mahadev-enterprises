@@ -4,8 +4,8 @@ import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
 
 export const metadata: Metadata = {
-  title: "About",
-  description: "The story, craftsmanship, positioning, and commercial credibility of Mahadev Enterprises.",
+  title: "About Mahadev Enterprises | Pilates Equipment Manufacturer",
+  description: "Mahadev Enterprises is India's premium Pilates equipment manufacturer based in Rishikesh, Uttarakhand. Studio-grade reformers, Cadillacs & wellness solutions.",
   alternates: { canonical: "/about" },
 };
 

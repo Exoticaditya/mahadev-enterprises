@@ -8,8 +8,8 @@ import { products, site } from "@/data/site";
 import { JsonLd } from "@/components/json-ld";
 
 export const metadata: Metadata = {
-  title: "Products",
-  description: "Premium Pilates equipment, yoga props, and wellness products for studios and commercial spaces.",
+  title: "Buy Pilates Equipment Online India | All 11 Models",
+  description: "Browse all 11 studio-grade Pilates equipment models — maple & aluminium reformers, Cadillac tables, Wunda chairs, ladder barrels, spine correctors. Manufacturer prices.",
   alternates: { canonical: "/products" },
 };
 

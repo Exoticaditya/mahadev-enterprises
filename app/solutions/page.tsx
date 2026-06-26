@@ -6,8 +6,8 @@ import { JsonLd } from "@/components/json-ld";
 import { solutions, site } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Solutions",
-  description: "Commercial wellness solutions for studios, hospitality, retreat, and design-led buyers.",
+  title: "Pilates Studio Solutions India | Equipment for Every Space",
+  description: "Complete Pilates studio solutions for yoga studios, hotels, resorts, retreat centres, physiotherapy clinics & wellness brands. Custom equipment packages from Rishikesh.",
   alternates: { canonical: "/solutions" },
 };
 

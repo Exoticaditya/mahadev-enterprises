@@ -5,8 +5,8 @@ import { PageShell } from "@/components/page-shell";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: "Project stories, custom installations, and commercial fit-out examples for Mahadev Enterprises.",
+  title: "Our Projects | Pilates Studio Installations India",
+  description: "View our Pilates equipment installations across India. Studio setups, resort wellness spaces & rehabilitation centres equipped by Mahadev Enterprises.",
   alternates: { canonical: "/projects" },
 };
 

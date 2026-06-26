@@ -4,8 +4,8 @@ import { PageShell } from "@/components/page-shell";
 import { JournalPreview } from "@/components/sections/journal-preview";
 
 export const metadata: Metadata = {
-  title: "Journal",
-  description: "Premium SEO content and buying guidance for wellness procurement.",
+  title: "Pilates Equipment Journal | Guides & Industry Insights",
+  description: "Expert guides on Pilates equipment selection, studio setup, material comparisons & industry insights from India's leading Pilates equipment manufacturer.",
   alternates: { canonical: "/journal" },
 };
 

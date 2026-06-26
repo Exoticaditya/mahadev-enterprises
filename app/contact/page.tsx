@@ -7,8 +7,8 @@ import { ContactForm } from "@/components/sections/contact-form";
 import { site } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Contact Mahadev Enterprises for catalogue requests, project enquiries, and commercial procurement.",
+  title: "Contact Mahadev Enterprises | Get a Quote Today",
+  description: "Contact Mahadev Enterprises for Pilates equipment enquiries. WhatsApp +91 90121 12527. Email indiamahadeventerprises@gmail.com. Pan-India delivery from Rishikesh.",
   alternates: { canonical: "/contact" },
 };
 

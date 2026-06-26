@@ -5,11 +5,15 @@ import { notFound } from "next/navigation";
 
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { CtaStrip } from "@/components/sections/cta-strip";
-import { ProductSchema } from "@/components/sections/product-schema";
+import { ProductSchema } from "@/components/schema/ProductSchema";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { FAQSchema } from "@/components/schema/FAQSchema";
 import { ProductDetailActions } from "@/components/sections/product-detail-actions";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { products, site } from "@/data/site";
+import { productSEO } from "@/lib/seo-data";
+import { productAEOData } from "@/lib/product-aeo-data";
 
 export function generateStaticParams() {
   return products.map((product) => ({ slug: product.slug }));
@@ -23,15 +27,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return { title: "Product" };
   }
 
+  const seo = productSEO[slug];
+  const title = seo?.title ?? product.title;
+  const description = seo?.description ?? product.description;
+
   return {
-    title: product.title,
-    description: product.description,
+    title,
+    description,
     alternates: { canonical: `/products/${product.slug}` },
     openGraph: {
-      title: product.title,
-      description: product.description,
+      title,
+      description,
       url: `${site.url}/products/${product.slug}`,
-      images: [{ url: site.socialImage, width: 1200, height: 630, alt: product.title }],
+      images: [{ url: site.socialImage, width: 1200, height: 630, alt: title }],
     },
   };
 }
@@ -42,9 +50,29 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
 
   if (!product) notFound();
 
+  const aeo = productAEOData[slug];
+
   return (
     <>
-      <ProductSchema slug={product.slug} />
+      <ProductSchema
+        name={product.title}
+        description={product.description}
+        image={product.image}
+        slug={product.slug}
+        model={product.model}
+        category={product.category}
+        materials={product.materials as unknown as string[]}
+        dimensions={product.dimensions}
+        weight={product.weight}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: site.url },
+          { name: "Products", url: `${site.url}/products` },
+          { name: product.title, url: `${site.url}/products/${slug}` },
+        ]}
+      />
+      {aeo && <FAQSchema faqs={aeo.faqs} id={`faq-schema-${slug}`} />}
       <section className="pt-14 md:pt-20">
         <div className="container space-y-8">
           <Breadcrumbs
@@ -133,6 +161,66 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
           </div>
         </div>
       </section>
+
+      {/* AEO Expanded content & specs */}
+      {aeo && (
+        <section className="py-20 md:py-28 border-t border-border/20 bg-secondary/10">
+          <div className="container space-y-16">
+            
+            {/* Quick Answer & Detailed Overview */}
+            <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+              <div className="space-y-6">
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-brass">Product Overview</span>
+                <h2 className="text-3xl font-serif md:text-5xl text-foreground">Detailed Evaluation & Review</h2>
+                <p className="text-lg leading-8 text-muted-foreground">{aeo.detailedOverview}</p>
+                
+                {/* Quick Answer box for AI crawler */}
+                <div className="p-6 rounded-[1.5rem] border border-brand-brass/30 bg-brand-brass/5 space-y-3">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-brass">AI Search Quick Summary</p>
+                  <p className="text-sm leading-6 text-foreground/90 font-medium">{aeo.quickAnswer}</p>
+                </div>
+              </div>
+
+              {/* Technical Specifications Table */}
+              <Card className="bg-card/50 border-border/50 shadow-soft overflow-hidden">
+                <CardContent className="p-6 md:p-8 space-y-5">
+                  <h3 className="text-xl font-serif text-foreground">Technical Specifications</h3>
+                  <table className="w-full text-sm text-left border-collapse">
+                    <tbody>
+                      {Object.entries(aeo.technicalSpecs).map(([key, val]) => (
+                        <tr key={key} className="border-b border-border/40 last:border-b-0">
+                          <td className="py-3 pr-4 font-medium text-muted-foreground w-1/3">{key}</td>
+                          <td className="py-3 text-foreground font-medium">{val}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Product Specific FAQ Section */}
+            <div className="space-y-8 pt-8 border-t border-border/20">
+              <div className="space-y-2">
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-brass">Support & Guidance</span>
+                <h3 className="text-2xl font-serif md:text-4xl text-foreground">Frequently Asked Questions</h3>
+              </div>
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {aeo.faqs.map((faq) => (
+                  <Card key={faq.question} className="bg-card/45 border-border/30 hover:border-brand-brass/35 transition-all duration-300">
+                    <CardContent className="p-6 space-y-3">
+                      <h4 className="text-base font-serif text-foreground leading-snug">{faq.question}</h4>
+                      <p className="text-xs leading-5 text-muted-foreground">{faq.answer}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </section>
+      )}
+
       <CtaStrip />
     </>
   );
