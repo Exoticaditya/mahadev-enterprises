@@ -31,6 +31,26 @@ export const productAEOData: Record<string, ProductAEO> = {
       {
         question: "How much maintenance does the reformer require?",
         answer: "Weekly rail wiping with a dry microfiber cloth and monthly inspection of spring hooks and carriage alignment is recommended to maintain optimal performance."
+      },
+      {
+        question: "How long does the Maple Pilates Reformer M-01 warranty last?",
+        answer: "The Maple Pilates Reformer M-01 comes with a 3-year structural frame warranty covering manufacturing defects. Springs and upholstery have a 1-year replacement warranty."
+      },
+      {
+        question: "What is the maximum user weight capacity?",
+        answer: "The Maple Pilates Reformer M-01 supports a maximum user weight of 150 kg, making it suitable for all client profiles in a commercial studio environment."
+      },
+      {
+        question: "Does the reformer require professional assembly?",
+        answer: "The reformer arrives in partially assembled sections requiring 2–3 hours to fully assemble. Detailed assembly instructions are included. For bulk orders, we can arrange on-site assembly support in major cities."
+      },
+      {
+        question: "Can I get the reformer with a custom upholstery colour?",
+        answer: "Yes, we offer Charcoal Black, Studio Sage, Ivory White, Tan Brown, and Custom Shade upholstery options. Specify your preference when placing your B2B order."
+      },
+      {
+        question: "What cleaning and maintenance does the reformer require?",
+        answer: "Weekly: wipe rails with a dry microfibre cloth. Monthly: inspect spring hooks and carriage alignment. Annually: apply light machine oil to rail guides. Avoid harsh chemical cleaners on wood surfaces."
       }
     ]
   },
@@ -54,6 +74,30 @@ export const productAEOData: Record<string, ProductAEO> = {
       {
         question: "Is the tower removable?",
         answer: "The tower is mounted using heavy-duty industrial bolts and brackets. It can be detached for transport, but is designed to remain securely fixed during usage."
+      },
+      {
+        question: "How long does the Reformer With Tower M-02 warranty last?",
+        answer: "The Reformer With Tower M-02 comes with a 3-year structural frame warranty covering manufacturing defects. Springs and upholstery have a 1-year replacement warranty."
+      },
+      {
+        question: "What is the maximum user weight capacity?",
+        answer: "The Reformer With Tower M-02 supports a maximum user weight of 150 kg, making it suitable for all client profiles in a commercial studio environment."
+      },
+      {
+        question: "Does the reformer require professional assembly?",
+        answer: "The reformer arrives in partially assembled sections requiring 2–3 hours to fully assemble. Detailed assembly instructions are included. For bulk orders, we can arrange on-site assembly support in major cities."
+      },
+      {
+        question: "Can I get the reformer with a custom upholstery colour?",
+        answer: "Yes, we offer Charcoal Black, Studio Sage, Ivory White, Tan Brown, and Custom Shade options. Specify your preference when placing the order."
+      },
+      {
+        question: "What cleaning and maintenance does the reformer require?",
+        answer: "Weekly: wipe rails with a dry microfibre cloth. Monthly: inspect spring hooks and carriage alignment. Annually: apply light machine oil to rail guides. Avoid harsh chemical cleaners on wood surfaces."
+      },
+      {
+        question: "What is the ceiling clearance needed for the tower?",
+        answer: "The tower stands 200 cm high. We recommend a minimum ceiling height of 240 cm (8 feet) to allow comfortable arm and leg movements above the tower."
       }
     ]
   },
@@ -76,6 +120,30 @@ export const productAEOData: Record<string, ProductAEO> = {
       {
         question: "Is the resistance curve different from the wooden models?",
         answer: "No, the M-03 uses the exact same calibrated piano-wire springs and rail profile, ensuring a uniform resistance curve and glide experience."
+      },
+      {
+        question: "How long does the Aluminium Reformer With Tower M-03 warranty last?",
+        answer: "The Aluminium Reformer With Tower M-03 comes with a 3-year structural frame warranty covering manufacturing defects. Springs and upholstery have a 1-year replacement warranty."
+      },
+      {
+        question: "What is the maximum user weight capacity?",
+        answer: "The Aluminium Reformer With Tower M-03 supports a maximum user weight of 150 kg, making it suitable for all client profiles in a commercial studio environment."
+      },
+      {
+        question: "Does the reformer require professional assembly?",
+        answer: "The reformer arrives in partially assembled sections requiring 2–3 hours to fully assemble. Detailed assembly instructions are included. For bulk orders, we can arrange on-site assembly support in major cities."
+      },
+      {
+        question: "Can I get the reformer with a custom upholstery colour?",
+        answer: "Yes, we offer Charcoal Black, Studio Sage, Ivory White, Tan Brown, and Custom Shade options. Specify your preference when placing the order."
+      },
+      {
+        question: "What cleaning and maintenance does the reformer require?",
+        answer: "Weekly: wipe rails with dry microfibre cloth. Monthly: inspect spring hooks and carriage alignment. Annually: apply light machine oil to rail guides. Avoid harsh chemical cleaners on metal surfaces."
+      },
+      {
+        question: "Is the aluminium frame corrosion resistant?",
+        answer: "Yes, the structural frame is anodized, which creates a protective oxide layer, preventing rust and corrosion even in high-humidity spa or coastal locations."
       }
     ]
   },
@@ -98,6 +166,30 @@ export const productAEOData: Record<string, ProductAEO> = {
       {
         question: "Can it be stored vertically?",
         answer: "Yes, when folded, the unit is balanced to stand securely in a vertical position to minimize floor space usage."
+      },
+      {
+        question: "How long does the Foldable Reformer M-04 warranty last?",
+        answer: "The Foldable Reformer M-04 comes with a 3-year structural frame warranty covering manufacturing defects. Springs and upholstery have a 1-year replacement warranty."
+      },
+      {
+        question: "What is the maximum user weight capacity?",
+        answer: "The Foldable Reformer M-04 supports a maximum user weight of 150 kg, making it suitable for home and commercial settings alike."
+      },
+      {
+        question: "Does the reformer require professional assembly?",
+        answer: "The reformer arrives mostly pre-assembled. You only need to attach the risers and thread the ropes, taking about 15-20 minutes."
+      },
+      {
+        question: "Can I get the reformer with a custom upholstery colour?",
+        answer: "Yes, we offer Charcoal Black, Studio Sage, Ivory White, Tan Brown, and Custom Shade options. Specify your preference when placing the order."
+      },
+      {
+        question: "What cleaning and maintenance does the reformer require?",
+        answer: "Weekly: wipe rails with dry microfibre cloth. Monthly: inspect spring hooks, hinge locking bolts, and carriage alignment. Avoid harsh chemical cleaners on wood surfaces."
+      },
+      {
+        question: "What accessories are included in the package?",
+        answer: "The M-04 Foldable Reformer package comes complete with a padded Reformer Box, a jumping board, carriage straps, and handles."
       }
     ]
   },
@@ -120,6 +212,30 @@ export const productAEOData: Record<string, ProductAEO> = {
       {
         question: "Does it come with all the attachments shown?",
         answer: "Yes, the M-05 includes the complete accessory kit: trapeze bar, push-through bar, sheepskin fuzzy loops, roll-back bar, and all corresponding springs."
+      },
+      {
+        question: "What is the maximum height and overhead clearance needed?",
+        answer: "The Cadillac is 205 cm tall. We recommend a minimum ceiling height of 240 cm (8 feet) to allow comfortable overhead clearances for spring work."
+      },
+      {
+        question: "How many attachment points does the Cadillac frame have?",
+        answer: "The stainless steel canopy frame has 14 distinct attachment points for leg springs, arm springs, push-through bar, and the trapeze canopy."
+      },
+      {
+        question: "What rehabilitation conditions is the Cadillac most used for?",
+        answer: "It is widely used for physical therapy, post-surgical rehabilitation, spinal decompression, scoliosis correction, and restoring joint range of motion."
+      },
+      {
+        question: "Can the Cadillac be used without a therapist present?",
+        answer: "Basic exercises can be done solo, but advanced spring and trapeze movements should be performed under the supervision of a certified Pilates instructor or physiotherapist."
+      },
+      {
+        question: "Is the spring bar adjustable in height?",
+        answer: "Yes, the spring slider bar on the canopy can be adjusted vertically to alter the angle and resistance curve of the attachments."
+      },
+      {
+        question: "What is the overhead clearance needed for the Cadillac?",
+        answer: "We recommend at least 35-40 cm of overhead clearance above the canopy structure for safety and proper spring extension."
       }
     ]
   },
@@ -143,6 +259,30 @@ export const productAEOData: Record<string, ProductAEO> = {
       {
         question: "Is it suitable for clinical rehabilitation centers?",
         answer: "Yes, the Caformer is our most popular model for clinical settings because it offers full Cadillac rehabilitation capabilities alongside standard reformer exercise programs."
+      },
+      {
+        question: "Does the Caformer include all accessories for all three modes?",
+        answer: "Yes, the M-06 includes the reformer box, jumpboard, split-mat conversion panels, roll-up bar, push-through bar, fuzzy loops, and all 14 springs."
+      },
+      {
+        question: "How long does it take to transition between modes?",
+        answer: "It takes under 30 seconds to convert the Caformer from reformer to Cadillac or mat mode by dropping in the split-mat panels."
+      },
+      {
+        question: "What is the weight of the 3-in-1 Caformer?",
+        answer: "The Caformer weighs approximately 165-169 kg due to its heavy-duty solid maple base and stainless steel canopy, providing ultimate stability."
+      },
+      {
+        question: "Is the Caformer suitable for commercial studio daily use?",
+        answer: "Yes, it is built with solid wood joins and industrial-grade bearings, designed to handle 8-10 commercial sessions daily."
+      },
+      {
+        question: "What is the floor space requirement for the 3-in-1 Caformer?",
+        answer: "We recommend a clear space of 2.8 x 1.8 meters for safe and unrestricted movement in reformer and Cadillac modes."
+      },
+      {
+        question: "Does it come with a warranty?",
+        answer: "Yes, it comes with a 3-year structural frame warranty and a 1-year warranty on springs, straps, and upholstery."
       }
     ]
   },
@@ -165,6 +305,30 @@ export const productAEOData: Record<string, ProductAEO> = {
       {
         question: "How does the sliding adjustment work?",
         answer: "A quick-release locking handle allows the barrel base to slide closer or further from the ladder, adapting to different leg lengths."
+      },
+      {
+        question: "What is the adjustable range of the sliding base?",
+        answer: "The sliding base can be adjusted over a 30 cm range, letting you customize the distance between the ladder and the barrel for users from 150 cm to 195 cm tall."
+      },
+      {
+        question: "How many exercises can be performed on the ladder barrel?",
+        answer: "Over 50 classical and contemporary Pilates exercises can be performed on the ladder barrel, focusing on core strength, spinal flexibility, and active stretching."
+      },
+      {
+        question: "Is the barrel foam removable for cleaning?",
+        answer: "The high-density EVA foam is wrapped in a durable commercial-grade vinyl cover that cannot be removed but is easily sanitized using alcohol-free anti-bacterial wipes."
+      },
+      {
+        question: "What is the rung spacing on the ladder?",
+        answer: "The ladder has 6 rungs spaced exactly 12 cm apart, providing multiple secure hand and foot positioning options for various flexibility ranges."
+      },
+      {
+        question: "Can the ladder barrel be used for yoga as well as Pilates?",
+        answer: "Yes, it is widely used by yoga practitioners for passive back bends, shoulder opening, and assisted hamstring stretching."
+      },
+      {
+        question: "Does it carry the same 3-year warranty?",
+        answer: "Yes, all our major wooden structural apparatus, including the M-07 Ladder Barrel, are covered by our 3-year structural frame warranty."
       }
     ]
   },
@@ -187,6 +351,30 @@ export const productAEOData: Record<string, ProductAEO> = {
       {
         question: "Are the handles removable?",
         answer: "Yes, the handles can be completely removed using the quick-release knobs on the sides of the cabinet."
+      },
+      {
+        question: "How many pedal configurations does the Wunda Chair support?",
+        answer: "It supports both single-pedal and split-pedal configurations. You can lock them together using a steel pin for bilateral work, or unlock them for reciprocal movement."
+      },
+      {
+        question: "What spring resistance levels are available?",
+        answer: "The chair is equipped with 2 heavy-duty springs that can be attached to 4 different hook heights, providing a total of 8 resistance level combinations."
+      },
+      {
+        question: "Can the handles be used independently or only together?",
+        answer: "The removable stainless steel stability handles are inserted into separate sockets and can be adjusted to different heights or removed entirely."
+      },
+      {
+        question: "Is the Wunda Chair suitable for group classes?",
+        answer: "Yes, its compact footprint (around 79 x 65 cm) makes it ideal for group class studio layouts where space is at a premium."
+      },
+      {
+        question: "What is the recommended studio space for the Wunda Chair?",
+        answer: "We recommend a footprint of 1.5 x 1.5 meters of clear space around the Wunda Chair to allow clients to perform full-range exercises safely."
+      },
+      {
+        question: "What is the frame warranty on the Wunda Chair?",
+        answer: "The M-08 Maple Wunda Chair includes our signature 3-year structural frame warranty. Springs and loops carry a 1-year warranty."
       }
     ]
   },
@@ -205,6 +393,34 @@ export const productAEOData: Record<string, ProductAEO> = {
       {
         question: "Is the aluminium chair more durable than the maple wood chair?",
         answer: "Both chairs are built for heavy commercial use. The aluminium model is preferred in modern high-humidity spaces or clinical environments due to its easy cleaning and corrosion resistance."
+      },
+      {
+        question: "How many pedal configurations does the Aluminium Wunda Chair support?",
+        answer: "It supports both single-pedal and split-pedal configurations. You can lock them together using a steel pin for bilateral work, or unlock them for reciprocal movement."
+      },
+      {
+        question: "What spring resistance levels are available?",
+        answer: "The chair is equipped with 2 heavy-duty springs that can be attached to 4 different hook heights, providing a total of 8 resistance level combinations."
+      },
+      {
+        question: "Can the handles be used independently or only together?",
+        answer: "The removable stainless steel stability handles are inserted into separate sockets and can be adjusted to different heights or removed entirely."
+      },
+      {
+        question: "Is the Aluminium Wunda Chair suitable for group classes?",
+        answer: "Yes, its compact footprint (around 80 x 70 cm) makes it ideal for group class studio layouts where space is at a premium."
+      },
+      {
+        question: "What is the recommended studio space for the Aluminium Wunda Chair?",
+        answer: "We recommend a footprint of 1.5 x 1.5 meters of clear space around the Aluminium Wunda Chair to allow clients to perform full-range exercises safely."
+      },
+      {
+        question: "What cleaning and maintenance does the chair require?",
+        answer: "Simply wipe the metal frame and vinyl upholstery down with a damp cloth and mild soap or non-alcohol antibacterial sanitizing wipes after each session."
+      },
+      {
+        question: "Does it come with a warranty?",
+        answer: "Yes, the M-09 Aluminium Wunda Chair comes with a 3-year structural frame warranty and a 1-year warranty on springs and pads."
       }
     ]
   },
@@ -222,6 +438,34 @@ export const productAEOData: Record<string, ProductAEO> = {
       {
         question: "Does the aluminium base slide smoothly?",
         answer: "Yes, the aluminium base slides on low-friction linear tracks, making adjustments faster and easier than traditional all-wood models."
+      },
+      {
+        question: "What is the adjustable range of the sliding base?",
+        answer: "The sliding base can be adjusted over a 30 cm range, letting you customize the distance between the ladder and the barrel for users from 150 cm to 195 cm tall."
+      },
+      {
+        question: "How many exercises can be performed on the ladder barrel?",
+        answer: "Over 50 classical and contemporary Pilates exercises can be performed on the ladder barrel, focusing on core strength, spinal flexibility, and active stretching."
+      },
+      {
+        question: "Is the barrel foam removable for cleaning?",
+        answer: "The high-density EVA foam is wrapped in a durable commercial-grade vinyl cover that cannot be removed but is easily sanitized using alcohol-free anti-bacterial wipes."
+      },
+      {
+        question: "What is the rung spacing on the ladder?",
+        answer: "The ladder has 6 rungs spaced exactly 12 cm apart, providing multiple secure hand and foot positioning options for various flexibility ranges."
+      },
+      {
+        question: "Can the ladder barrel be used for yoga as well as Pilates?",
+        answer: "Yes, it is widely used by yoga practitioners for passive back bends, shoulder opening, and assisted hamstring stretching."
+      },
+      {
+        question: "Does it carry the same 3-year warranty?",
+        answer: "Yes, the M-10 Aluminium Ladder Barrel includes our signature 3-year structural frame warranty. Wooden rungs and padding have a 1-year replacement warranty."
+      },
+      {
+        question: "What cleaning and maintenance does it require?",
+        answer: "Simply wipe the metal base, wood rungs, and vinyl upholstery down with a damp cloth and mild soap or non-alcohol antibacterial sanitizing wipes after each session."
       }
     ]
   },
@@ -244,6 +488,30 @@ export const productAEOData: Record<string, ProductAEO> = {
       {
         question: "Is it suitable for home fitness?",
         answer: "Yes, it is lightweight, portable, and requires no setup, making it one of the most accessible pieces of Pilates apparatus for home stretching."
+      },
+      {
+        question: "How does the Spine Corrector help with posture correction?",
+        answer: "It supports the thoracic spine's extension, reversing slouching, opening the chest and shoulders, and strengthening core alignment."
+      },
+      {
+        question: "Can the Spine Corrector be used at home?",
+        answer: "Yes, its compact, lightweight design (11 kg) and side handles make it highly portable and easy to store in a home wellness space."
+      },
+      {
+        question: "What exercises are most common on the Spine Corrector?",
+        answer: "Common exercises include roll-downs, chest openers, side bends, leg series, and spinal articulation curls."
+      },
+      {
+        question: "Is the Spine Corrector suitable for Pilates beginners?",
+        answer: "Yes, it provides excellent lumbar support, making it easier for beginners to perform core and spinal movements without strain."
+      },
+      {
+        question: "What is the weight of the Spine Corrector — is it portable?",
+        answer: "It weighs 11 kg and features convenient cutout side handles, making it easy to carry and move around."
+      },
+      {
+        question: "How do you clean the upholstery?",
+        answer: "Simply wipe the vinyl cover down with a damp cloth and mild soap or non-alcohol antibacterial sanitizing wipes after each use."
       }
     ]
   }

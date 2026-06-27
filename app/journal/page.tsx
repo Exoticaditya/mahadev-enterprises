@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import { PageShell } from "@/components/page-shell";
 import { JournalPreview } from "@/components/sections/journal-preview";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Pilates Equipment Journal | Guides & Industry Insights",
@@ -11,7 +13,14 @@ export const metadata: Metadata = {
 
 export default function JournalPage() {
   return (
-    <PageShell
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: site.url },
+          { name: "Journal", url: `${site.url}/journal` },
+        ]}
+      />
+      <PageShell
       eyebrow="Journal"
       title="The Mahadev Enterprises Journal"
       description="Read professional perspectives on Pilates equipment selection, studio layout design, and wellness industry procurement standards."
@@ -19,5 +28,6 @@ export default function JournalPage() {
     >
       <JournalPreview />
     </PageShell>
+    </>
   );
 }

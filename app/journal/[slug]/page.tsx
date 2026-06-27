@@ -21,14 +21,21 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!post) return { title: "Journal Article" };
 
   return {
-    title: `${post.title} | Mahadev Enterprises`,
+    title: post.title,
     description: post.summary,
+    keywords: (post as any).keywords || [],
     alternates: { canonical: `/journal/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.summary,
       url: `${site.url}/journal/${post.slug}`,
       images: [{ url: site.socialImage, width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.summary,
+      images: [site.socialImage],
     },
   };
 }

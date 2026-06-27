@@ -10,6 +10,8 @@ interface ProductSchemaProps {
   materials: string[];
   dimensions?: string;
   weight?: string;
+  priceRange?: string;
+  warranty?: string;
 }
 
 export function ProductSchema({
@@ -22,6 +24,8 @@ export function ProductSchema({
   materials,
   dimensions,
   weight,
+  priceRange,
+  warranty,
 }: ProductSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
@@ -45,6 +49,7 @@ export function ProductSchema({
     ...(dimensions && { size: dimensions }),
     offers: {
       "@type": "Offer",
+      priceRange: priceRange ?? "₹85,000 to ₹1,75,000",
       availability: "https://schema.org/InStock",
       priceCurrency: "INR",
       seller: {
@@ -57,6 +62,16 @@ export function ProductSchema({
         "@type": "PropertyValue",
         name: "Model Number",
         value: model,
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Warranty",
+        value: warranty ?? "3-year structural frame warranty",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Category",
+        value: category,
       },
     ],
   };

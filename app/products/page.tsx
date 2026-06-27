@@ -6,6 +6,7 @@ import { AccessoriesGrid } from "@/components/sections/accessories-grid";
 import { PageShell } from "@/components/page-shell";
 import { products, site } from "@/data/site";
 import { JsonLd } from "@/components/json-ld";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Buy Pilates Equipment Online India | All 11 Models",
@@ -16,6 +17,12 @@ export const metadata: Metadata = {
 export default function ProductsPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: site.url },
+          { name: "Products", url: `${site.url}/products` },
+        ]}
+      />
       <JsonLd
         data={{
           "@context": "https://schema.org",

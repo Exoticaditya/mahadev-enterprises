@@ -67,11 +67,35 @@ export function Footer() {
 
         {/* Link Columns */}
         <div className="mt-12 grid gap-12 md:grid-cols-2 xl:grid-cols-4">
-          <div className="space-y-4 xl:col-span-2">
+          <div className="space-y-4">
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-brass">Brand Philosophy</p>
             <p className="max-w-lg text-sm leading-7 text-white/70">
               We believe wellness spaces should inspire peace and focus. Our studio reformers and props are crafted using sustainable materials and engineering excellence to ensure reliable performance for commercial B2B buyers.
             </p>
+          </div>
+
+          <div className="space-y-4">
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-brass">Served Locations</p>
+            <div className="grid gap-3">
+              <Link href="/pilates-equipment-mumbai" className="text-sm text-white/80 transition hover:text-brand-brass">
+                Mumbai
+              </Link>
+              <Link href="/pilates-equipment-delhi" className="text-sm text-white/80 transition hover:text-brand-brass">
+                Delhi
+              </Link>
+              <Link href="/pilates-equipment-bangalore" className="text-sm text-white/80 transition hover:text-brand-brass">
+                Bengaluru
+              </Link>
+              <Link href="/pilates-equipment-pune" className="text-sm text-white/80 transition hover:text-brand-brass">
+                Pune
+              </Link>
+              <Link href="/pilates-equipment-rishikesh" className="text-sm text-white/80 transition hover:text-brand-brass">
+                Rishikesh
+              </Link>
+              <Link href="/locations" className="text-sm text-brand-brass transition hover:underline">
+                All 25 Locations →
+              </Link>
+            </div>
           </div>
 
           <div className="space-y-4">

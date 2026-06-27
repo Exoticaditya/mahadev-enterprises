@@ -4,6 +4,7 @@ import { PageShell } from "@/components/page-shell";
 import { SolutionsGrid } from "@/components/sections/solutions-grid";
 import { JsonLd } from "@/components/json-ld";
 import { solutions, site } from "@/data/site";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Pilates Studio Solutions India | Equipment for Every Space",
@@ -14,6 +15,12 @@ export const metadata: Metadata = {
 export default function SolutionsPage() {
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: site.url },
+          { name: "Solutions", url: `${site.url}/solutions` },
+        ]}
+      />
       <JsonLd
         data={{
           "@context": "https://schema.org",

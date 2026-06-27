@@ -5,6 +5,7 @@ import { Phone, Mail, Instagram } from "lucide-react";
 import { PageShell } from "@/components/page-shell";
 import { ContactForm } from "@/components/sections/contact-form";
 import { site } from "@/data/site";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Contact Mahadev Enterprises | Get a Quote Today",
@@ -14,7 +15,14 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <PageShell
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: site.url },
+          { name: "Contact", url: `${site.url}/contact` },
+        ]}
+      />
+      <PageShell
       eyebrow="Contact"
       title="Get in Touch with Our Procurement Team"
       description="Contact us directly to request custom pricing, discuss volume discounts, or arrange a private consultation for your wellness studio or project."
@@ -85,10 +93,19 @@ export default function ContactPage() {
                 <p className="mt-1 text-lg font-serif text-foreground truncate">@mahadev_enterprises_india</p>
               </div>
             </Link>
+
+            {/* Delivery Locations Info */}
+            <div className="luxury-card p-6 space-y-3">
+              <h4 className="font-serif text-lg text-foreground">We Deliver Pan-India</h4>
+              <p className="text-xs leading-5 text-muted-foreground">
+                We manufacture in Rishikesh and deliver fully insured to all major locations including Mumbai, Delhi NCR, Bengaluru, Pune, Ahmedabad, Hyderabad, and <Link href="/locations" className="text-brand-brass underline font-medium">20+ other locations</Link>.
+              </p>
+            </div>
           </div>
           <ContactForm />
         </div>
       </section>
     </PageShell>
+    </>
   );
 }

@@ -357,29 +357,36 @@ export const testimonials = [
 
 export const faqs = [
   {
-    question: "Do you work with bulk and commercial orders?",
-    answer:
-      "Yes. The site is structured for studio, hospitality, retreat, and international buyers who require reliable commercial supply.",
+    question: "What Pilates equipment does Mahadev Enterprises manufacture?",
+    answer: "Mahadev Enterprises manufactures 11 professional Pilates equipment models including maple and aluminium reformers, Cadillac trapeze tables, Wunda chairs, ladder barrels, and spine correctors. All equipment is manufactured in Rishikesh, Uttarakhand, and delivered pan-India.",
   },
   {
-    question: "Can I request a catalogue or product list?",
-    answer:
-      "Yes. The catalogue download is available throughout the site and the enquiry form can be used to request a curated proposal.",
+    question: "Where is Mahadev Enterprises located?",
+    answer: "Mahadev Enterprises is based in Rishikesh, Uttarakhand — India's wellness capital. We manufacture all equipment locally and ship across India.",
   },
   {
-    question: "Do you support export enquiries?",
-    answer:
-      "Yes. Export-facing content, contact clarity, and international buyer pathways are part of the site strategy.",
+    question: "Do you deliver Pilates equipment across India?",
+    answer: "Yes, we deliver all 11 Pilates equipment models across India including Mumbai, Delhi, Bengaluru, Pune, Ahmedabad, Hyderabad, Chennai, Kolkata, and all major cities. Typical delivery time is 7–14 business days.",
   },
   {
-    question: "Are the products suitable for premium studios?",
-    answer:
-      "The product architecture emphasizes studio-grade reformers, compact strength tools, and commercial-quality finish options.",
+    question: "What is the price range of Pilates reformers in India?",
+    answer: "Our Pilates reformers range from ₹85,000 for the foldable model to ₹1,75,000 for the reformer with tower. The exact price depends on model and customisation. Contact us for a custom studio quote.",
   },
   {
-    question: "Can designers or specifiers use the site for projects?",
-    answer:
-      "Yes. The product pages and solution pages are designed to support specification, material review, and project suitability checks.",
+    question: "What is the difference between maple and aluminium Pilates equipment?",
+    answer: "Maple wood equipment offers a warm aesthetic, natural dampening, and is ideal for boutique studios. Aluminium equipment is corrosion-resistant, lighter, and preferred for clinical and high-humidity environments. Both are commercial grade.",
+  },
+  {
+    question: "Do you offer bulk discounts for Pilates studios?",
+    answer: "Yes, we offer competitive bulk pricing for studios ordering 3 or more units. Contact us with your studio requirements for a customised commercial quote.",
+  },
+  {
+    question: "Can I customise the upholstery colour of the equipment?",
+    answer: "Yes, we offer five upholstery options: Charcoal Black, Studio Sage, Ivory White, Tan Brown, and Custom Shade. Custom colours are available for bulk orders.",
+  },
+  {
+    question: "Is Mahadev Enterprises Pilates equipment suitable for physiotherapy clinics?",
+    answer: "Yes. Our Cadillac (M-05), Aluminium Reformer with Tower (M-03), and Aluminium Wunda Chair (M-09) are specifically used by physiotherapy clinics for rehabilitation. The progressive spring tension system allows very low resistance for injury recovery.",
   },
 ] as const;
 
@@ -389,78 +396,157 @@ export const journalPosts = [
     title: "Pilates Equipment Price List India 2026 — Complete Studio Setup Cost Guide",
     summary: "A complete price guide for all 11 studio-grade Pilates equipment models and recommended packages for Indian studios.",
     date: "2026-06-26",
+    keywords: [
+      "pilates equipment price India",
+      "pilates reformer cost India",
+      "pilates studio setup cost",
+      "buy pilates equipment price list 2026"
+    ],
   },
   {
     slug: "maple-vs-aluminium-pilates-reformer",
     title: "Maple vs Aluminium Pilates Reformer — Which Should You Buy in India?",
     summary: "An in-depth material comparison guide detailing durability, maintenance, and aesthetics of Pilates reformers.",
-    date: "2026-06-26",
+    date: "2026-06-17",
+    keywords: [
+      "maple vs aluminium pilates reformer",
+      "pilates reformer material comparison",
+      "best pilates reformer India",
+      "maple wood pilates equipment"
+    ],
   },
   {
     slug: "how-to-set-up-a-pilates-studio-in-india",
     title: "How to Set Up a Pilates Studio in India — Complete Equipment Checklist",
     summary: "A step-by-step blueprint, footprint guidelines, and checklists for starting a Pilates studio in India.",
-    date: "2026-06-26",
+    date: "2026-06-21",
+    keywords: [
+      "how to set up pilates studio India",
+      "pilates studio equipment checklist",
+      "pilates studio setup guide India",
+      "open pilates studio India"
+    ],
   },
   {
     slug: "pilates-reformer-vs-cadillac",
     title: "Pilates Reformer vs Cadillac — Key Differences Explained for Indian Studios",
     summary: "Compare the exercises, target patients, and clinical value of Pilates reformers vs. Cadillac tables.",
-    date: "2026-06-26",
+    date: "2026-06-10",
+    keywords: [
+      "pilates reformer vs cadillac",
+      "difference reformer cadillac",
+      "pilates cadillac trapeze table India",
+      "reformer vs cadillac which to buy"
+    ],
   },
   {
     slug: "what-is-a-wunda-chair",
     title: "What is a Wunda Chair? Complete Pilates Chair Guide for Indian Buyers",
     summary: "Discover the history, split-pedal variations, and commercial balance exercises of the Wunda Chair.",
-    date: "2026-06-26",
+    date: "2026-06-07",
+    keywords: [
+      "what is a wunda chair",
+      "pilates wunda chair India",
+      "buy pilates chair India",
+      "wunda chair exercises",
+      "pilates chair benefits"
+    ],
   },
   {
     slug: "pilates-equipment-for-physiotherapy-clinics-india",
     title: "Pilates Equipment for Physiotherapy Clinics India — Complete Buyer's Guide",
     summary: "Evaluate clinical-grade reformers, chairs, and Cadillacs for injury recovery and physical therapy practices.",
-    date: "2026-06-26",
+    date: "2026-06-05",
+    keywords: [
+      "pilates equipment physiotherapy India",
+      "clinical pilates equipment",
+      "rehabilitation pilates apparatus",
+      "physio clinic pilates reformer India"
+    ],
   },
   {
     slug: "top-pilates-equipment-manufacturers-in-india-2026",
     title: "Top Pilates Equipment Manufacturers in India 2026 — Honest Review",
     summary: "Evaluate frame construction, spring quality, and direct manufacturer service for top Indian Pilates brands.",
-    date: "2026-06-26",
+    date: "2026-06-19",
+    keywords: [
+      "pilates equipment manufacturer India",
+      "best pilates equipment India",
+      "Indian pilates reformer brand",
+      "pilates manufacturer Rishikesh"
+    ],
   },
   {
     slug: "how-to-choose-a-pilates-reformer-for-your-studio",
     title: "How to Choose a Pilates Reformer for Your Studio — 7 Key Factors",
     summary: "Learn what to look for in frame materials, spring tension curves, and structural warranties before buying.",
-    date: "2026-06-26",
+    date: "2026-06-12",
+    keywords: [
+      "how to choose pilates reformer",
+      "buying pilates reformer guide India",
+      "pilates reformer selection criteria",
+      "best reformer for studio India"
+    ],
   },
   {
     slug: "valley-of-wellness-why-rishikesh-made-pilates-equipment-stands-apart",
     title: "Valley of Wellness: Why Rishikesh-Made Pilates Equipment Stands Apart",
     summary: "The story of how Tapovan and Laxman Jhula design traditions shape our silent, high-precision Pilates apparatus.",
-    date: "2026-06-26",
+    date: "2026-06-14",
+    keywords: [
+      "Rishikesh pilates equipment",
+      "Indian made pilates equipment",
+      "pilates manufacturer Rishikesh India",
+      "wellness capital Rishikesh yoga equipment"
+    ],
   },
   {
     slug: "pilates-studio-equipment-setup-cost-in-india-city-wise-breakdown-2026",
     title: "Pilates Studio Equipment Setup Cost in India — City-Wise Breakdown 2026",
     summary: "Calculate real estate rents and commercial Pilates equipment budgets across Mumbai, Delhi, and Bangalore.",
-    date: "2026-06-26",
+    date: "2026-06-24",
+    keywords: [
+      "pilates studio cost India",
+      "pilates equipment cost Mumbai Delhi Bangalore",
+      "studio setup budget India",
+      "pilates studio investment India"
+    ],
   },
   {
     slug: "choosing-the-right-pilates-reformer-for-your-studio",
     title: "Choosing the Right Pilates Reformer for Your Studio",
     summary: "A practical guide to model selection, footprint, and procurement confidence.",
-    date: "2026-06-24",
+    date: "2026-05-28",
+    keywords: [
+      "pilates reformer selection",
+      "studio reformer guide",
+      "best reformers for studio",
+      "pilates studio equipment layout"
+    ],
   },
   {
     slug: "designing-a-wellness-space-that-feels-premium",
     title: "Designing a Wellness Space That Feels Premium",
     summary: "How material tone, spatial rhythm, and equipment choice shape perception.",
-    date: "2026-06-24",
+    date: "2026-05-30",
+    keywords: [
+      "wellness space design",
+      "premium gym interior",
+      "pilates studio layout",
+      "wellness decor aesthetic"
+    ],
   },
   {
     slug: "what-international-buyers-look-for-in-an-indian-supplier",
     title: "What International Buyers Look for in an Indian Supplier",
     summary: "The trust signals and content structure that support export conversations.",
-    date: "2026-06-24",
+    date: "2026-06-02",
+    keywords: [
+      "export pilates equipment India",
+      "pilates supplier India",
+      "international pilates buyers",
+      "yoga props exporter India"
+    ],
   },
 ] as const;
 

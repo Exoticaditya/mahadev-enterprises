@@ -3,7 +3,7 @@ import Link from "next/link";
 import { PageShell } from "@/components/page-shell";
 import { Card, CardContent } from "@/components/ui/card";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
-import { locationCities, locationStates } from "@/lib/location-data";
+import { LOCATIONS } from "@/lib/locations";
 import { site } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -13,17 +13,20 @@ export const metadata: Metadata = {
 };
 
 export default function LocationsIndexPage() {
-  const cities = Object.entries(locationCities).map(([slug, data]) => ({
-    href: `/pilates-equipment-${slug}`,
-    name: data.name,
-    region: data.region,
-  }));
+  const cities = Object.values(LOCATIONS)
+    .filter((loc) => loc.type === "city")
+    .map((city) => ({
+      href: city.url,
+      name: city.displayName,
+      state: city.state,
+    }));
 
-  const states = Object.entries(locationStates).map(([slug, data]) => ({
-    href: `/pilates-equipment-${slug}`,
-    name: data.name,
-    region: data.region,
-  }));
+  const states = Object.values(LOCATIONS)
+    .filter((loc) => loc.type === "state")
+    .map((state) => ({
+      href: state.url,
+      name: state.displayName,
+    }));
 
   return (
     <>
@@ -58,7 +61,7 @@ export default function LocationsIndexPage() {
                     <CardContent className="p-5 flex flex-col justify-between h-full">
                       <div>
                         <p className="text-[10px] font-semibold uppercase tracking-wider text-brand-brass mb-1">
-                          {city.region} India
+                          {city.state}
                         </p>
                         <h3 className="text-lg font-serif text-foreground group-hover:text-brand-brass transition-colors">
                           {city.name}
@@ -87,7 +90,7 @@ export default function LocationsIndexPage() {
                     <CardContent className="p-5 flex flex-col justify-between h-full">
                       <div>
                         <p className="text-[10px] font-semibold uppercase tracking-wider text-brand-brass mb-1">
-                          {state.region} Region
+                          India
                         </p>
                         <h3 className="text-lg font-serif text-foreground group-hover:text-brand-brass transition-colors">
                           {state.name}

@@ -34,12 +34,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title,
     description,
+    keywords: seo?.keywords || [],
     alternates: { canonical: `/products/${product.slug}` },
     openGraph: {
       title,
       description,
       url: `${site.url}/products/${product.slug}`,
       images: [{ url: site.socialImage, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [site.socialImage],
     },
   };
 }
@@ -158,6 +165,14 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
             <Button asChild>
               <Link href="/contact">Enquire about {product.title}</Link>
             </Button>
+            <p className="text-xs text-muted-foreground pt-2">
+              We ship this product fully insured across India, including:{" "}
+              <Link href="/pilates-equipment-mumbai" className="text-brand-brass hover:underline">Mumbai</Link>,{" "}
+              <Link href="/pilates-equipment-delhi" className="text-brand-brass hover:underline">Delhi NCR</Link>,{" "}
+              <Link href="/pilates-equipment-bangalore" className="text-brand-brass hover:underline">Bengaluru</Link>,{" "}
+              <Link href="/pilates-equipment-pune" className="text-brand-brass hover:underline">Pune</Link>, and{" "}
+              <Link href="/locations" className="text-brand-brass hover:underline">other key locations</Link>.
+            </p>
           </div>
         </div>
       </section>

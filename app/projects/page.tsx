@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import { PageShell } from "@/components/page-shell";
 import { Button } from "@/components/ui/button";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Our Projects | Pilates Studio Installations India",
@@ -12,7 +14,14 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <PageShell
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: site.url },
+          { name: "Projects", url: `${site.url}/projects` },
+        ]}
+      />
+      <PageShell
       eyebrow="Projects"
       title="Our Featured Project Collaborations"
       description="Explore a selection of our premium custom installations for leading boutique Pilates studios, luxury wellness resorts, and holistic retreat centers."
@@ -80,6 +89,7 @@ export default function ProjectsPage() {
         </div>
       </section>
     </PageShell>
+    </>
   );
 }
 

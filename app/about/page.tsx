@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 
 import { PageShell } from "@/components/page-shell";
 import { SectionHeading } from "@/components/section-heading";
+import { OrganizationSchema } from "@/components/schema/OrganizationSchema";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "About Mahadev Enterprises | Pilates Equipment Manufacturer",
@@ -11,12 +14,20 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <PageShell
-      eyebrow="About Us"
-      title="A premium Indian supplier focused on craftsmanship, design, and longevity."
-      description="Mahadev Enterprises is dedicated to designing and manufacturing professional-grade Pilates reformers, yoga props, and custom wellness solutions that elevate boutique spaces."
-      breadcrumbs={[{ label: "Home", href: "/" }, { label: "About", href: "/about" }]}
-    >
+    <>
+      <OrganizationSchema />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: site.url },
+          { name: "About", url: `${site.url}/about` },
+        ]}
+      />
+      <PageShell
+        eyebrow="About Us"
+        title="A premium Indian supplier focused on craftsmanship, design, and longevity."
+        description="Mahadev Enterprises is dedicated to designing and manufacturing professional-grade Pilates reformers, yoga props, and custom wellness solutions that elevate boutique spaces."
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "About", href: "/about" }]}
+      >
       {/* 1. Core Brand Pillars */}
       <section className="relative py-14 md:py-20">
         <div className="glow-orb left-[-5%] top-[10%] h-[350px] w-[350px] bg-brand-brass/5" />
@@ -87,6 +98,7 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
-    </PageShell>
+      </PageShell>
+    </>
   );
 }

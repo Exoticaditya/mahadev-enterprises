@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { solutions, site } from "@/data/site";
 import Link from "next/link";
 import { JsonLd } from "@/components/json-ld";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 
 export function generateStaticParams() {
   return solutions.map((solution) => ({ slug: solution.slug }));
@@ -39,6 +40,13 @@ export default async function SolutionPage({ params }: { params: Promise<{ slug:
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: site.url },
+          { name: "Solutions", url: `${site.url}/solutions` },
+          { name: solution.title, url: `${site.url}/solutions/${solution.slug}` },
+        ]}
+      />
       <JsonLd
         data={{
           "@context": "https://schema.org",
