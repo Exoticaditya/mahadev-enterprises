@@ -66,7 +66,7 @@ export default async function JournalPostPage({ params }: { params: Promise<{ sl
         <FAQSchema faqs={content.faqs} id={`faq-schema-${slug}`} />
       )}
 
-      <section className="pt-14 md:pt-20 pb-20 md:pb-28">
+      <section className="pt-20 lg:pt-28 pb-20 md:pb-28">
         <div className="container max-w-4xl space-y-10">
           <Breadcrumbs
             items={[
