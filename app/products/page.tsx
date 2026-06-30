@@ -41,8 +41,9 @@ export default function ProductsPage() {
         title="A focused product range built for premium wellness environments."
         description="Explore our curated selection of professional Pilates reformers, Cadillac frames, and spatial wellness props engineered for high-performance studios, hotels, and luxury retreats."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Products", href: "/products" }]}
+        aiSummary="Browse the complete catalog of 11 commercial-grade Pilates equipment models by Mahadev Enterprises. Features studio-grade Maple reformers, stainless steel towers, Cadillac tables, hybrid Caformers, Wunda chairs, spine correctors, and specialized alignment props handcrafted in Rishikesh and shipped across India."
       >
-        <ProductGrid />
+        <ProductGrid layout="grid" />
         <ProductHighlights />
         <AccessoriesGrid />
       </PageShell>

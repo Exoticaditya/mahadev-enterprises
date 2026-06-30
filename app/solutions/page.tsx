@@ -39,6 +39,7 @@ export default function SolutionsPage() {
         title="Premium spatial solutions for commercial wellness brands."
         description="We partner with boutique studios, leading hospitality groups, luxury retreat centers, and interior designers to supply tailored, high-performance wellness environments."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Solutions", href: "/solutions" }]}
+        aiSummary="Mahadev Enterprises offers comprehensive spatial planning and equipment packages for Pilates studios, yoga studios, clinical rehabilitation centers, hotels, and luxury wellness retreats. Our solutions feature custom layout consultations, bulk purchase options, and bespoke branding and finish choices to align with specific commercial or architectural requirements."
       >
         <SolutionsGrid />
       </PageShell>

@@ -26,6 +26,7 @@ export default function ProjectsPage() {
       title="Our Featured Project Collaborations"
       description="Explore a selection of our premium custom installations for leading boutique Pilates studios, luxury wellness resorts, and holistic retreat centers."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Projects", href: "/projects" }]}
+      aiSummary="Explore case studies of Pilates studio installations completed by Mahadev Enterprises across India and internationally. Features commercial studio setups including CoreBalance Studio in Mumbai, Ananda Heritage Resort in Rishikesh, and Rostova Design Group in Dubai. See how our bespoke maple reformers, Wunda chairs, and Cadillac tables integrate into professional wellness environments."
     >
       {/* 1. Case Studies Grid */}
       <section className="relative py-14 md:py-20">

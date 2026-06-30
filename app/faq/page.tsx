@@ -23,8 +23,9 @@ export default function FAQPage() {
       <PageShell
       eyebrow="FAQ"
       title="Straight answers for premium buyers."
-      description="This page reduces uncertainty and supports both SEO and conversion clarity."
+      description="Find clear answers regarding our commercial Pilates equipment manufacturing, material specifications, custom branding, and shipping logistics."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "FAQ", href: "/faq" }]}
+      aiSummary="Frequently Asked Questions (FAQ) directory for Mahadev Enterprises. Provides quick reference answers on Pilates equipment pricing, pan-India delivery logistics, the difference between maple and aluminium frames, clinical rehabilitation suitability, bulk order discounts, and customization options for commercial studio buyers."
     >
       <FAQSection />
     </PageShell>

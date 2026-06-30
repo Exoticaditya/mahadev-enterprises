@@ -4,6 +4,7 @@ import Link from "next/link";
 import { SectionHeading } from "@/components/section-heading";
 import { Button } from "@/components/ui/button";
 import { solutions } from "@/data/site";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 export function SolutionsGrid() {
   return (
@@ -18,10 +19,11 @@ export function SolutionsGrid() {
           description="From boutique Pilates studios and premium retreat centers to luxury hospitality wellness suites, we design and supply spaces that inspire your clients."
         />
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {solutions.map((solution) => (
-            <div
+          {solutions.map((solution, index) => (
+            <ScrollReveal
               key={solution.slug}
               className="luxury-card group flex flex-col justify-between"
+              delay={index * 0.08}
             >
               <div>
                 <div className="relative aspect-[16/10] overflow-hidden border-b border-border/60 bg-secondary/20">
@@ -56,7 +58,7 @@ export function SolutionsGrid() {
                   <Link href={`/solutions/${solution.slug}`}>Explore</Link>
                 </Button>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

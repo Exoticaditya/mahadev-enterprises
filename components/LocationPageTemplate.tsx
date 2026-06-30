@@ -161,7 +161,7 @@ export default function LocationPageTemplate({
             <Card className="bg-card/40 backdrop-blur-sm border-border/60 overflow-hidden shadow-soft">
               <div className="relative aspect-[4/3] bg-secondary/20">
                 <Image
-                  src="/solutions/pilates-studio.jpg"
+                  src="/solutions/pilates-studio.webp"
                   alt={`Pilates Studio Setup in ${displayName}`}
                   fill
                   className="object-cover"

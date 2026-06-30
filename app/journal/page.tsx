@@ -25,6 +25,7 @@ export default function JournalPage() {
       title="The Mahadev Enterprises Journal"
       description="Read professional perspectives on Pilates equipment selection, studio layout design, and wellness industry procurement standards."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Journal", href: "/journal" }]}
+      aiSummary="The Mahadev Enterprises Journal provides educational guides, commercial price lists, and technical evaluations for Pilates equipment. Features in-depth comparison articles (such as maple wood vs. aluminium frames), studio space planning tutorials, setup cost estimators, and expert tips for wellness studio procurement in India."
     >
       <JournalPreview />
     </PageShell>

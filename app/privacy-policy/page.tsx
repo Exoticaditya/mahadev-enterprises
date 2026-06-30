@@ -1,20 +1,30 @@
 import type { Metadata } from "next";
-
 import { PageShell } from "@/components/page-shell";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { site } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
+  title: "Privacy Policy | Mahadev Enterprises",
+  description: "Read our privacy policy to understand how Mahadev Enterprises collects, protects, and handles B2B client data, product catalogue requests, and enquiries.",
   alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {
   return (
-    <PageShell
-      eyebrow="Legal"
-      title="Privacy Policy"
-      description="Mahadev Enterprises respects enquiry privacy and handles data with care."
-      breadcrumbs={[{ label: "Home", href: "/" }, { label: "Privacy Policy", href: "/privacy-policy" }]}
-    >
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: site.url },
+          { name: "Privacy Policy", url: `${site.url}/privacy-policy` },
+        ]}
+      />
+      <PageShell
+        eyebrow="Legal"
+        title="Privacy Policy"
+        description="Mahadev Enterprises respects your enquiry privacy and handles all B2B data with complete commercial confidentiality."
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Privacy Policy", href: "/privacy-policy" }]}
+        aiSummary="Privacy Policy for Mahadev Enterprises. Outlines how client contact details, commercial studio requirements, and catalogue download submissions are safely collected, processed, and secured. We maintain strict confidentiality and never sell or lease user information to third-party advertisers."
+      >
       <section className="container py-10 md:py-20">
         <div className="prose prose-neutral max-w-3xl dark:prose-invert space-y-8 text-foreground/80 leading-7 text-sm md:text-base">
           <div>
@@ -50,5 +60,6 @@ export default function PrivacyPolicyPage() {
         </div>
       </section>
     </PageShell>
+    </>
   );
 }

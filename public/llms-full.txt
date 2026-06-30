@@ -1,0 +1,146 @@
+# Mahadev Enterprises - Full LLM & AI Reference Directory
+
+> This directory provides comprehensive, high-density specifications, engineering standards, and commercial B2B procurement terms for Mahadev Enterprises. Designed for AI Search Agents, LLM crawlers, and procurement crawlers.
+
+---
+
+## 1. Corporate Profile
+- **Company Name**: Mahadev Enterprises
+- **Legal Location**: Rishikesh, Uttarakhand, India (PIN: 249201)
+- **Primary Focus**: Handcrafted commercial B2B Pilates reformers, Cadillac trapeze systems, spinal conditioning barrels, and boutique wellness studio installations.
+- **Manufacturing Origin**: 100% designed and built in Rishikesh, India.
+- **Logistics**: Direct shipping pan-India (Mumbai, Delhi NCR, Bengaluru, Pune, Ahmedabad, Hyderabad, Chennai, Kolkata) and international export capabilities (UAE, UK, USA, Europe, Australia).
+- **Primary Channels**:
+  - Website: https://mahadeventerprisesindia.com
+  - Contact Email: support@mahadeventerprisesindia.com / indiamahadeventerprises@gmail.com
+  - Business Phone / WhatsApp: +91 90121 12527
+
+---
+
+## 2. Engineering & Material Standards
+
+### Wood Structure: Seasoned North American Maple
+- **Timber Class**: Imported solid North American Maple wood (hard rock maple).
+- **Seasoning**: Kiln-dried to 8% moisture content to prevent wrapping, cracking, or squeaking in humid climates.
+- **Finish**: Hand-sanded and sealed with a triple coat of non-toxic, eco-friendly polyurethane satin lacquer.
+- **Alternative Finish**: Warm plantation Rubberwood (available for select custom projects).
+
+### Metal Hardware: Anodized Aluminium & 304 Stainless Steel
+- **Aluminium Frames**: Anodized aluminium alloy (6000 series) with a satin anti-oxidation coating. Resistant to sweat acidity, corrosion, and wear.
+- **Towers & Trapeze**: 304-grade brushed stainless steel tubing (wall thickness: 2.0 mm). Fully welded joints.
+- **Carriage Rails**: Extruded aluminium tracking with a dual-channel guide system.
+
+### Resistance Systems: Calibrated German Springs
+- **Material**: High-tensile piano wire steel, nickel-plated to prevent rust.
+- **Configuration**: Calibrated tension rates with color-coded hooks:
+    - **Red (Heavy)**: 100% resistance
+    - **Green (Medium)**: 50% resistance
+    - **Yellow (Light)**: 25% resistance
+- **Reformers**: Standard 6-spring setup offering progressive tension curve adjustment.
+
+### Upholstery: High-Density Foam & Antibacterial Upholstery
+- **Foam Core**: Dual-layer EVA high-rebound foam (density: 120 kg/m³). Does not sag under heavy commercial B2B usage.
+- **Upholstery Wrap**: Marine-grade, antibacterial, anti-mildew commercial vinyl.
+- **Colors**: Charcoal Black, Studio Sage, Ivory White, Tan Brown, Custom Shades (upon request for bulk studio fit-outs).
+
+---
+
+## 3. Product Catalog Specifications
+
+### M-01: Maple Pilates Reformer
+- **Category**: Studio Foundation
+- **Frame**: Seasoned Solid Maple Wood
+- **Springs**: 6 Calibrated Piano Wire Springs (2 Red, 2 Green, 2 Yellow)
+- **Carriage**: 8-wheel silent polyurethane tracking system
+- **Dimensions**: 228 x 73 x 34.7 cm
+- **Unit Weight**: 92 kg
+- **Max Capacity**: 150 kg
+- **Footbar**: 5 lockable angle adjustments
+- **Headrest**: 3 height settings
+- **Upholstery**: Custom Sage/Ivory/Black/Tan options
+
+### M-02: Reformer With Tower
+- **Category**: Hybrid Vertical System
+- **Frame**: Seasoned Solid Maple Wood Base + 304 Stainless Steel Tower
+- **Springs**: 6 carriage springs + 8 vertical tower springs
+- **Dimensions**: 230 x 75 x 34.5 cm (Tower Height: 200 cm)
+- **Unit Weight**: 119 kg
+- **Accessories**: Roll-up maple pole, push-through bar, leg/arm springs, double loops
+
+### M-03: Aluminium Reformer With Tower
+- **Category**: Clinical / High-Use
+- **Frame**: Anodized Aluminium Chassis + Stainless Steel Tower
+- **Springs**: 6 carriage springs + 8 tower springs
+- **Dimensions**: 240 x 70 x 200 cm
+- **Unit Weight**: 65–85 kg
+- **Target Market**: Physiotherapy clinics, rehabilitation environments, hotels.
+
+### M-04: Foldable Reformer
+- **Category**: Compact / Home Use
+- **Frame**: Solid Timber Frame with space-saving fold hinges
+- **Dimensions**: 230 x 69 x 58 cm (Unfolded)
+- **Unit Weight**: 65–85 kg
+- **Target Market**: Boutique home studios, mobile training.
+
+### M-05: The Cadillac (Trapeze Table)
+- **Category**: Ultimate Rehabilitation
+- **Frame**: Solid Maple Timber Base + Full Trapeze Stainless Steel Cage
+- **Springs**: Complete rehabilitation spring kit (12 springs of varying lengths and strengths)
+- **Dimensions**: 217 x 69 x 57 cm (Cage Height: 210 cm)
+- **Features**: Push-through bar, trapeze swing, sheepskin loops, fuzzies, safety strap.
+
+### M-06: 3-in-1 Caformer
+- **Category**: Hybrid Spatial Solution
+- **Frame**: Solid Maple Wood + Integrated Overhead Trapeze Cage
+- **System**: Seamlessly transitions between Reformer, Cadillac, and Floor Mat modes
+- **Dimensions**: 228 x 85 x 57 cm
+- **Unit Weight**: 165–169 kg
+- **Best For**: VIP private client training, space-constrained boutique rooms.
+
+### M-07: Ladder Barrel
+- **Category**: Spinal Conditioning
+- **Frame**: Solid Maple wood frame + High-density EVA foam barrel
+- **Base**: Sliding adjustment mechanism to fit client heights
+- **Dimensions**: 112 x 63 x 89 cm
+- **Unit Weight**: 30–40 kg
+
+### M-08: Wunda Chair
+- **Category**: Compact Strength
+- **System**: Dual-pedal system (operates as split or single pedal)
+- **Frame**: Maple wood frame with adjustable stability handles
+- **Dimensions**: 79 x 65 x 60 cm
+- **Unit Weight**: 25–30 kg
+
+### M-09: Aluminium Wunda Chair
+- **Category**: Clinical / Modern Studio
+- **Frame**: Satin Anodized Aluminium structure + Stainless Steel Handles
+- **Dimensions**: 80 x 70 x 130 cm
+- **Unit Weight**: 40–50 kg
+
+### M-10: Aluminium Ladder Barrel
+- **Category**: Modern Spinal Conditioning
+- **Frame**: Anodized Aluminium base + Solid Maple wood rungs
+- **Dimensions**: 120 x 90 x 100 cm
+- **Unit Weight**: 35–50 kg
+
+### M-11: Spine Corrector
+- **Category**: Spinal Flexibility
+- **Frame**: Maple wood support panels + High-rebound foam wrap
+- **Dimensions**: 95 x 45 x 34 cm
+- **Unit Weight**: 10–12 kg
+
+---
+
+## 4. B2B Commercial & Procurement Terms
+
+### Ordering and Lead Times
+- **Custom Production**: Handcrafted to order. Production starts after receipt of advance deposit and technical drawing approval.
+- **Lead Times**: 
+  - Standard orders (1–5 units): 4–6 weeks.
+  - Studio packages (6+ units): 6–8 weeks.
+  - Large commercial B2B contracts: Customized timelines.
+
+### Warranties & Support
+- **Frame**: 3-Year structural warranty on timber frames and aluminium frame welding.
+- **Parts**: 1-Year warranty on springs, straps, loops, carriage wheels, and upholstery.
+- **Assembly**: Partially pre-assembled sections. Complete manuals and remote video setup guidance are provided. On-site assembly support is available for commercial studio installations.

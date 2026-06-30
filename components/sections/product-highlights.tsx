@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SectionHeading } from "@/components/section-heading";
 import { Button } from "@/components/ui/button";
 import { products } from "@/data/site";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 export function ProductHighlights() {
   return (
@@ -17,10 +18,11 @@ export function ProductHighlights() {
           description="Complement your reformer setup with our secondary apparatus—engineered for targeted flexibility, posture correction, and compact studio layouts."
         />
         <div className="grid gap-6 lg:grid-cols-2">
-          {products.slice(6).map((product) => (
-            <div
+          {products.slice(6).map((product, index) => (
+            <ScrollReveal
               key={product.slug}
               className="luxury-card flex flex-col justify-between p-6 md:p-8"
+              delay={index * 0.08}
             >
               <div className="space-y-4">
                 <p className="text-[10px] font-semibold uppercase tracking-wider text-brand-brass">
@@ -42,7 +44,7 @@ export function ProductHighlights() {
                   <Link href={`/products/${product.slug}`}>View details</Link>
                 </Button>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

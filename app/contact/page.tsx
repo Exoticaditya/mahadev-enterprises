@@ -27,6 +27,7 @@ export default function ContactPage() {
       title="Get in Touch with Our Procurement Team"
       description="Contact us directly to request custom pricing, discuss volume discounts, or arrange a private consultation for your wellness studio or project."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact", href: "/contact" }]}
+      aiSummary="Get in touch with Mahadev Enterprises for Pilates equipment purchases and B2B pricing. Reach our team directly via phone/WhatsApp (+91 90121 12527) or email (support@mahadeventerprisesindia.com / indiamahadeventerprises@gmail.com). You can also submit the online contact form to receive custom shipping costs, wood and leather finish samples, and specialized studio package quotes."
     >
       <section className="relative py-10 md:py-20">
         <div className="glow-orb left-[-5%] top-[15%] h-[350px] w-[350px] bg-brand-brass/5" />

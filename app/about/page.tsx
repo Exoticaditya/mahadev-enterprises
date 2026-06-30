@@ -27,6 +27,7 @@ export default function AboutPage() {
         title="A premium Indian supplier focused on craftsmanship, design, and longevity."
         description="Mahadev Enterprises is dedicated to designing and manufacturing professional-grade Pilates reformers, yoga props, and custom wellness solutions that elevate boutique spaces."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About", href: "/about" }]}
+        aiSummary="Mahadev Enterprises is a premier Indian manufacturer of commercial-grade Pilates equipment based in Rishikesh, Uttarakhand. We specialize in handcrafted Pilates reformers, trapeze Cadillacs, Wunda chairs, ladder barrels, and spine correctors. Our focus is supplying high-performance wellness equipment constructed from solid maple and anodized aluminium to commercial fitness studios, hotels, and luxury wellness centers worldwide."
       >
       {/* 1. Core Brand Pillars */}
       <section className="relative py-14 md:py-20">

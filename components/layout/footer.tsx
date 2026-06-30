@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Instagram, Phone, Mail } from "lucide-react";
 
-import { contactPoints, navigation, site } from "@/data/site";
+import { contactPoints, navigation, site, products } from "@/data/site";
 import { CatalogueLink } from "@/components/catalogue-link";
 import { Separator } from "@/components/ui/separator";
 
@@ -12,7 +12,7 @@ export function Footer() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/footer/footer-sunrise.jpg"
+          src="/footer/footer-sunrise.webp"
           alt="Sunrise over the mountains near Rishikesh"
           fill
           className="object-cover object-bottom"
@@ -27,7 +27,7 @@ export function Footer() {
         {/* Brand Header Section */}
         <div className="grid gap-10 lg:grid-cols-[auto_1fr] lg:items-start lg:gap-16 border-b border-white/10 pb-12">
           <div className="flex h-36 w-36 items-center justify-center overflow-hidden shrink-0">
-            <Image src="/logo.png" alt="Mahadev Enterprises logo" width={144} height={144} className="h-full w-full object-contain" />
+            <Image src="/logo.webp" alt="Mahadev Enterprises logo" width={144} height={144} className="h-full w-full object-contain" />
           </div>
           <div className="space-y-4">
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-brass">Mahadev Enterprises</p>
@@ -68,10 +68,17 @@ export function Footer() {
         {/* Link Columns */}
         <div className="mt-12 grid gap-12 md:grid-cols-2 xl:grid-cols-4">
           <div className="space-y-4">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-brass">Brand Philosophy</p>
-            <p className="max-w-lg text-sm leading-7 text-white/70">
-              We believe wellness spaces should inspire peace and focus. Our studio reformers and props are crafted using sustainable materials and engineering excellence to ensure reliable performance for commercial B2B buyers.
-            </p>
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-brass">Product Range</p>
+            <div className="grid gap-3">
+              {products.slice(0, 5).map((prod) => (
+                <Link key={prod.slug} href={`/products/${prod.slug}`} className="text-sm text-white/80 transition hover:text-brand-brass">
+                  {prod.title}
+                </Link>
+              ))}
+              <Link href="/products" className="text-sm text-brand-brass transition hover:underline">
+                All 11 Models →
+              </Link>
+            </div>
           </div>
 
           <div className="space-y-4">

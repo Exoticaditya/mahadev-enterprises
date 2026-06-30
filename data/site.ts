@@ -12,8 +12,8 @@ export const site = {
   catalogueHref: "/catalogue/mahadev-enterprises-catalogue.pdf",
   socialImage: "/social/og-home.svg",
   heroImages: {
-    desktop: "/hero/hero-desktop.jpg",
-    mobile: "/hero/hero-mobile.jpg",
+    desktop: "/hero/hero-desktop.webp",
+    mobile: "/hero/hero-mobile.webp",
   },
 } as const;
 
@@ -60,7 +60,7 @@ export const products = [
     dimensions: "228 X 73 X 34.7 cm",
     weight: "92 kg",
     idealFor: ["Pilates studios", "Luxury wellness centres", "Boutique fitness spaces"],
-    image: "/catalogue/products/PILATES-REFORMER-(M-01).png",
+    image: "/catalogue/products/PILATES-REFORMER-(M-01).webp",
   },
   {
     slug: "reformer-with-tower",
@@ -80,7 +80,7 @@ export const products = [
     dimensions: "230 x 75 x 34.5 cm (approx.)",
     weight: "119 kg",
     idealFor: ["Boutique Pilates studios", "Rehab clinics", "Personal training spaces"],
-    image: "/catalogue/products/REFORMER-WITH-TOWER-(M-02).png",
+    image: "/catalogue/products/REFORMER-WITH-TOWER-(M-02).webp",
   },
   {
     slug: "aluminium-reformer-with-tower",
@@ -100,7 +100,7 @@ export const products = [
     dimensions: "240 x 70 x 200 cm (approx.)",
     weight: "65–85 kg",
     idealFor: ["Clinical rehab spaces", "Physiotherapy clinics", "Commercial Pilates studios"],
-    image: "/catalogue/products/ALLUMINIUM-REFORMER-WITH-TOWER-(M-03).png",
+    image: "/catalogue/products/ALLUMINIUM-REFORMER-WITH-TOWER-(M-03).webp",
   },
   {
     slug: "foldable-reformer",
@@ -120,7 +120,7 @@ export const products = [
     dimensions: "230 x 69 x 58 cm (approx.)",
     weight: "65–85 kg",
     idealFor: ["Home wellness spaces", "Mobile Pilates instructors", "Space-constrained rooms"],
-    image: "/catalogue/products/FOLDABLE-REFORMER-(M-04).png",
+    image: "/catalogue/products/FOLDABLE-REFORMER-(M-04).webp",
   },
   {
     slug: "the-cadillac",
@@ -140,7 +140,7 @@ export const products = [
     dimensions: "217 x 69 x 57 cm (approx.)",
     weight: "65–85 kg",
     idealFor: ["Physiotherapy clinics", "Boutique Pilates studios", "Luxury wellness centres"],
-    image: "/catalogue/products/THE-CADILLAC-(M-05).png",
+    image: "/catalogue/products/THE-CADILLAC-(M-05).webp",
   },
   {
     slug: "3-in-1-caformer",
@@ -160,7 +160,7 @@ export const products = [
     dimensions: "228 x 85 x 57 cm (approx.)",
     weight: "165–169 kg",
     idealFor: ["Space-constrained studios", "Private movement spaces", "Premium wellness suites"],
-    image: "/catalogue/products/3-IN-1-CAFORMER-(M-06).png",
+    image: "/catalogue/products/3-IN-1-CAFORMER-(M-06).webp",
   },
   {
     slug: "ladder-barrel",
@@ -180,7 +180,7 @@ export const products = [
     dimensions: "112 x 63 x 89 cm (approx.)",
     weight: "30-40 kg",
     idealFor: ["Boutique Pilates studios", "Rehabilitation clinics", "Home wellness spaces"],
-    image: "/catalogue/products/LADDER-BARREL-(M-07).png",
+    image: "/catalogue/products/LADDER-BARREL-(M-07).webp",
   },
   {
     slug: "wunda-chair",
@@ -200,7 +200,7 @@ export const products = [
     dimensions: "79 x 65 x 60 cm (approx.)",
     weight: "25-30 kg",
     idealFor: ["Small group classes", "Boutique Pilates studios", "Rehabilitation spaces"],
-    image: "/catalogue/products/WUNDA-CHAIR-(M-08).png",
+    image: "/catalogue/products/WUNDA-CHAIR-(M-08).webp",
   },
   {
     slug: "aluminium-wunda-chair",
@@ -220,7 +220,7 @@ export const products = [
     dimensions: "80 x 70 x 130 cm (approx.)",
     weight: "40–50 kg",
     idealFor: ["Clinical rehab spaces", "Mobile Pilates classes", "Physiotherapy centres"],
-    image: "/catalogue/products/ALUMINIUM-WUNDA-CHAIR-(M-09).png",
+    image: "/catalogue/products/ALUMINIUM-WUNDA-CHAIR-(M-09).webp",
   },
   {
     slug: "aluminium-ladder-barrel",
@@ -240,7 +240,7 @@ export const products = [
     dimensions: "120 x 90 x 100 cm (approx.)",
     weight: "35–50 kg",
     idealFor: ["Commercial Pilates studios", "Boutique wellness centers", "Rehab clinics"],
-    image: "/catalogue/products/ALLUMINIUM-LADDER-BARREL-(M-10).png",
+    image: "/catalogue/products/ALLUMINIUM-LADDER-BARREL-(M-10).webp",
   },
   {
     slug: "spine-corrector",
@@ -260,19 +260,19 @@ export const products = [
     dimensions: "95 x 45 x 34 cm (approx.)",
     weight: "10–12 kg",
     idealFor: ["Group Pilates classes", "Physiotherapy clinics", "Wellness retreat programming"],
-    image: "/catalogue/products/SPINE-CORRECTOR-(M-11).png",
+    image: "/catalogue/products/SPINE-CORRECTOR-(M-11).webp",
   },
 ] as const;
 
 export const solutionImages = {
-  pilatesStudios: "/solutions/pilates-studio.jpg",
-  yogaStudios: "/solutions/yoga-studio.jpg",
-  yogaSchools: "/solutions/therapy-clinic.jpg",
-  hotelsAndResorts: "/solutions/hotel-wellness.jpg",
-  retreatCentres: "/solutions/retreat-centre.jpg",
-  wellnessBrands: "/solutions/residential-wellness.jpg",
-  interiorDesigners: "/solutions/international-hospitality.jpg",
-  internationalBuyers: "/solutions/corporate-wellness.jpg",
+  pilatesStudios: "/solutions/pilates-studio.webp",
+  yogaStudios: "/solutions/yoga-studio.webp",
+  yogaSchools: "/solutions/therapy-clinic.webp",
+  hotelsAndResorts: "/solutions/hotel-wellness.webp",
+  retreatCentres: "/solutions/retreat-centre.webp",
+  wellnessBrands: "/solutions/residential-wellness.webp",
+  interiorDesigners: "/solutions/international-hospitality.webp",
+  internationalBuyers: "/solutions/corporate-wellness.webp",
 } as const;
 
 export const solutions = [
@@ -608,7 +608,7 @@ export const accessories = [
     description: "Designed for active spinal decompression and core flexibility work. Features premium antibacterial leather wrapping and dual integrated grab handles for easy mobility.",
     materials: ["High-density foam", "Premium leather upholstery", "Maple base support"],
     features: ["Ergonomic curvature", "Sweat-resistant antibacterial leather", "Dual side carry handles"],
-    image: "/Gallary/product-gallery/m-06-ladder-barrel.jpg",
+    image: "/Gallary/product-gallery/m-06-ladder-barrel.webp",
   },
   {
     slug: "standing-plate",
@@ -638,7 +638,7 @@ export const accessories = [
     description: "A studio-grade Pilates mat system offering exceptional cushioning and alignment guides. Built with eco-friendly, high-density materials and designed for intensive floorwork, postural correction, and classical exercises.",
     materials: ["Eco-TPE core", "Non-slip textured surface", "Nylon carry strap"],
     features: ["Postural alignment markings", "High-density joint protection", "Water-resistant, easy-to-sanitize"],
-    image: "/Gallary/product-gallery/m-08-mat-system.jpg",
+    image: "/Gallary/product-gallery/m-08-mat-system.webp",
   },
   {
     slug: "props-kit",
@@ -648,7 +648,7 @@ export const accessories = [
     description: "A complete selection of studio props curated for resistance training, flexibility enhancement, and exercise progression. Features high-tensile resistance bands, durable yoga blocks, and a classic Pilates ring.",
     materials: ["Fiberglass ring", "EVA foam blocks", "Natural latex bands"],
     features: ["Curated studio essentials", "High-durability materials", "Suitable for all client levels"],
-    image: "/Gallary/product-gallery/m-09-props-kit.jpg",
+    image: "/Gallary/product-gallery/m-09-props-kit.webp",
   },
   {
     slug: "ball-collection",
@@ -658,7 +658,7 @@ export const accessories = [
     description: "A collection of premium stability and soft therapy balls designed to improve balance, target core stability, and support rehabilitation exercises. Includes anti-burst technology and tactile finish.",
     materials: ["Anti-burst PVC", "Hypoallergenic rubber", "Inflation pump included"],
     features: ["Anti-burst safety rating", "Tactile non-slip surface", "Varying sizes for diverse training"],
-    image: "/Gallary/product-gallery/m-10-ball-collection.jpg",
+    image: "/Gallary/product-gallery/m-10-ball-collection.webp",
   },
   {
     slug: "starter-bundle",
@@ -668,7 +668,7 @@ export const accessories = [
     description: "A comprehensive package combining a premium mat, essential props, and therapy balls to jumpstart any personal Pilates studio or home practice. Tailored for quality, consistency, and professional performance.",
     materials: ["Premium studio materials", "Eco-friendly components"],
     features: ["Complete training set", "Cost-effective studio startup", "Standardized manufacturer warranty"],
-    image: "/Gallary/product-gallery/m-11-starter-bundle.jpg",
+    image: "/Gallary/product-gallery/m-11-starter-bundle.webp",
   },
   {
     slug: "screw-kit",

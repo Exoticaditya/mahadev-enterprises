@@ -11,6 +11,7 @@ import { LenisProvider } from "@/components/layout/lenis-provider";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { CartProvider } from "@/components/providers/cart-context";
 import { LocalBusinessSchema } from "@/components/schema/LocalBusinessSchema";
+import { PageTransition } from "@/components/layout/page-transition";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -73,6 +74,11 @@ export const metadata: Metadata = {
   verification: {
     google: "TODO: Add Google verification code from Search Console",
   },
+  icons: {
+    icon: "/logo.webp",
+    shortcut: "/logo.webp",
+    apple: "/logo.webp",
+  },
   robots: {
     index: true,
     follow: true,
@@ -109,7 +115,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <CartProvider>
             <LenisProvider>
               <div className="relative min-h-screen overflow-hidden text-foreground">
-                {/* Global Background Video (Subtly visible behind everything on all pages) */}
+                {/* Global Background Video (Subtly visible behind everything on all pages, optimized for all viewports) */}
                 <div className="fixed inset-0 -z-30 pointer-events-none overflow-hidden select-none">
                   <video
                     autoPlay
@@ -117,8 +123,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                     muted
                     playsInline
                     className="h-full w-full object-cover opacity-[0.12] dark:opacity-[0.16]"
-                    poster="/hero/hero-desktop.jpg"
+                    poster="/hero/hero-desktop.webp"
                   >
+                    <source src="/videos/hero-loop.webm" type="video/webm" />
                     <source src="/videos/hero-loop.mp4" type="video/mp4" />
                   </video>
                 </div>
@@ -129,9 +136,27 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <div className="glow-orb left-[-5%] top-[75%] h-[450px] w-[450px] bg-brand-clay/10 dark:bg-brand-clay/5" />
 
                 <LocalBusinessSchema />
+                
+                {/* VideoObject Schema for Search Engines / AI crawlers */}
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "VideoObject",
+                      "name": "Mahadev Enterprises Pilates Reformer Loop",
+                      "description": "Studio-grade Pilates reformers, Cadillacs, and alignment tools manufactured by Mahadev Enterprises in Rishikesh, India.",
+                      "thumbnailUrl": "https://mahadeventerprisesindia.com/hero/hero-desktop.webp",
+                      "uploadDate": "2026-07-01T00:00:00Z",
+                      "contentUrl": "https://mahadeventerprisesindia.com/videos/hero-loop.mp4"
+                    })
+                  }}
+                />
 
                 <Header />
-                <main>{children}</main>
+                <main>
+                  <PageTransition>{children}</PageTransition>
+                </main>
                 <Footer />
                 <FloatingActions />
               </div>

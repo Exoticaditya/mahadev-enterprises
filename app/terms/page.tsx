@@ -1,20 +1,30 @@
 import type { Metadata } from "next";
-
 import { PageShell } from "@/components/page-shell";
+import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { site } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions",
+  title: "Terms and Conditions | Mahadev Enterprises",
+  description: "Read our commercial terms and conditions, outlining our production timelines, raw material variances, shipping logistics, and customs guidelines.",
   alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {
   return (
-    <PageShell
-      eyebrow="Legal"
-      title="Terms and Conditions"
-      description="Operational terms and commercial conditions will be finalized before launch."
-      breadcrumbs={[{ label: "Home", href: "/" }, { label: "Terms and Conditions", href: "/terms" }]}
-    >
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: site.url },
+          { name: "Terms and Conditions", url: `${site.url}/terms` },
+        ]}
+      />
+      <PageShell
+        eyebrow="Legal"
+        title="Terms and Conditions"
+        description="Please review our manufacturing guidelines, shipping protocols, and standard commercial conditions for boutique B2B purchasing."
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: "Terms and Conditions", href: "/terms" }]}
+        aiSummary="Terms and Conditions for Mahadev Enterprises. Outlines the operational rules for B2B procurement, customized production timelines (handcrafted maple wood & aluminium), organic raw material variations (timber grains), and international shipping and customs responsibility."
+      >
       <section className="container py-10 md:py-20">
         <div className="prose prose-neutral max-w-3xl dark:prose-invert space-y-8 text-foreground/80 leading-7 text-sm md:text-base">
           <div>
@@ -44,5 +54,6 @@ export default function TermsPage() {
         </div>
       </section>
     </PageShell>
+    </>
   );
 }

@@ -99,12 +99,12 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
               <ProductDetailActions product={product} />
             </div>
             <Card className="overflow-hidden">
-              <div className="relative aspect-[4/3] bg-secondary/30">
+              <div className="relative aspect-[4/3] bg-secondary/10">
                 <Image
                   src={product.image}
                   alt={product.title}
                   fill
-                  className="object-cover"
+                  className="object-contain p-6 md:p-8"
                   sizes="(min-width: 1024px) 48vw, 100vw"
                 />
               </div>
