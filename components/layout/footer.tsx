@@ -75,6 +75,9 @@ export function Footer() {
                   {prod.title}
                 </Link>
               ))}
+              <Link href="/products#accessories" className="text-sm text-white/80 transition hover:text-brand-brass font-medium">
+                Studio Accessories & Spares
+              </Link>
               <Link href="/products" className="text-sm text-brand-brass transition hover:underline">
                 All 11 Models →
               </Link>

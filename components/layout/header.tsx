@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ShoppingBag, ChevronDown } from "lucide-react";
@@ -18,10 +18,36 @@ export function Header() {
   const { cartCount, setIsOpen } = useCart();
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      const currentScrollY = window.scrollY;
+      
+      // Update scrolled state
+      setScrolled(currentScrollY > 20);
+
+      // Always show at the top of the page
+      if (currentScrollY < 60) {
+        setVisible(true);
+        lastScrollY.current = currentScrollY;
+        return;
+      }
+
+      const diff = currentScrollY - lastScrollY.current;
+
+      // Hide header when scrolling down
+      if (diff > 10) {
+        setVisible(false);
+      } 
+      // Show header when scrolling up
+      else if (diff < -10) {
+        setVisible(true);
+      }
+
+      // Guard: prevent negative scroll coordinates from elastic scroll
+      lastScrollY.current = Math.max(0, currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -34,16 +60,18 @@ export function Header() {
         scrolled
           ? "border-border/40 bg-background/60 backdrop-blur-3xl shadow-glass"
           : "border-border/20 bg-background/40 backdrop-blur-xl"
+      } ${
+        visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
       }`}
     >
-      <div className={`container flex items-center justify-between gap-4 transition-all duration-300 ease-in-out ${scrolled ? "h-24" : "h-32"}`}>
+      <div className={`container flex items-center justify-between gap-4 transition-all duration-300 ease-in-out ${scrolled ? "h-20" : "h-24"}`}>
         <Link href="/" className="flex items-center gap-3">
-          <div className={`flex items-center justify-center overflow-hidden rounded-full border border-border/70 bg-background/80 shadow-soft transition-all duration-300 ${scrolled ? "h-12 w-12" : "h-16 w-16"}`}>
-            <Image src="/logo.png" alt="Mahadev Enterprises logo" width={64} height={64} className="h-full w-full object-contain p-1" priority />
+          <div className={`flex items-center justify-center overflow-hidden rounded-full border border-border/70 bg-background/80 shadow-soft transition-all duration-300 ${scrolled ? "h-10 w-10" : "h-12 w-12"}`}>
+            <Image src="/logo.png" alt="Mahadev Enterprises logo" width={48} height={48} className="h-full w-full object-contain p-1" priority />
           </div>
           <div className="hidden sm:block">
-            <p className={`font-medium uppercase tracking-[0.2em] text-muted-foreground transition-all duration-300 ${scrolled ? "text-[11px]" : "text-sm"}`}>Mahadev Enterprises</p>
-            <p className={`text-muted-foreground transition-all duration-300 ${scrolled ? "text-[9px]" : "text-xs"}`}>Premium Pilates and wellness supply</p>
+            <p className={`font-medium uppercase tracking-[0.2em] text-muted-foreground transition-all duration-300 ${scrolled ? "text-[10px]" : "text-xs"}`}>Mahadev Enterprises</p>
+            <p className={`text-muted-foreground transition-all duration-300 ${scrolled ? "text-[8px]" : "text-[10px]"}`}>Premium Pilates and wellness supply</p>
           </div>
         </Link>
  
@@ -78,7 +106,11 @@ export function Header() {
                         <span className="text-[10px] text-muted-foreground line-clamp-1">{prod.summary}</span>
                       </Link>
                     ))}
-                    <div className="col-span-2 pt-2 border-t border-border/40 flex justify-end">
+                    <div className="col-span-2 pt-2 border-t border-border/40 flex justify-between items-center">
+                      <Link href="/products#accessories" className="text-xs font-semibold text-brand-brass hover:underline flex items-center gap-1">
+                        <span>Studio Accessories & Spare Parts</span>
+                        <span>→</span>
+                      </Link>
                       <Link href="/products" className="text-xs font-semibold text-brand-brass hover:underline flex items-center gap-1">
                         <span>View All 11 Models</span>
                         <span>→</span>

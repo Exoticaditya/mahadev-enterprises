@@ -32,22 +32,29 @@ export function MobileNav() {
               if (item.label === "Products") {
                 return (
                   <div key={item.href} className="space-y-2">
-                    <button
-                      onClick={() => setProductsOpen(!productsOpen)}
-                      className={`flex w-full items-center justify-between text-2xl font-medium transition hover:text-brand-brass ${
-                        isActive ? "text-brand-brass" : "text-foreground"
-                      }`}
-                    >
-                      <span>{item.label}</span>
-                      <svg
-                        className={`h-5 w-5 transition-transform duration-300 ${productsOpen ? "rotate-180" : ""}`}
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
+                    <div className="flex w-full items-center justify-between text-2xl font-medium transition">
+                      <Link
+                        href="/products"
+                        onClick={() => setOpen(false)}
+                        className={`hover:text-brand-brass ${isActive ? "text-brand-brass" : "text-foreground"}`}
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </button>
+                        {item.label}
+                      </Link>
+                      <button
+                        onClick={() => setProductsOpen(!productsOpen)}
+                        className="p-2 text-muted-foreground hover:text-brand-brass"
+                        aria-label="Toggle products submenu"
+                      >
+                        <svg
+                          className={`h-5 w-5 transition-transform duration-300 ${productsOpen ? "rotate-180" : ""}`}
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
+                    </div>
                     {productsOpen && (
                       <div className="grid gap-2 pl-4 border-l border-brand-brass/25 py-1">
                         {products.map((prod) => (
@@ -61,9 +68,16 @@ export function MobileNav() {
                           </Link>
                         ))}
                         <Link
+                          href="/products#accessories"
+                          onClick={() => setOpen(false)}
+                          className="text-sm font-semibold text-brand-brass hover:underline py-1 block border-t border-border/20 mt-1 pt-1"
+                        >
+                          Studio Accessories & Spares →
+                        </Link>
+                        <Link
                           href="/products"
                           onClick={() => setOpen(false)}
-                          className="text-xs font-semibold text-brand-brass hover:underline py-1 block"
+                          className="text-xs font-semibold text-brand-brass/80 hover:underline py-1 block"
                         >
                           View All 11 Models →
                         </Link>
