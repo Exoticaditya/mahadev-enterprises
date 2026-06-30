@@ -20,7 +20,7 @@ export function PageShell({
 }) {
   return (
     <>
-      <Section className="relative overflow-hidden pt-32 md:pt-40 -mt-20 isolate border-b border-border/30">
+      <Section className="relative overflow-hidden pt-12 pb-16 isolate border-b border-border/30">
         <div className="container space-y-6">
           <Breadcrumbs items={breadcrumbs} />
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-brass">{eyebrow}</p>

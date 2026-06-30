@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ShoppingBag, ChevronDown } from "lucide-react";
@@ -18,31 +18,10 @@ export function Header() {
   const { cartCount, setIsOpen } = useCart();
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
-  const [visible, setVisible] = useState(true);
-  const lastScrollYRef = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      
-      // Update scrolled state
-      setScrolled(currentScrollY > 20);
-
-      // Always show at the top
-      if (currentScrollY <= 20) {
-        setVisible(true);
-        lastScrollYRef.current = currentScrollY;
-        return;
-      }
-
-      // Hide header when scrolling down, show when scrolling up
-      if (currentScrollY > lastScrollYRef.current && currentScrollY > 120) {
-        setVisible(false); // Scrolling down
-      } else {
-        setVisible(true); // Scrolling up
-      }
-      
-      lastScrollYRef.current = currentScrollY;
+      setScrolled(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -51,22 +30,20 @@ export function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-40 border-b transition-all duration-500 ease-in-out ${
+      className={`sticky top-0 z-40 border-b transition-all duration-300 ease-in-out ${
         scrolled
           ? "border-border/40 bg-background/60 backdrop-blur-3xl shadow-glass"
           : "border-border/20 bg-background/40 backdrop-blur-xl"
-      } ${
-        visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
       }`}
     >
-      <div className={`container flex items-center justify-between gap-4 transition-all duration-500 ease-in-out ${scrolled ? "h-20" : "h-26"}`}>
+      <div className={`container flex items-center justify-between gap-4 transition-all duration-300 ease-in-out ${scrolled ? "h-24" : "h-32"}`}>
         <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-border/70 bg-background/80 shadow-soft">
-            <Image src="/logo.webp" alt="Mahadev Enterprises logo" width={44} height={44} className="h-full w-full object-contain p-1" priority />
+          <div className={`flex items-center justify-center overflow-hidden rounded-full border border-border/70 bg-background/80 shadow-soft transition-all duration-300 ${scrolled ? "h-12 w-12" : "h-16 w-16"}`}>
+            <Image src="/logo.png" alt="Mahadev Enterprises logo" width={64} height={64} className="h-full w-full object-contain p-1" priority />
           </div>
           <div className="hidden sm:block">
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">Mahadev Enterprises</p>
-            <p className="text-xs text-muted-foreground">Premium Pilates and wellness supply</p>
+            <p className={`font-medium uppercase tracking-[0.2em] text-muted-foreground transition-all duration-300 ${scrolled ? "text-[11px]" : "text-sm"}`}>Mahadev Enterprises</p>
+            <p className={`text-muted-foreground transition-all duration-300 ${scrolled ? "text-[9px]" : "text-xs"}`}>Premium Pilates and wellness supply</p>
           </div>
         </Link>
  

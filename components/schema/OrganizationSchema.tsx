@@ -8,7 +8,7 @@ export const organizationSchema = {
   "url": "https://mahadeventerprisesindia.com",
   "logo": {
     "@type": "ImageObject",
-    "url": "https://mahadeventerprisesindia.com/logo.webp",
+    "url": "https://mahadeventerprisesindia.com/logo.png",
     "width": 512,
     "height": 512
   },

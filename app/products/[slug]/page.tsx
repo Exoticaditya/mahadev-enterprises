@@ -80,7 +80,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
         ]}
       />
       {aeo && <FAQSchema faqs={aeo.faqs} id={`faq-schema-${slug}`} />}
-      <section className="pt-14 md:pt-20">
+      <section className="pt-20 lg:pt-28">
         <div className="container space-y-8">
           <Breadcrumbs
             items={[

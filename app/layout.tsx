@@ -75,9 +75,9 @@ export const metadata: Metadata = {
     google: "TODO: Add Google verification code from Search Console",
   },
   icons: {
-    icon: "/logo.webp",
-    shortcut: "/logo.webp",
-    apple: "/logo.webp",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   robots: {
     index: true,
