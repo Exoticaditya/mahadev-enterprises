@@ -75,9 +75,12 @@ export const metadata: Metadata = {
     google: "TODO: Add Google verification code from Search Console",
   },
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: [
+      { url: "/favicon.png?v=2", type: "image/png" },
+      { url: "/favicon.ico?v=2", type: "image/x-icon" }
+    ],
+    shortcut: "/favicon.png?v=2",
+    apple: "/favicon.png?v=2",
   },
   robots: {
     index: true,
