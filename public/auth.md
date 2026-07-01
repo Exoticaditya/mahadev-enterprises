@@ -2,15 +2,20 @@
 
 Welcome, AI Agent!
 
-Mahadev Enterprises is a public catalog showcase and B2B inquiry site for professional Pilates equipment manufactured in Rishikesh, India.
+This document describes the agent registration and authentication flow for Mahadev Enterprises.
 
-## 1. Access Credentials
-- **Authentication Required**: None.
-- **Registration**: Not required.
-- **API Catalog**: Available at `/.well-known/api-catalog`
-- **Product Reference**: High-density specifications directory available at `/llms-full.txt`
+## Agent Registration
+AI agents can programmatically register to obtain API access credentials by sending a POST request to our registration endpoint:
 
-All product catalog data, specifications, dimensions, served locations, and contact channels are fully public and open-access. No OAuth, OIDC, or API keys are required for retrieval.
+`POST https://mahadeventerprisesindia.com/api/auth/register`
 
-## 2. Inquiries & Forms
-- Commercial boutique studio setup, customization requests, and pricing quotations can be submitted directly via our standard contact form endpoints (handled via FormSubmit B2B integrations).
+Registration is fully automated, and no manual approval is required. Registered agents will receive a Client ID and Client Secret for secure machine-to-machine authentication.
+
+## Authentication
+Agents can authenticate using the OAuth 2.0 client credentials grant flow to access catalog details:
+
+- **Token Endpoint**: `https://mahadeventerprisesindia.com/api/auth/token`
+- **Grant Type**: `client_credentials`
+- **Scope**: `read:catalog`
+
+No authentication is required for basic public web scraping or reading the high-density `/llms-full.txt` catalog specifications.
