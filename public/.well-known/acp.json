@@ -6,13 +6,6 @@
   "api_base_url": "https://mahadeventerprisesindia.com/api",
   "transports": ["http"],
   "capabilities": {
-    "services": {
-      "cart": {
-        "url": "https://mahadeventerprisesindia.com/api/cart"
-      },
-      "checkout": {
-        "url": "https://mahadeventerprisesindia.com/contact"
-      }
-    }
+    "services": ["cart", "checkout", "catalog"]
   }
 }

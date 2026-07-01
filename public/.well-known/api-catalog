@@ -12,6 +12,15 @@
         {
           "href": "https://mahadeventerprisesindia.com/llms-full.txt",
           "type": "text/plain"
+        },
+        {
+          "href": "https://mahadeventerprisesindia.com/openapi.json",
+          "type": "application/json"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://mahadeventerprisesindia.com/api/protected"
         }
       ]
     }
