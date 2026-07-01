@@ -12,6 +12,7 @@ import { ThemeProvider } from "@/components/layout/theme-provider";
 import { CartProvider } from "@/components/providers/cart-context";
 import { LocalBusinessSchema } from "@/components/schema/LocalBusinessSchema";
 import { PageTransition } from "@/components/layout/page-transition";
+import { WebMcpProvider } from "@/components/webmcp-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -154,6 +155,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 />
 
                 <Header />
+                <WebMcpProvider />
                 <main>
                   <PageTransition>{children}</PageTransition>
                 </main>

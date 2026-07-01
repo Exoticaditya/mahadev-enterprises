@@ -1,0 +1,19 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://mahadeventerprisesindia.com",
+      "api-catalog": [
+        {
+          "href": "https://mahadeventerprisesindia.com/.well-known/api-catalog",
+          "type": "application/linkset+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://mahadeventerprisesindia.com/llms-full.txt",
+          "type": "text/plain"
+        }
+      ]
+    }
+  ]
+}

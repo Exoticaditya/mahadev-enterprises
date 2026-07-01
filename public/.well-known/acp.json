@@ -1,0 +1,14 @@
+{
+  "protocol": {
+    "name": "acp",
+    "version": "1.0.0"
+  },
+  "api_base_url": "https://mahadeventerprisesindia.com/api",
+  "transports": ["http"],
+  "capabilities": {
+    "services": {
+      "catalog": "https://mahadeventerprisesindia.com/products",
+      "quote_request": "https://mahadeventerprisesindia.com/contact"
+    }
+  }
+}

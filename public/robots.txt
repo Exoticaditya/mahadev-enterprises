@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://mahadeventerprisesindia.com/sitemap.xml
+Host: https://mahadeventerprisesindia.com
+
+# AI Content Signals (AIPref / Content Signals RFC)
+Content-Signal: ai-train=no, search=yes, ai-input=no

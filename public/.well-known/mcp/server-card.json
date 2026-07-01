@@ -1,0 +1,20 @@
+{
+  "mcpServerCardVersion": "1.0.0",
+  "serverInfo": {
+    "name": "Mahadev Enterprises Catalog Server",
+    "version": "1.0.0",
+    "description": "Exposes Mahadev Enterprises B2B Pilates equipment catalog to AI agents."
+  },
+  "transport": {
+    "type": "http",
+    "endpoint": "https://mahadeventerprisesindia.com/api/mcp"
+  },
+  "capabilities": {
+    "tools": {
+      "list": true
+    },
+    "resources": {
+      "list": true
+    }
+  }
+}

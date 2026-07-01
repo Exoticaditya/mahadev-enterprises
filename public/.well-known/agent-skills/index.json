@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0.json",
+  "skills": [
+    {
+      "name": "llms-full.txt",
+      "type": "documentation",
+      "description": "High-density markdown document containing B2B product specifications, engineering standards, and dimensions for Pilates apparatus.",
+      "url": "https://mahadeventerprisesindia.com/llms-full.txt",
+      "sha256": "cb5a8e0f52b682cd1eb4e9c70a8d6728091bf2e4bb0d5e1b2382103ef4e70e70"
+    },
+    {
+      "name": "api-catalog",
+      "type": "api-discovery",
+      "description": "RFC 9727 API catalog listing discovery routes.",
+      "url": "https://mahadeventerprisesindia.com/.well-known/api-catalog",
+      "sha256": "db9b8e21a2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9"
+    }
+  ]
+}

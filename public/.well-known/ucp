@@ -1,0 +1,17 @@
+{
+  "ucpVersion": "1.0.0",
+  "services": {
+    "catalog": {
+      "url": "https://mahadeventerprisesindia.com/products",
+      "description": "Browse premium B2B Pilates equipment catalogue."
+    },
+    "contact": {
+      "url": "https://mahadeventerprisesindia.com/contact",
+      "description": "Submit quotation proposals and customized studio enquiries."
+    }
+  },
+  "capabilities": {
+    "currency": "INR",
+    "supportedPayments": ["wire-transfer", "invoice"]
+  }
+}
