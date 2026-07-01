@@ -1,5 +1,5 @@
 {
-  "ucpVersion": "1.0.0",
+  "ucp": "1.0.0",
   "services": {
     "catalog": {
       "url": "https://mahadeventerprisesindia.com/products",

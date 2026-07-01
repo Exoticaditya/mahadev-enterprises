@@ -1,4 +1,4 @@
-# Agent Registration & Authentication - Mahadev Enterprises
+# Auth.md
 
 Welcome, AI Agent!
 

@@ -7,8 +7,12 @@
   "transports": ["http"],
   "capabilities": {
     "services": {
-      "catalog": "https://mahadeventerprisesindia.com/products",
-      "quote_request": "https://mahadeventerprisesindia.com/contact"
+      "cart": {
+        "url": "https://mahadeventerprisesindia.com/api/cart"
+      },
+      "checkout": {
+        "url": "https://mahadeventerprisesindia.com/contact"
+      }
     }
   }
 }

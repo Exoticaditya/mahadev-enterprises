@@ -1,0 +1,30 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Mahadev Enterprises B2B API",
+    "version": "1.0.0",
+    "description": "API catalog for Mahadev Enterprises professional Pilates equipment."
+  },
+  "paths": {
+    "/api/protected": {
+      "get": {
+        "summary": "Protected Premium B2B Specifications API",
+        "description": "Retrieve high-density spatial blueprints and proprietary raw materials data.",
+        "responses": {
+          "200": {
+            "description": "Successful retrieval of specifications data."
+          },
+          "402": {
+            "description": "Payment required to access premium data."
+          }
+        },
+        "x-payment-info": {
+          "intent": "charge",
+          "method": "stripe",
+          "amount": 100,
+          "currency": "INR"
+        }
+      }
+    }
+  }
+}

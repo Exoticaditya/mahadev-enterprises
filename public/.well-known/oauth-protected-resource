@@ -1,0 +1,7 @@
+{
+  "resource": "https://mahadeventerprisesindia.com/api",
+  "authorization_servers": [
+    "https://mahadeventerprisesindia.com"
+  ],
+  "scopes_supported": ["read:catalog"]
+}

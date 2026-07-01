@@ -1,0 +1,10 @@
+{
+  "issuer": "https://mahadeventerprisesindia.com",
+  "authorization_endpoint": "https://mahadeventerprisesindia.com/api/auth/authorize",
+  "token_endpoint": "https://mahadeventerprisesindia.com/api/auth/token",
+  "jwks_uri": "https://mahadeventerprisesindia.com/api/auth/jwks",
+  "grant_types_supported": ["client_credentials"],
+  "response_types_supported": ["token"],
+  "subject_types_supported": ["public"],
+  "id_token_signing_alg_values_supported": ["RS256"]
+}
