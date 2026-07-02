@@ -54,7 +54,7 @@ export function ContactForm() {
   return (
     <Card className="overflow-hidden border-border/70 bg-card/70 shadow-haze">
       <CardHeader>
-        <CardTitle className="text-3xl">Start your enquiry</CardTitle>
+        <CardTitle className="text-3xl" as="h2">Start your enquiry</CardTitle>
       </CardHeader>
       <CardContent>
         {submitted ? (

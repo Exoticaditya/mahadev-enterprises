@@ -78,7 +78,7 @@ export default function AboutPage() {
               ["Antibacterial Leather Upholstery", "Double-stitched commercial vinyl upholstery formulated to resist sweat, sanitizers, and high daily client turnovers."]
             ].map(([title, desc]) => (
               <div key={title} className="luxury-card p-6 md:p-7 space-y-3">
-                <h4 className="text-lg font-serif text-foreground leading-snug">{title}</h4>
+                <h3 className="text-lg font-serif text-foreground leading-snug">{title}</h3>
                 <p className="text-xs leading-5 text-muted-foreground">{desc}</p>
               </div>
             ))}

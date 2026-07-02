@@ -60,6 +60,8 @@ export default function LocationPageTemplate({
 
   const formattedWhatsAppUrl = `https://wa.me/919012112527?text=Hi%20Mahadev%20Enterprises,%20I%20am%20enquiring%20about%20Pilates%20equipment%20delivery%20in%20${encodeURIComponent(displayName)}.`;
 
+  const aiSummaryText = `Mahadev Enterprises supplies commercial-grade Pilates reformers, Cadillac frames, Wunda chairs, and accessories to fitness studios, physical therapy clinics, and luxury hospitality venues in ${displayName}, ${state}. Equipment is handcrafted from premium North American Maple wood and steel alloys in our Rishikesh workshop and shipped directly to ${displayName} with transit insurance and video setup support.`;
+
   return (
     <>
       {/* Dynamic Schema Injections */}
@@ -85,6 +87,7 @@ export default function LocationPageTemplate({
           { label: "Locations", href: "/locations" },
           { label: displayName, href: url },
         ]}
+        aiSummary={aiSummaryText}
       >
         {/* WhatsApp CTA in Hero area */}
         <div className="container pb-10">
@@ -137,21 +140,21 @@ export default function LocationPageTemplate({
                 <div className="flex gap-4">
                   <CheckCircle className="h-6 w-6 text-brand-brass shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold text-foreground">North American Hard Maple Wood</h4>
+                    <h3 className="font-semibold text-foreground">North American Hard Maple Wood</h3>
                     <p className="text-sm text-muted-foreground mt-1">Sustainably sourced, kiln-dried seasoned hardwood that prevents warping under continuous commercial B2B loads.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <CheckCircle className="h-6 w-6 text-brand-brass shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold text-foreground">Up to 45% Price Advantage</h4>
+                    <h3 className="font-semibold text-foreground">Up to 45% Price Advantage</h3>
                     <p className="text-sm text-muted-foreground mt-1">By selling direct from our Rishikesh workshop to {displayName} buyers, we eliminate middleman commissions and import duties.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <CheckCircle className="h-6 w-6 text-brand-brass shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-semibold text-foreground">Comprehensive Client Support</h4>
+                    <h3 className="font-semibold text-foreground">Comprehensive Client Support</h3>
                     <p className="text-sm text-muted-foreground mt-1">From initial layout planning to video assembly calls, our B2B team supports your studio&apos;s operational success.</p>
                   </div>
                 </div>
@@ -255,7 +258,7 @@ export default function LocationPageTemplate({
                 {content.deliveryInfo}
               </p>
               <div className="space-y-2">
-                <h4 className="font-semibold text-foreground text-sm uppercase tracking-wider">Local Distribution Hubs & Suburbs Served:</h4>
+                <h3 className="font-semibold text-foreground text-sm uppercase tracking-wider">Local Distribution Hubs & Suburbs Served:</h3>
                 <div className="flex flex-wrap gap-2 pt-2">
                   {nearbyAreas.map((area) => (
                     <span key={area} className="rounded-full bg-muted/80 border border-border px-3 py-1 text-xs font-medium text-muted-foreground flex items-center gap-1.5">
@@ -277,7 +280,7 @@ export default function LocationPageTemplate({
                 {content.localContext}
               </p>
               <div className="p-6 rounded-[1.5rem] border border-border/50 bg-card/40 space-y-2">
-                <h4 className="font-serif text-lg text-foreground">Market Demand Status</h4>
+                <h3 className="font-serif text-lg text-foreground">Market Demand Status</h3>
                 <div className="flex justify-between items-center text-sm">
                   <span className="text-muted-foreground">Local Demand Intensity:</span>
                   <span className="font-semibold text-brand-brass">{demandLevel}</span>

@@ -97,7 +97,7 @@ export default function ContactPage() {
 
             {/* Delivery Locations Info */}
             <div className="luxury-card p-6 space-y-3">
-              <h4 className="font-serif text-lg text-foreground">We Deliver Pan-India</h4>
+              <h2 className="font-serif text-lg text-foreground">We Deliver Pan-India</h2>
               <p className="text-xs leading-5 text-muted-foreground">
                 We manufacture in Rishikesh and deliver fully insured to all major locations including Mumbai, Delhi NCR, Bengaluru, Pune, Ahmedabad, Hyderabad, and <Link href="/locations" className="text-brand-brass underline font-medium">20+ other locations</Link>.
               </p>

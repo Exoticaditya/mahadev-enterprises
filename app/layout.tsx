@@ -10,7 +10,6 @@ import { FloatingActions } from "@/components/layout/floating-actions";
 import { LenisProvider } from "@/components/layout/lenis-provider";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { CartProvider } from "@/components/providers/cart-context";
-import { LocalBusinessSchema } from "@/components/schema/LocalBusinessSchema";
 import { OrganizationSchema } from "@/components/schema/OrganizationSchema";
 import { PageTransition } from "@/components/layout/page-transition";
 
@@ -141,7 +140,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <div className="glow-orb left-[-5%] top-[75%] h-[450px] w-[450px] bg-brand-clay/10 dark:bg-brand-clay/5" />
 
                 <OrganizationSchema />
-                <LocalBusinessSchema />
                 
                 {/* VideoObject Schema for Search Engines / AI crawlers */}
                 <script

@@ -48,10 +48,11 @@ export function ProductSchema({
     ...(weight && { weight: { "@type": "QuantitativeValue", value: weight } }),
     ...(dimensions && { size: dimensions }),
     offers: {
-      "@type": "Offer",
-      priceRange: priceRange ?? "₹85,000 to ₹1,75,000",
-      availability: "https://schema.org/InStock",
+      "@type": "AggregateOffer",
+      lowPrice: 85000,
+      highPrice: 175000,
       priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
       seller: {
         "@type": "Organization",
         name: "Mahadev Enterprises",

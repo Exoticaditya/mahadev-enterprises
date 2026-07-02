@@ -9,6 +9,7 @@ import { FAQSection } from "@/components/sections/faq";
 import { JournalPreview } from "@/components/sections/journal-preview";
 import { CtaStrip } from "@/components/sections/cta-strip";
 import { OrganizationSchema } from "@/components/schema/OrganizationSchema";
+import { LocalBusinessSchema } from "@/components/schema/LocalBusinessSchema";
 import { FAQSchema } from "@/components/schema/FAQSchema";
 import { faqs } from "@/data/site";
 
@@ -16,6 +17,7 @@ export default function HomePage() {
   return (
     <>
       <OrganizationSchema />
+      <LocalBusinessSchema />
       <Hero />
       <BrandsStrip />
       <div className="container max-w-7xl mx-auto px-6 md:px-8 mt-6">

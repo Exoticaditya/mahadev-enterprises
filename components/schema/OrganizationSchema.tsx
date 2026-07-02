@@ -22,7 +22,6 @@ export const organizationSchema = {
     "telephone": "+919012112527",
     "contactType": "sales",
     "availableLanguage": ["English", "Hindi"],
-    "contactOption": "TollFree",
     "areaServed": "IN"
   },
   "address": {

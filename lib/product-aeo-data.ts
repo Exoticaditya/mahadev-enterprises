@@ -156,6 +156,7 @@ export const productAEOData: Record<string, ProductAEO> = {
       "Spring Resistance": "5 carriage springs",
       "Folded Dimensions": "115 x 69 x 75 cm",
       "Unfolded Dimensions": "230 x 69 x 58 cm",
+      "Unit Weight": "65–85 kg",
       "Included Accessories": "Reformer Box, Jumpboard, Foot strap",
     },
     faqs: [
@@ -203,6 +204,7 @@ export const productAEOData: Record<string, ProductAEO> = {
       "Dimensions": "217 x 69 x 205 cm",
       "Spring Count": "12 clinical-grade springs with various resistance levels",
       "Max User Weight": "180 kg",
+      "Unit Weight": "85–95 kg",
     },
     faqs: [
       {
@@ -342,6 +344,7 @@ export const productAEOData: Record<string, ProductAEO> = {
       "Resistance Slots": "4 slots per spring for micro-adjustments",
       "Handles": "Removable, height-adjustable stainless steel handles",
       "Dimensions": "79 x 65 x 60 cm",
+      "Unit Weight": "25–30 kg",
     },
     faqs: [
       {
