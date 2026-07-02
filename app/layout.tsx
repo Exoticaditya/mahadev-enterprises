@@ -11,6 +11,7 @@ import { LenisProvider } from "@/components/layout/lenis-provider";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { CartProvider } from "@/components/providers/cart-context";
 import { LocalBusinessSchema } from "@/components/schema/LocalBusinessSchema";
+import { OrganizationSchema } from "@/components/schema/OrganizationSchema";
 import { PageTransition } from "@/components/layout/page-transition";
 
 const inter = Inter({
@@ -72,7 +73,7 @@ export const metadata: Metadata = {
     images: [site.socialImage],
   },
   verification: {
-    google: "TODO: Add Google verification code from Search Console",
+    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION || "TODO: Add Google verification code from Search Console",
   },
   icons: {
     icon: [
@@ -82,6 +83,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png?v=2",
     apple: "/favicon.png?v=2",
   },
+  manifest: "/site.webmanifest",
   robots: {
     index: true,
     follow: true,
@@ -138,6 +140,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <div className="glow-orb right-[-15%] top-[45%] h-[500px] w-[500px] bg-brand-sage/10 dark:bg-brand-sage/5" />
                 <div className="glow-orb left-[-5%] top-[75%] h-[450px] w-[450px] bg-brand-clay/10 dark:bg-brand-clay/5" />
 
+                <OrganizationSchema />
                 <LocalBusinessSchema />
                 
                 {/* VideoObject Schema for Search Engines / AI crawlers */}

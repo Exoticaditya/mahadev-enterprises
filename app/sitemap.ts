@@ -76,7 +76,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Journal/blog articles
   const journalPages: MetadataRoute.Sitemap = journalPosts.map((post) => ({
     url: `${site.url}/journal/${post.slug}`,
-    lastModified: now,
+    lastModified: new Date(post.date),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
