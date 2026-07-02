@@ -26,9 +26,14 @@ export function ArticleSchema({
     datePublished,
     dateModified: dateModified ?? datePublished,
     author: {
-      "@type": "Organization",
-      name: site.name,
-      url: site.url,
+      "@type": "Person",
+      name: "Aditya",
+      jobTitle: "Lead Design Engineer",
+      worksFor: {
+        "@type": "Organization",
+        name: site.name,
+        url: site.url,
+      },
     },
     publisher: {
       "@type": "Organization",

@@ -55,7 +55,7 @@ export function SolutionsGrid() {
 
               <div className="p-6 md:p-7 pt-0">
                 <Button asChild variant="outline" className="w-full rounded-full transition-all duration-300 hover:bg-brand-brass hover:text-white hover:border-brand-brass">
-                  <Link href={`/solutions/${solution.slug}`}>Explore</Link>
+                  <Link href={`/solutions/${solution.slug}`} aria-label={`Explore wellness equipment solutions for ${solution.title}`}>Explore</Link>
                 </Button>
               </div>
             </ScrollReveal>

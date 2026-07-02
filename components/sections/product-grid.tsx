@@ -76,7 +76,7 @@ export function ProductGrid({ layout = "scroll" }: { layout?: "scroll" | "grid" 
 
               <div className="p-6 md:p-8 pt-0">
                 <Button asChild variant="outline" className="w-full rounded-full transition-all duration-300 hover:bg-brand-brass hover:text-white hover:border-brand-brass">
-                  <Link href={`/products/${product.slug}`}>View Details</Link>
+                  <Link href={`/products/${product.slug}`} aria-label={`View detailed technical specifications of ${product.title}`}>View Details</Link>
                 </Button>
               </div>
             </ScrollReveal>

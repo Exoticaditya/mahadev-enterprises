@@ -10,6 +10,7 @@ import { ArticleSchema } from "@/components/schema/ArticleSchema";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 import { FAQSchema } from "@/components/schema/FAQSchema";
 import { journalContentData } from "@/lib/journal-content-data";
+import { getReadingTime } from "@/lib/utils";
 
 export function generateStaticParams() {
   return journalPosts.map((post) => ({ slug: post.slug }));
@@ -78,9 +79,10 @@ export default async function JournalPostPage({ params }: { params: Promise<{ sl
           
           <article className="space-y-8">
             <div className="space-y-4">
-              <p className="text-xs uppercase tracking-[0.2em] text-brand-brass font-semibold">
-                Published {post.date}
-              </p>
+              <div className="flex justify-between items-center text-xs uppercase tracking-[0.2em] text-brand-brass font-semibold">
+                <span>Published {post.date}</span>
+                <span>{getReadingTime(post.slug)}</span>
+              </div>
               <h1 className="text-balance text-4xl leading-[1.05] font-serif md:text-5xl lg:text-6xl text-foreground">
                 {post.title}
               </h1>
@@ -99,8 +101,25 @@ export default async function JournalPostPage({ params }: { params: Promise<{ sl
               <p className="text-muted-foreground italic">Article content is currently being drafted.</p>
             )}
 
+            {/* Author Profile Bio Card for EEAT */}
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 p-6 rounded-[1.5rem] border border-border/50 bg-card/40 mt-12">
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-brand-brass/10 text-brand-brass text-xl font-serif font-bold">
+                A
+              </div>
+              <div className="space-y-2 text-center sm:text-left">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-2">
+                  <span className="font-semibold text-foreground">Aditya</span>
+                  <span className="hidden sm:inline text-muted-foreground/60">•</span>
+                  <span className="text-xs text-brand-brass font-medium uppercase tracking-wider">Lead Design Engineer</span>
+                </div>
+                <p className="text-sm leading-6 text-muted-foreground">
+                  Aditya oversees material sourcing and engineering calibration at Mahadev Enterprises. Specializing in sustainable timber mechanics and progressive spring system designs, he guides our Rishikesh workshop to deliver structurally silent Pilates equipment.
+                </p>
+              </div>
+            </div>
+
             {/* Connect Card */}
-            <Card className="bg-card/40 border-border/40 mt-12">
+            <Card className="bg-card/40 border-border/40 mt-8">
               <CardContent className="space-y-5 p-6 md:p-8">
                 <h3 className="text-xl font-serif text-foreground">Sourcing Premium Pilates Equipment?</h3>
                 <p className="text-sm leading-7 text-muted-foreground">
