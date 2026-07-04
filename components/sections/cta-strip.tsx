@@ -19,7 +19,7 @@ export function CtaStrip() {
               <Link href="/contact">Contact Us</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="/catalogue/mahadev-enterprises-catalogue.pdf">Download Catalogue</Link>
+              <a href="/catalogue/mahadev-enterprises-catalogue.pdf" target="_blank" rel="noopener noreferrer" download>Download Catalogue</a>
             </Button>
           </div>
         </div>

@@ -99,6 +99,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="preload" href="/hero/hero-desktop.webp" as="image" fetchPriority="high" />
+      </head>
       <body className={`${inter.variable} ${cormorant.variable} font-sans`}>
         {/* Google Analytics (gtag.js) */}
         <Script
@@ -131,6 +134,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                   >
                     <source src="/videos/hero-loop.webm" type="video/webm" />
                     <source src="/videos/hero-loop.mp4" type="video/mp4" />
+                    <track kind="captions" src="" label="No captions" default />
                   </video>
                 </div>
 

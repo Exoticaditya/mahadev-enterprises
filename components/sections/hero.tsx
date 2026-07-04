@@ -21,6 +21,7 @@ export function Hero() {
         >
           <source src="/videos/hero-loop.webm" type="video/webm" />
           <source src="/videos/hero-loop.mp4" type="video/mp4" />
+          <track kind="captions" src="" label="No captions" default />
         </video>
         <div className="absolute inset-0 bg-background/80 backdrop-blur-[3px]" />
       </div>
