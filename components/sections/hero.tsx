@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -7,22 +10,46 @@ import { CatalogueLink } from "@/components/catalogue-link";
 import { site, stats, trustSignals } from "@/data/site";
 
 export function Hero() {
+  const [mounted, setMounted] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section className="relative overflow-hidden pt-12 pb-20 md:pb-28 isolate">
       {/* Background Video/Image with Translucent Blur Overlay */}
       <div className="absolute inset-0 -z-10">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 h-full w-full object-cover"
-          poster="/hero/hero-desktop.webp"
-        >
-          <source src="/videos/hero-loop.webm" type="video/webm" />
-          <source src="/videos/hero-loop.mp4" type="video/mp4" />
-          <track kind="captions" src="" label="No captions" default />
-        </video>
+        {mounted && isDesktop ? (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 h-full w-full object-cover"
+            poster="/hero/hero-desktop.webp"
+          >
+            <source src="/videos/hero-loop.webm" type="video/webm" />
+            <source src="/videos/hero-loop.mp4" type="video/mp4" />
+            <track kind="captions" src="" label="No captions" default />
+          </video>
+        ) : (
+          <Image
+            src="/hero/hero-desktop.webp"
+            alt="Mahadev Enterprises Pilates Reformer"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+        )}
         <div className="absolute inset-0 bg-background/80 backdrop-blur-[3px]" />
       </div>
 
