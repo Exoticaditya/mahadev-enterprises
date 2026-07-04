@@ -107,7 +107,7 @@ export function Header() {
                       </Link>
                     ))}
                     <div className="col-span-2 pt-2 border-t border-border/40 flex justify-between items-center">
-                      <Link href="/products#accessories" className="text-xs font-semibold text-brand-brass hover:underline flex items-center gap-1">
+                      <Link href="/accessories" className="text-xs font-semibold text-brand-brass hover:underline flex items-center gap-1">
                         <span>Studio Accessories & Spare Parts</span>
                         <span>→</span>
                       </Link>

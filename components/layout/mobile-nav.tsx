@@ -68,7 +68,7 @@ export function MobileNav() {
                           </Link>
                         ))}
                         <Link
-                          href="/products#accessories"
+                          href="/accessories"
                           onClick={() => setOpen(false)}
                           className="text-sm font-semibold text-brand-brass hover:underline py-1 block border-t border-border/20 mt-1 pt-1"
                         >
