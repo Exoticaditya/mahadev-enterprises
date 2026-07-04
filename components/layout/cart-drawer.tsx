@@ -114,7 +114,6 @@ export function CartDrawer() {
                   <div key={`${item.id}-${item.woodFinish || ""}-${item.upholsteryColor || ""}`} className="flex py-6 gap-4 animate-fadeIn">
                     <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-xl border border-border/40 bg-secondary/10">
                       {item.image ? (
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={item.image}
                           alt={item.title}
