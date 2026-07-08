@@ -1,10 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useCart } from "@/components/providers/cart-context";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { ShoppingBag } from "lucide-react";
+import { TrackingLink } from "@/components/tracking-link";
+import { trackBusinessAction } from "@/lib/analytics";
 
 interface Product {
   slug: string;
@@ -20,6 +22,18 @@ export function ProductDetailActions({ product }: { product: Product }) {
   const [upholsteryColor, setUpholsteryColor] = useState("Charcoal Black");
   const [added, setAdded] = useState(false);
 
+  useEffect(() => {
+    trackBusinessAction(
+      "view_product_detail",
+      {
+        content_name: product.title,
+        content_category: product.category,
+        content_ids: product.slug,
+      },
+      { metaStandardEvent: "ViewContent" }
+    );
+  }, [product.category, product.slug, product.title]);
+
   const handleAddToCart = () => {
     addToCart({
       id: product.slug,
@@ -31,6 +45,18 @@ export function ProductDetailActions({ product }: { product: Product }) {
       upholsteryColor,
       quantity: 1,
     });
+
+    trackBusinessAction(
+      "add_to_quote_cart",
+      {
+        content_name: product.title,
+        content_category: product.category,
+        content_ids: product.slug,
+        wood_finish: woodFinish,
+        upholstery_color: upholsteryColor,
+      },
+      { metaStandardEvent: "AddToCart" }
+    );
 
     setAdded(true);
     setTimeout(() => setAdded(false), 2000);
@@ -91,9 +117,14 @@ export function ProductDetailActions({ product }: { product: Product }) {
           <span>{added ? "Added to Quote ✓" : "Add to Quote Cart"}</span>
         </Button>
         <Button asChild size="lg" variant="outline" className="rounded-full">
-          <a href="/catalogue/mahadev-enterprises-catalogue.pdf" download>
+          <TrackingLink
+            href="/catalogue/mahadev-enterprises-catalogue.pdf"
+            download
+            eventName="download_catalogue"
+            metaCustomEvent="CatalogueDownload"
+          >
             Download Catalogue
-          </a>
+          </TrackingLink>
         </Button>
       </div>
     </div>

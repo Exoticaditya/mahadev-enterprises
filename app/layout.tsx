@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 
 import { site } from "@/data/site";
@@ -10,6 +9,7 @@ import { FloatingActions } from "@/components/layout/floating-actions";
 import { LenisProvider } from "@/components/layout/lenis-provider";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { CartProvider } from "@/components/providers/cart-context";
+import { MarketingConsent } from "@/components/providers/marketing-consent";
 import { OrganizationSchema } from "@/components/schema/OrganizationSchema";
 import { PageTransition } from "@/components/layout/page-transition";
 import { BackgroundVideo } from "@/components/background-video";
@@ -104,20 +104,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="preload" href="/hero/hero-desktop.webp" as="image" fetchPriority="high" />
       </head>
       <body className={`${inter.variable} ${cormorant.variable} font-sans`}>
-        {/* Google Analytics (gtag.js) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-48D8HG2V8Y"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-48D8HG2V8Y');
-          `}
-        </Script>
+        <MarketingConsent pixelId="988063364058240" />
 
         <ThemeProvider>
           <CartProvider>

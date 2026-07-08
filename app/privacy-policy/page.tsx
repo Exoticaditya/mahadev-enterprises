@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
         title="Privacy Policy"
         description="Mahadev Enterprises respects your enquiry privacy and handles all B2B data with complete commercial confidentiality."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Privacy Policy", href: "/privacy-policy" }]}
-        aiSummary="Privacy Policy for Mahadev Enterprises. Outlines how client contact details, commercial studio requirements, and catalogue download submissions are safely collected, processed, and secured. We maintain strict confidentiality and never sell or lease user information to third-party advertisers."
+        aiSummary="Privacy Policy for Mahadev Enterprises. Outlines how client contact details, commercial studio requirements, catalogue download submissions, and consent-controlled marketing analytics are safely collected, processed, and secured. We maintain strict confidentiality and never sell or lease user information to third-party advertisers."
       >
       <section className="container py-10 md:py-20">
         <div className="prose prose-neutral max-w-3xl dark:prose-invert space-y-8 text-foreground/80 leading-7 text-sm md:text-base">
@@ -55,6 +55,18 @@ export default function PrivacyPolicyPage() {
             <h3 className="text-xl font-serif text-foreground font-semibold">4. Your Rights</h3>
             <p className="mt-3">
               You may request access to, correction of, or deletion of your commercial details at any time by contacting our procurement office at <a href="mailto:indiamahadeventerprises@gmail.com" className="text-brand-brass hover:underline">indiamahadeventerprises@gmail.com</a>.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-serif text-foreground font-semibold">5. Cookies and Analytics</h3>
+            <p className="mt-3">
+              We use marketing cookies and analytics tools such as Meta Pixel and Google analytics services only after you opt in through our consent banner. When enabled, we may measure catalogue downloads, WhatsApp clicks, phone taps, form submissions, and product page views to understand campaign performance and improve the site experience.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-serif text-foreground font-semibold">6. Consent Choices</h3>
+            <p className="mt-3">
+              You can accept, decline, or reset marketing cookies at any time using the cookie preferences controls shown on the site. Declining marketing cookies keeps Meta Pixel and non-essential analytics disabled while preserving core site functionality.
             </p>
           </div>
         </div>

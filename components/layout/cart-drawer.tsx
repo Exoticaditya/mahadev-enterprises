@@ -11,6 +11,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { trackBusinessAction } from "@/lib/analytics";
 
 export function CartDrawer() {
   const { cart, isOpen, setIsOpen, updateQuantity, removeFromCart, clearCart } = useCart();
@@ -51,6 +52,15 @@ export function CartDrawer() {
     const phoneNumber = "919012112527";
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+    trackBusinessAction(
+      "quote_checkout_whatsapp",
+      {
+        lead_type: "quote_cart_checkout",
+        item_count: cart.length,
+      },
+      { metaStandardEvent: "Lead", metaCustomEvent: "QuoteCheckout" }
+    );
 
     // Open WhatsApp URL
     window.open(whatsappUrl, "_blank");

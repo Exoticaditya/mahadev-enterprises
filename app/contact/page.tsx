@@ -6,6 +6,7 @@ import { PageShell } from "@/components/page-shell";
 import { ContactForm } from "@/components/sections/contact-form";
 import { site } from "@/data/site";
 import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
+import { TrackingLink } from "@/components/tracking-link";
 
 export const metadata: Metadata = {
   title: "Contact Mahadev Enterprises | Get a Quote Today",
@@ -34,9 +35,11 @@ export default function ContactPage() {
         <div className="container grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="space-y-4">
             {/* Phone Card */}
-            <Link
+            <TrackingLink
               href="tel:+919012112527"
               className="luxury-card flex items-center gap-5 p-6 hover:-translate-y-1 transition-all duration-300 group"
+              eventName="phone_tap"
+              metaStandardEvent="Contact"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-card shadow-soft text-brand-brass transition-colors duration-300 group-hover:bg-brand-brass group-hover:text-white group-hover:border-brand-brass shrink-0">
                 <Phone className="h-5 w-5" />
@@ -45,12 +48,14 @@ export default function ContactPage() {
                 <p className="text-[10px] font-semibold uppercase tracking-wider text-brand-brass">Phone Number</p>
                 <p className="mt-1 text-lg font-serif text-foreground">{site.phone}</p>
               </div>
-            </Link>
+            </TrackingLink>
 
             {/* Email Card */}
-            <Link
+            <TrackingLink
               href={`mailto:${site.email}`}
               className="luxury-card flex items-center gap-5 p-6 hover:-translate-y-1 transition-all duration-300 group"
+              eventName="email_tap"
+              metaStandardEvent="Contact"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-card shadow-soft text-brand-brass transition-colors duration-300 group-hover:bg-brand-brass group-hover:text-white group-hover:border-brand-brass shrink-0">
                 <Mail className="h-5 w-5" />
@@ -59,14 +64,16 @@ export default function ContactPage() {
                 <p className="text-[10px] font-semibold uppercase tracking-wider text-brand-brass">Email Address</p>
                 <p className="mt-1 text-lg font-serif text-foreground truncate">{site.email}</p>
               </div>
-            </Link>
+            </TrackingLink>
 
             {/* WhatsApp Card */}
-            <Link
+            <TrackingLink
               href={site.whatsapp}
               target="_blank"
               rel="noreferrer"
               className="luxury-card flex items-center gap-5 p-6 hover:-translate-y-1 transition-all duration-300 group"
+              eventName="whatsapp_click"
+              metaStandardEvent="Contact"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-card shadow-soft text-brand-brass transition-colors duration-300 group-hover:bg-[#25D366] group-hover:text-white group-hover:border-[#25D366] shrink-0">
                 <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -77,14 +84,15 @@ export default function ContactPage() {
                 <p className="text-[10px] font-semibold uppercase tracking-wider text-brand-brass">WhatsApp Chat</p>
                 <p className="mt-1 text-lg font-serif text-foreground">Chat on WhatsApp</p>
               </div>
-            </Link>
+            </TrackingLink>
 
             {/* Instagram Card */}
-            <Link
+            <TrackingLink
               href={site.instagram}
               target="_blank"
               rel="noreferrer"
               className="luxury-card flex items-center gap-5 p-6 hover:-translate-y-1 transition-all duration-300 group"
+              eventName="instagram_click"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-card shadow-soft text-brand-brass transition-colors duration-300 group-hover:bg-[#E1306C] group-hover:text-white group-hover:border-[#E1306C] shrink-0">
                 <Instagram className="h-5 w-5" />
@@ -93,7 +101,7 @@ export default function ContactPage() {
                 <p className="text-[10px] font-semibold uppercase tracking-wider text-brand-brass">Instagram Profile</p>
                 <p className="mt-1 text-lg font-serif text-foreground truncate">@mahadev_enterprises_india</p>
               </div>
-            </Link>
+            </TrackingLink>
 
             {/* Delivery Locations Info */}
             <div className="luxury-card p-6 space-y-3">

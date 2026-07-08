@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
+import { TrackingLink } from "@/components/tracking-link";
 
 export function CtaStrip() {
   return (
@@ -16,10 +19,25 @@ export function CtaStrip() {
           </div>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg">
-              <Link href="/contact">Contact Us</Link>
+              <TrackingLink
+                href="/contact"
+                eventName="cta_contact_click"
+                metaStandardEvent="Contact"
+              >
+                Contact Us
+              </TrackingLink>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="/catalogue/mahadev-enterprises-catalogue.pdf" target="_blank" rel="noopener noreferrer" download>Download Catalogue</a>
+              <TrackingLink
+                href="/catalogue/mahadev-enterprises-catalogue.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+                eventName="download_catalogue"
+                metaCustomEvent="CatalogueDownload"
+              >
+                Download Catalogue
+              </TrackingLink>
             </Button>
           </div>
         </div>

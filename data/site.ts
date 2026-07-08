@@ -25,6 +25,7 @@ export const navigation = [
   { label: "Journal", href: "/journal" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
 ] as const;
 
 export const stats = [

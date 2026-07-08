@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { trackBusinessAction } from "@/lib/analytics";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -40,6 +41,13 @@ export function ContactForm() {
 
       if (response.ok) {
         setSubmitted(true);
+        trackBusinessAction(
+          "contact_form_submit",
+          {
+            lead_type: "contact_form",
+          },
+          { metaStandardEvent: "Lead" }
+        );
       } else {
         throw new Error("Failed to submit form");
       }

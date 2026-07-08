@@ -9,6 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Phone, Mail, Download, MapPin, CheckCircle } from "lucide-react";
 import { PageShell } from "@/components/page-shell";
+import { TrackingLink } from "@/components/tracking-link";
 
 export interface LocationPageTemplateProps {
   slug: string;
@@ -92,9 +93,9 @@ export default function LocationPageTemplate({
         {/* WhatsApp CTA in Hero area */}
         <div className="container pb-10">
           <Button asChild size="lg" className="rounded-full bg-brand-brass hover:bg-brand-brass/90 text-white font-medium px-8 transition duration-300">
-            <Link href={formattedWhatsAppUrl} target="_blank" rel="noopener noreferrer">
+            <TrackingLink href={formattedWhatsAppUrl} target="_blank" rel="noopener noreferrer" eventName="whatsapp_click" metaStandardEvent="Contact">
               Get a Quote for {displayName} Delivery
-            </Link>
+            </TrackingLink>
           </Button>
         </div>
 
@@ -229,9 +230,9 @@ export default function LocationPageTemplate({
                     </div>
                     <div className="p-6 pt-0 space-y-2">
                       <Button asChild className="w-full rounded-full bg-brand-brass hover:bg-brand-brass/90 text-white font-medium transition duration-300">
-                        <Link href={productWaUrl} target="_blank" rel="noopener noreferrer">
+                        <TrackingLink href={productWaUrl} target="_blank" rel="noopener noreferrer" eventName="whatsapp_click" metaStandardEvent="Contact">
                           Enquire for {displayName} Delivery
-                        </Link>
+                        </TrackingLink>
                       </Button>
                       <Button asChild variant="outline" className="w-full rounded-full">
                         <Link href={`/products/${product.slug}`}>Product Details</Link>
@@ -337,19 +338,19 @@ export default function LocationPageTemplate({
             
             <div className="flex flex-wrap justify-center gap-4 pt-4">
               <Button asChild size="lg" className="rounded-full bg-brand-brass hover:bg-brand-brass/90 text-white font-medium px-8 transition duration-300">
-                <Link href={formattedWhatsAppUrl} target="_blank" rel="noopener noreferrer">
+                <TrackingLink href={formattedWhatsAppUrl} target="_blank" rel="noopener noreferrer" eventName="whatsapp_click" metaStandardEvent="Contact">
                   Chat on WhatsApp
-                </Link>
+                </TrackingLink>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-full px-8">
-                <Link href="/contact">
+                <TrackingLink href="/contact" eventName="location_contact_click" metaStandardEvent="Contact">
                   Send Email Enquiry
-                </Link>
+                </TrackingLink>
               </Button>
               <Button asChild size="lg" variant="ghost" className="rounded-full px-8 text-brand-brass font-medium">
-                <a href={site.catalogueHref} download>
+                <TrackingLink href={site.catalogueHref} download eventName="download_catalogue" metaCustomEvent="CatalogueDownload">
                   <Download className="h-4 w-4 mr-2" /> Download Catalogue
-                </a>
+                </TrackingLink>
               </Button>
             </div>
 
