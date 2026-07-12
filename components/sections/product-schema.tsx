@@ -13,7 +13,7 @@ export function OrganizationSchema() {
         telephone: site.phone,
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Rishikesh",
+          addressLocality: "Dehradun",
           addressCountry: "IN",
         },
       }}
@@ -31,7 +31,7 @@ export function LocalBusinessSchema() {
         url: site.url,
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Rishikesh",
+          addressLocality: "Dehradun",
           addressRegion: "Uttarakhand",
           addressCountry: "IN",
         },

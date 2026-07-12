@@ -8,7 +8,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Our Locations | Pilates Studio Installations India",
-  description: "Browse our Pilates equipment supply networks and custom studio installation locations across India. Insured shipping from our Rishikesh factory.",
+  description: "Browse our Pilates equipment supply networks and custom studio installation locations across India. Insured shipping from our Dehradun factory.",
   alternates: { canonical: "/locations" },
 };
 

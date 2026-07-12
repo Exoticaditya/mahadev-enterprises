@@ -61,7 +61,7 @@ export default function LocationPageTemplate({
 
   const formattedWhatsAppUrl = `https://wa.me/919012112527?text=Hi%20Mahadev%20Enterprises,%20I%20am%20enquiring%20about%20Pilates%20equipment%20delivery%20in%20${encodeURIComponent(displayName)}.`;
 
-  const aiSummaryText = `Mahadev Enterprises supplies commercial-grade Pilates reformers, Cadillac frames, Wunda chairs, and accessories to fitness studios, physical therapy clinics, and luxury hospitality venues in ${displayName}, ${state}. Equipment is handcrafted from premium North American Maple wood and steel alloys in our Rishikesh workshop and shipped directly to ${displayName} with transit insurance and video setup support.`;
+  const aiSummaryText = `Mahadev Enterprises supplies commercial-grade Pilates reformers, Cadillac frames, Wunda chairs, and accessories to fitness studios, physical therapy clinics, and luxury hospitality venues in ${displayName}, ${state}. Equipment is handcrafted from premium North American Maple wood and steel alloys in our Dehradun workshop and shipped directly to ${displayName} with transit insurance and video setup support.`;
 
   return (
     <>
@@ -149,7 +149,7 @@ export default function LocationPageTemplate({
                   <CheckCircle className="h-6 w-6 text-brand-brass shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-semibold text-foreground">Up to 45% Price Advantage</h3>
-                    <p className="text-sm text-muted-foreground mt-1">By selling direct from our Rishikesh workshop to {displayName} buyers, we eliminate middleman commissions and import duties.</p>
+                    <p className="text-sm text-muted-foreground mt-1">By selling direct from our Dehradun workshop to {displayName} buyers, we eliminate middleman commissions and import duties.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -195,7 +195,7 @@ export default function LocationPageTemplate({
                 Pilates Equipment Available for {displayName} Delivery
               </h2>
               <p className="text-sm leading-6 text-muted-foreground">
-                Explore our full line of studio-grade wooden and metal apparatus. Every model is built to order in Rishikesh and shipped with full transit insurance.
+                Explore our full line of studio-grade wooden and metal apparatus. Every model is built to order in Dehradun and shipped with full transit insurance.
               </p>
             </div>
 
@@ -333,7 +333,7 @@ export default function LocationPageTemplate({
               Ready to Equip Your {displayName} Studio?
             </h2>
             <p className="text-base leading-8 text-muted-foreground md:text-lg max-w-2xl mx-auto">
-              Get direct factory quote, request material catalog, or schedule a virtual live demo with our Tapovan-Rishikesh workshop engineers.
+              Get direct factory quote, request material catalog, or schedule a virtual live demo with our Dehradun workshop engineers.
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 pt-4">

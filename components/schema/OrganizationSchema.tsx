@@ -12,10 +12,10 @@ export const organizationSchema = {
     "width": 512,
     "height": 512
   },
-  "description": "India's premium Pilates equipment manufacturer in Rishikesh, Uttarakhand. Studio-grade reformers, Cadillac tables, Wunda chairs for commercial studios and wellness centers.",
+  "description": "India's premium Pilates equipment manufacturer in Dehradun, Uttarakhand. Studio-grade reformers, Cadillac tables, Wunda chairs for commercial studios and wellness centers.",
   "foundingLocation": {
     "@type": "Place",
-    "name": "Rishikesh, Uttarakhand, India"
+    "name": "Dehradun, Uttarakhand, India"
   },
   "contactPoint": {
     "@type": "ContactPoint",
@@ -26,7 +26,7 @@ export const organizationSchema = {
   },
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Rishikesh",
+    "addressLocality": "Dehradun",
     "addressRegion": "Uttarakhand",
     "postalCode": "249201",
     "addressCountry": "IN"

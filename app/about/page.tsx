@@ -8,7 +8,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "About Mahadev Enterprises | Pilates Equipment Manufacturer",
-  description: "Mahadev Enterprises is India's premium Pilates equipment manufacturer based in Rishikesh, Uttarakhand. Studio-grade reformers, Cadillacs & wellness solutions.",
+  description: "Mahadev Enterprises is India's premium Pilates equipment manufacturer based in Dehradun, Uttarakhand. Studio-grade reformers, Cadillacs & wellness solutions.",
   alternates: { canonical: "/about" },
 };
 
@@ -27,7 +27,7 @@ export default function AboutPage() {
         title="A premium Indian supplier focused on craftsmanship, design, and longevity."
         description="Mahadev Enterprises is dedicated to designing and manufacturing professional-grade Pilates reformers, yoga props, and custom wellness solutions that elevate boutique spaces."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About", href: "/about" }]}
-        aiSummary="Mahadev Enterprises is a premier Indian manufacturer of commercial-grade Pilates equipment based in Rishikesh, Uttarakhand. We specialize in handcrafted Pilates reformers, trapeze Cadillacs, Wunda chairs, ladder barrels, and spine correctors. Our focus is supplying high-performance wellness equipment constructed from solid maple and anodized aluminium to commercial fitness studios, hotels, and luxury wellness centers worldwide."
+        aiSummary="Mahadev Enterprises is a premier Indian manufacturer of commercial-grade Pilates equipment based in Dehradun, Uttarakhand. We specialize in handcrafted Pilates reformers, trapeze Cadillacs, Wunda chairs, ladder barrels, and spine correctors. Our focus is supplying high-performance wellness equipment constructed from solid maple and anodized aluminium to commercial fitness studios, hotels, and luxury wellness centers worldwide."
       >
       {/* 1. Core Brand Pillars */}
       <section className="relative py-14 md:py-20">
@@ -36,7 +36,7 @@ export default function AboutPage() {
           {[
             ["Vision", "To elevate global wellness spaces with high-precision Pilates and yoga apparatus that balances functional reliability and luxury design."],
             ["Commitment", "To maintain the highest standards of materials, craftsmanship, and export-ready client service for our B2B partners worldwide."],
-            ["Origin", "Based in Rishikesh, India—serving premium domestic and international wellness demand with reliable logistics and custom branding."],
+            ["Origin", "Based in Dehradun, India—serving premium domestic and international wellness demand with reliable logistics and custom branding."],
           ].map(([title, copy]) => (
             <div key={title} className="luxury-card p-8 flex flex-col justify-between">
               <div className="space-y-4">
@@ -86,16 +86,16 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 3. Rishikesh Heritage */}
+      {/* 3. Dehradun Heritage */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="glow-orb left-[20%] bottom-[10%] h-[450px] w-[450px] bg-brand-clay/5" />
         <div className="container max-w-4xl text-center space-y-8">
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-brass">Rishikesh Design Heritage</span>
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-brass">Dehradun Design Heritage</span>
           <h2 className="text-4xl font-serif md:text-5xl lg:text-6xl text-foreground">
             Where holistic focus meets industrial precision.
           </h2>
           <p className="text-base leading-8 text-muted-foreground md:text-lg">
-            Rooted in the spiritual strength and natural serenity of Rishikesh, India—the world capital of yoga—our manufacturing workshop blends mindful design with rigorous mechanical standards. We believe wellness equipment should be structurally silent and visually grounding, allowing practitioners to focus entirely on breath, strength, and posture.
+            Rooted in the enterprise corridor of Dehradun, India, and the wider Uttarakhand wellness belt, our manufacturing workshop blends mindful design with rigorous mechanical standards. We believe wellness equipment should be structurally silent and visually grounding, allowing practitioners to focus entirely on breath, strength, and posture.
           </p>
         </div>
       </section>

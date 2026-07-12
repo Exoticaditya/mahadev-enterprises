@@ -63,15 +63,15 @@ export const pageSEO = {
   },
   solutions: {
     title: "Pilates Studio Solutions India | Equipment for Every Space",
-    description: "Complete Pilates studio solutions for yoga studios, hotels, resorts, retreat centres, physiotherapy clinics & wellness brands. Custom equipment packages from Rishikesh.",
+    description: "Complete Pilates studio solutions for yoga studios, hotels, resorts, retreat centres, physiotherapy clinics & wellness brands. Custom equipment packages from Dehradun.",
   },
   about: {
     title: "About Mahadev Enterprises | Pilates Equipment Manufacturer",
-    description: "Mahadev Enterprises is India's premium Pilates equipment manufacturer based in Rishikesh, Uttarakhand. Studio-grade reformers, Cadillacs & wellness solutions.",
+    description: "Mahadev Enterprises is India's premium Pilates equipment manufacturer based in Dehradun, Uttarakhand. Studio-grade reformers, Cadillacs & wellness solutions.",
   },
   contact: {
     title: "Contact Mahadev Enterprises | Get a Quote Today",
-    description: "Contact Mahadev Enterprises for Pilates equipment enquiries. WhatsApp +91 90121 12527. Email indiamahadeventerprises@gmail.com. Pan-India delivery from Rishikesh.",
+    description: "Contact Mahadev Enterprises for Pilates equipment enquiries. WhatsApp +91 90121 12527. Email indiamahadeventerprises@gmail.com. Pan-India delivery from Dehradun.",
   },
   journal: {
     title: "Pilates Equipment Journal | Guides & Industry Insights",

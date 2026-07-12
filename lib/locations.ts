@@ -605,64 +605,64 @@ export const LOCATIONS: Record<string, LocationData> = {
   "rishikesh": {
     "slug": "pilates-equipment-rishikesh",
     "type": "city",
-    "displayName": "Rishikesh",
+    "displayName": "Dehradun",
     "state": "Uttarakhand",
     "studioCount": 18,
     "demandLevel": "High",
     "tier": "home-base",
     "url": "/pilates-equipment-rishikesh",
     "nearbyAreas": [
-      "Tapovan",
-      "Laxman Jhula",
-      "Ram Jhula",
-      "Swargashram",
-      "Dehradun",
-      "Haridwar",
-      "Mussoorie"
+      "Indira Nagar Colony",
+      "Rajpur Road",
+      "Jakhan",
+      "Race Course",
+      "Ballupur",
+      "Turner Road",
+      "Seema Dwar"
     ],
     "seo": {
       "title": "Pilates Equipment Manufacturer Rishikesh Uttarakhand | Direct Factory Price | Mahadev Enterprises",
-      "description": "Buy Pilates equipment direct from Rishikesh manufacturer. Best prices in Uttarakhand. Yoga studios, retreat centers & wellness spaces. Factory-direct supply.",
-      "h1": "Pilates Equipment Rishikesh — Studio-Grade Apparatus Direct from Our Tapovan Workshop",
+      "description": "Buy Pilates equipment direct from Dehradun manufacturer. Best prices in Uttarakhand. Yoga studios, retreat centers & wellness spaces. Factory-direct supply.",
+      "h1": "Pilates Equipment Dehradun — Studio-Grade Apparatus Direct from Our Workshop",
       "h2s": [
-        "Rishikesh: The Spiritual & Craftsmanship Capital",
-        "Our Tapovan Workshop Standards",
-        "Ashram & Yoga Academy Setup Rishikesh",
-        "Local Delivery Across Uttarakhand & Dehradun"
+        "Dehradun: The Wellness & Craftsmanship Capital",
+        "Our Workshop Standards",
+        "Studio & Training Space Setup Dehradun",
+        "Local Delivery Across Uttarakhand"
       ],
       "keywords": [
-        "pilates equipment Rishikesh",
-        "pilates manufacturer Tapovan",
-        "yoga props Rishikesh",
+        "pilates equipment Dehradun",
+        "pilates manufacturer Dehradun",
+        "yoga props Dehradun",
         "pilates supplier Dehradun"
       ]
     },
     "content": {
-      "introText": "Rishikesh is one of India's most dynamic Pilates markets, driven by teacher training academies, holistic ashram wellness spaces, and direct local factory installations. Our premium B2B manufacturing workshop supplies studio-grade maple and aluminium reformers, Cadillac trapeze tables, Wunda chairs, and alignment props to fitness centers, physiotherapy clinics, and hotels across the region. With fully insured, door-to-door delivery covered in Tapovan and Laxman Jhula, we ensure your B2B wellness investment is set up seamlessly within 1-2 days of order dispatch. All apparatus is built to commercial specifications in Rishikesh and shipped directly.",
-      "whyChooseUs": "Sourcing commercial Pilates equipment in Rishikesh requires balancing budget considerations and equipment longevity. At Mahadev Enterprises, we manufacture all products in-house in Rishikesh, giving our partners a 35% to 45% price advantage over imported brands. Our solid maple wood frames are selected for their dampening characteristics and premium aesthetic, while our aluminium series provides medical-grade hygiene for rehabilitation clinics in Ram Jhula. Every spring is calibrated for progressive tension curves, ensuring safety during high-frequency commercial sessions. Leading studios in Tapovan choose our equipment for its quiet mechanical performance, direct factory warranty, and custom upholstery configuration options.",
-      "deliveryInfo": "We manage fully insured road transport for all 11 Pilates models to all major areas in Rishikesh, including Tapovan, Laxman Jhula, Ram Jhula, Swargashram, and surrounding suburbs. Our delivery team coordinates unloading, and we provide comprehensive video assembly support. Typical transit window is 1-2 days.",
-      "localContext": "The wellness sector in Rishikesh is experiencing a major expansion, with over 18 active Pilates and rehabilitation spaces. High-end clients demand premium equipment aesthetics and flawless mechanical movement, making seasoned wood and structural alloys the default choice for competitive boutique wellness operators."
+      "introText": "Dehradun is one of Uttarakhand's most dynamic Pilates markets, driven by wellness education, boutique studios, and direct local installations. Our premium B2B manufacturing workshop supplies studio-grade maple and aluminium reformers, Cadillac trapeze tables, Wunda chairs, and alignment props to fitness centers, physiotherapy clinics, and hotels across the region. With fully insured, door-to-door delivery covered across Dehradun and nearby hubs, we ensure your B2B wellness investment is set up seamlessly within 1-2 days of order dispatch. All apparatus is built to commercial specifications in Dehradun and shipped directly.",
+      "whyChooseUs": "Sourcing commercial Pilates equipment in Dehradun requires balancing budget considerations and equipment longevity. At Mahadev Enterprises, we manufacture all products in-house in Dehradun, giving our partners a 35% to 45% price advantage over imported brands. Our solid maple wood frames are selected for their dampening characteristics and premium aesthetic, while our aluminium series provides medical-grade hygiene for rehabilitation clinics across the city. Every spring is calibrated for progressive tension curves, ensuring safety during high-frequency commercial sessions. Leading studios in Dehradun choose our equipment for its quiet mechanical performance, direct factory warranty, and custom upholstery configuration options.",
+      "deliveryInfo": "We manage fully insured road transport for all 11 Pilates models to all major areas in Dehradun, including Indira Nagar Colony, Rajpur Road, Jakhan, Race Course, and surrounding suburbs. Our delivery team coordinates unloading, and we provide comprehensive video assembly support. Typical transit window is 1-2 days.",
+      "localContext": "The wellness sector in Dehradun is experiencing a major expansion, with a growing base of Pilates and rehabilitation spaces. High-end clients demand premium equipment aesthetics and flawless mechanical movement, making seasoned wood and structural alloys the default choice for competitive boutique wellness operators."
     },
     "faqs": [
       {
-        "question": "Do you deliver Pilates equipment to Rishikesh?",
-        "answer": "Yes, we provide fully insured door-to-door shipping for all 11 Pilates models in Rishikesh, covering Tapovan, Laxman Jhula, Ram Jhula and surrounding regions. Standard delivery takes 1-2 days."
+        "question": "Do you deliver Pilates equipment to Dehradun?",
+        "answer": "Yes, we provide fully insured door-to-door shipping for all 11 Pilates models in Dehradun, covering Indira Nagar Colony, Rajpur Road, Jakhan and surrounding regions. Standard delivery takes 1-2 days."
       },
       {
-        "question": "What is the price of a Pilates reformer in Rishikesh?",
+        "question": "What is the price of a Pilates reformer in Dehradun?",
         "answer": "Our reformers range from ₹85,000 to ₹1,75,000 depending on the model (M-01 Maple to M-02 with Tower). We offer custom volume discounts for commercial studios or physical therapy centers ordering 3 or more units."
       },
       {
-        "question": "Do you offer assembly support in Rishikesh?",
-        "answer": "All equipment is shipped partially assembled with detailed PDF and video instructions. For bulk studio orders in Rishikesh, we can arrange on-site technical assembly support to ensure proper carriage calibration."
+        "question": "Do you offer assembly support in Dehradun?",
+        "answer": "All equipment is shipped partially assembled with detailed PDF and video instructions. For bulk studio orders in Dehradun, we can arrange on-site technical assembly support to ensure proper carriage calibration."
       },
       {
-        "question": "What Pilates equipment is best for a new studio in Rishikesh?",
+        "question": "What Pilates equipment is best for a new studio in Dehradun?",
         "answer": "For most boutique setups, we recommend starting with a minimum of 4 M-01 Maple Reformers for group training, along with 1 M-07 Ladder Barrel and 1 M-08 Wunda Chair for private, high-margin sessions."
       },
       {
-        "question": "Can I view the equipment before ordering from Rishikesh?",
-        "answer": "We offer high-definition video walkthroughs and live product demos directly from our Rishikesh workshop. Material samples of our solid maple wood and custom leather upholstery can be sent to Rishikesh on request."
+        "question": "Can I view the equipment before ordering from Dehradun?",
+        "answer": "We offer high-definition video walkthroughs and live product demos directly from our Dehradun workshop. Material samples of our solid maple wood and custom leather upholstery can be sent to Dehradun on request."
       }
     ]
   },
@@ -1388,32 +1388,32 @@ export const LOCATIONS: Record<string, LocationData> = {
       "Roorkee"
     ],
     "seo": {
-      "title": "Pilates Equipment Manufacturer Rishikesh Uttarakhand | Direct Factory Price | Mahadev Enterprises",
-      "description": "Buy Pilates equipment direct from Rishikesh manufacturer. Best prices in Uttarakhand. Yoga studios, retreat centers & wellness spaces. Factory-direct supply.",
-      "h1": "Pilates Equipment Delivery Across Uttarakhand — Studio-Grade Apparatus from Rishikesh",
+      "title": "Pilates Equipment Manufacturer Dehradun Uttarakhand | Direct Factory Price | Mahadev Enterprises",
+      "description": "Buy Pilates equipment direct from Dehradun manufacturer. Best prices in Uttarakhand. Yoga studios, retreat centers & wellness spaces. Factory-direct supply.",
+      "h1": "Pilates Equipment Delivery Across Uttarakhand — Studio-Grade Apparatus from Dehradun",
       "h2s": [
-        "Spiritual Wellness & Pilates in Rishikesh",
+        "Wellness & Pilates in Dehradun",
         "Mussoorie & Nainital Retreat Centers Spa setups",
         "Dehradun Residential Wellness Installations",
         "Local Factory Direct Support Uttarakhand"
       ],
       "keywords": [
         "pilates equipment Uttarakhand",
-        "direct manufacturer Rishikesh",
+        "direct manufacturer Dehradun",
         "mussoorie retreat spa",
         "dehradun pilates equipment"
       ]
     },
     "content": {
-      "introText": "Uttarakhand is one of India's most dynamic Pilates markets, driven by yoga ashram retreats, wellness tourism programs in Nainital and Mussoorie, and local teacher training centres. Our premium B2B manufacturing workshop supplies studio-grade maple and aluminium reformers, Cadillac trapeze tables, Wunda chairs, and alignment props to fitness centers, physiotherapy clinics, and hotels across the region. With fully insured, door-to-door delivery covered in Rishikesh and Dehradun, we ensure your B2B wellness investment is set up seamlessly within 1-2 days of order dispatch. All apparatus is built to commercial specifications in Rishikesh and shipped directly.",
-      "whyChooseUs": "Sourcing commercial Pilates equipment in Uttarakhand requires balancing budget considerations and equipment longevity. At Mahadev Enterprises, we manufacture all products in-house in Rishikesh, giving our partners a 35% to 45% price advantage over imported brands. Our solid maple wood frames are selected for their dampening characteristics and premium aesthetic, while our aluminium series provides medical-grade hygiene for rehabilitation clinics in Haridwar. Every spring is calibrated for progressive tension curves, ensuring safety during high-frequency commercial sessions. Leading studios in Rishikesh choose our equipment for its quiet mechanical performance, direct factory warranty, and custom upholstery configuration options.",
-      "deliveryInfo": "We manage fully insured road transport for all 11 Pilates models to all major areas in Uttarakhand, including Rishikesh, Dehradun, Haridwar, Mussoorie, and surrounding suburbs. Our delivery team coordinates unloading, and we provide comprehensive video assembly support. Typical transit window is 1-2 days.",
+      "introText": "Uttarakhand is one of India's most dynamic Pilates markets, driven by yoga ashram retreats, wellness tourism programs in Nainital and Mussoorie, and local teacher training centres. Our premium B2B manufacturing workshop supplies studio-grade maple and aluminium reformers, Cadillac trapeze tables, Wunda chairs, and alignment props to fitness centers, physiotherapy clinics, and hotels across the region. With fully insured, door-to-door delivery covered in Dehradun and nearby hubs, we ensure your B2B wellness investment is set up seamlessly within 1-2 days of order dispatch. All apparatus is built to commercial specifications in Dehradun and shipped directly.",
+      "whyChooseUs": "Sourcing commercial Pilates equipment in Uttarakhand requires balancing budget considerations and equipment longevity. At Mahadev Enterprises, we manufacture all products in-house in Dehradun, giving our partners a 35% to 45% price advantage over imported brands. Our solid maple wood frames are selected for their dampening characteristics and premium aesthetic, while our aluminium series provides medical-grade hygiene for rehabilitation clinics across the state. Every spring is calibrated for progressive tension curves, ensuring safety during high-frequency commercial sessions. Leading studios in Dehradun choose our equipment for its quiet mechanical performance, direct factory warranty, and custom upholstery configuration options.",
+      "deliveryInfo": "We manage fully insured road transport for all 11 Pilates models to all major areas in Uttarakhand, including Dehradun, Haridwar, Mussoorie, and surrounding suburbs. Our delivery team coordinates unloading, and we provide comprehensive video assembly support. Typical transit window is 1-2 days.",
       "localContext": "The wellness sector in Uttarakhand is experiencing a major expansion, with over 20+ active Pilates and rehabilitation spaces. High-end clients demand premium equipment aesthetics and flawless mechanical movement, making seasoned wood and structural alloys the default choice for competitive boutique wellness operators."
     },
     "faqs": [
       {
         "question": "Do you deliver Pilates equipment to Uttarakhand?",
-        "answer": "Yes, we provide fully insured door-to-door shipping for all 11 Pilates models across Uttarakhand, covering Rishikesh, Dehradun, Haridwar and surrounding regions. Standard delivery takes 1-2 days."
+        "answer": "Yes, we provide fully insured door-to-door shipping for all 11 Pilates models across Uttarakhand, covering Dehradun, Haridwar, Mussoorie and surrounding regions. Standard delivery takes 1-2 days."
       },
       {
         "question": "What is the price of a Pilates reformer in Uttarakhand?",
@@ -1429,7 +1429,7 @@ export const LOCATIONS: Record<string, LocationData> = {
       },
       {
         "question": "Can I view the equipment before ordering from Uttarakhand?",
-        "answer": "We offer high-definition video walkthroughs and live product demos directly from our Rishikesh workshop. Material samples of our solid maple wood and custom leather upholstery can be sent to Uttarakhand on request."
+        "answer": "We offer high-definition video walkthroughs and live product demos directly from our Dehradun workshop. Material samples of our solid maple wood and custom leather upholstery can be sent to Uttarakhand on request."
       }
     ]
   },

@@ -34,13 +34,13 @@ export const metadata: Metadata = {
     template: `%s | Mahadev Enterprises`,
   },
   description:
-    "India's premium Pilates equipment manufacturer in Rishikesh. Buy studio-grade maple & aluminium reformers, Cadillac tables, Wunda chairs & accessories. Pan-India delivery. Get a quote.",
+    "India's premium Pilates equipment manufacturer in Dehradun. Buy studio-grade maple & aluminium reformers, Cadillac tables, Wunda chairs & accessories. Pan-India delivery. Get a quote.",
   keywords: [
     "pilates equipment India",
     "pilates reformer manufacturer India",
     "buy pilates equipment online",
     "studio pilates equipment",
-    "pilates equipment Rishikesh",
+    "pilates equipment Dehradun",
     "yoga studio equipment India",
     "pilates cadillac India",
     "wunda chair India",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: "Mahadev Enterprises",
     title: "India's Premium Pilates Equipment Manufacturer | Mahadev Enterprises",
     description:
-      "Studio-grade Pilates reformers, Cadillac tables & Wunda chairs from Rishikesh. Pan-India delivery.",
+      "Studio-grade Pilates reformers, Cadillac tables & Wunda chairs from Dehradun. Pan-India delivery.",
     locale: "en_IN",
     images: [
       {
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pilates Equipment Manufacturer India | Mahadev Enterprises",
     description:
-      "Studio-grade Pilates reformers, Cadillac tables & Wunda chairs from Rishikesh. Pan-India delivery.",
+      "Studio-grade Pilates reformers, Cadillac tables & Wunda chairs from Dehradun. Pan-India delivery.",
     images: [site.socialImage],
   },
   verification: {
@@ -101,7 +101,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="preload" href="/hero/hero-desktop.webp" as="image" fetchPriority="high" />
+        <link rel="preload" href="/hero/hero-mobile.webp" as="image" media="(max-width: 767px)" fetchPriority="high" />
+        <link rel="preload" href="/hero/hero-desktop.webp" as="image" media="(min-width: 768px)" fetchPriority="high" />
       </head>
       <body className={`${inter.variable} ${cormorant.variable} font-sans`}>
         <MarketingConsent pixelId="988063364058240" />
@@ -128,7 +129,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                       "@context": "https://schema.org",
                       "@type": "VideoObject",
                       "name": "Mahadev Enterprises Pilates Reformer Loop",
-                      "description": "Studio-grade Pilates reformers, Cadillacs, and alignment tools manufactured by Mahadev Enterprises in Rishikesh, India.",
+                      "description": "Studio-grade Pilates reformers, Cadillacs, and alignment tools manufactured by Mahadev Enterprises in Dehradun, India.",
                       "thumbnailUrl": "https://mahadeventerprisesindia.com/hero/hero-desktop.webp",
                       "uploadDate": "2026-07-01T00:00:00Z",
                       "contentUrl": "https://mahadeventerprisesindia.com/videos/hero-loop.mp4"
@@ -174,7 +175,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                                     phone: "+91 90121 12527",
                                     email: "support@mahadeventerprisesindia.com",
                                     whatsapp: "https://wa.me/919012112527",
-                                    location: "Rishikesh, Uttarakhand, India 249201"
+                                    location: "C-1/103 Shopping Complex, About Amway, Near SBI, Indira Nagar Colony, Dehradun"
                                   };
                                 }
                               }

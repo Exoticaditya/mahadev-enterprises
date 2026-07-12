@@ -231,7 +231,7 @@ export function CartDrawer() {
                 <div className="space-y-1">
                   <p className="text-[10px] font-semibold text-brand-brass uppercase tracking-wider">Recipient: Mahadev Enterprises</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    Provide your contact details so we can estimate shipping and custom manufacturing options from Rishikesh.
+                    Provide your contact details so we can estimate shipping and custom manufacturing options from Dehradun.
                   </p>
                 </div>
 
@@ -289,7 +289,7 @@ export function CartDrawer() {
                     Send WhatsApp Enquiry
                   </Button>
                   <p className="text-[10px] text-center text-muted-foreground leading-relaxed max-w-xs mx-auto">
-                    Handcrafted in Rishikesh · Standard dispatch: 4–6 weeks · Shipping quotes are calculated upon enquiry submission
+                    Handcrafted in Dehradun · Standard dispatch: 4–6 weeks · Shipping quotes are calculated upon enquiry submission
                   </p>
                 </div>
               </form>

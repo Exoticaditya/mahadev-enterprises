@@ -11,28 +11,22 @@ import { site, stats, trustSignals } from "@/data/site";
 
 export function Hero() {
   const [mounted, setMounted] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
     <section className="relative overflow-hidden pt-12 pb-20 md:pb-28 isolate">
       {/* Background Video/Image with Translucent Blur Overlay */}
       <div className="absolute inset-0 -z-10">
-        {mounted && isDesktop ? (
+        {mounted ? (
           <video
             autoPlay
             loop
             muted
             playsInline
+            preload="auto"
             className="absolute inset-0 h-full w-full object-cover"
             poster="/hero/hero-desktop.webp"
           >
@@ -55,7 +49,7 @@ export function Hero() {
 
       <div className="container grid gap-14 pb-24 pt-10 md:pb-32 lg:grid-cols-[1.2fr_0.8fr] lg:items-end lg:gap-12">
         <div className="max-w-4xl space-y-8">
-          <p className="text-xs font-medium uppercase tracking-[0.22em] text-muted-foreground">Rishikesh, India · Wellness supply</p>
+          <p className="text-xs font-medium uppercase tracking-[0.22em] text-muted-foreground">Dehradun, India · Wellness supply</p>
           <h1 className="max-w-4xl text-balance text-5xl font-serif leading-[1.05] tracking-tight md:text-6xl lg:text-7xl xl:text-[5.5rem]">
             Premium Pilates equipment and wellness products for studios that expect more.
           </h1>
@@ -82,13 +76,21 @@ export function Hero() {
 
         <div className="space-y-4">
           <div className="relative overflow-hidden rounded-[2rem] border border-border/70 bg-card/70 shadow-haze backdrop-blur-md">
-            <div className="relative aspect-[4/5] md:aspect-[5/6] lg:aspect-[4/3] overflow-hidden">
+            <div className="relative aspect-[4/5] md:aspect-[5/6] lg:aspect-[4/3] overflow-hidden bg-[#f4eee4]">
+              <Image
+                src={site.heroImages.mobile}
+                alt="Mahadev Enterprises Pilates studio reformer"
+                fill
+                priority
+                className="object-contain object-center md:hidden"
+                sizes="100vw"
+              />
               <Image
                 src={site.heroImages.desktop}
                 alt="Mahadev Enterprises Pilates studio reformer"
                 fill
                 priority
-                className="object-cover"
+                className="hidden object-cover md:block"
                 sizes="(min-width: 1024px) 38vw, 100vw"
               />
             </div>

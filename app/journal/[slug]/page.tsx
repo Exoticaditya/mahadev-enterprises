@@ -113,7 +113,7 @@ export default async function JournalPostPage({ params }: { params: Promise<{ sl
                   <span className="text-xs text-brand-brass font-medium uppercase tracking-wider">Lead Design Engineer</span>
                 </div>
                 <p className="text-sm leading-6 text-muted-foreground">
-                  Aditya oversees material sourcing and engineering calibration at Mahadev Enterprises. Specializing in sustainable timber mechanics and progressive spring system designs, he guides our Rishikesh workshop to deliver structurally silent Pilates equipment.
+                  Aditya oversees material sourcing and engineering calibration at Mahadev Enterprises. Specializing in sustainable timber mechanics and progressive spring system designs, he guides our Dehradun workshop to deliver structurally silent Pilates equipment.
                 </p>
               </div>
             </div>

@@ -41,7 +41,7 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc pl-5 mt-2 space-y-1">
               <li>Process and respond to custom pricing and bulk ordering enquiries.</li>
               <li>Provide product consultation and spatial layout advice for your studio projects.</li>
-              <li>Coordinate manufacturing, quality inspection, and international export logistics from our Rishikesh facilities.</li>
+              <li>Coordinate manufacturing, quality inspection, and international export logistics from our Dehradun facilities.</li>
               <li>Send critical updates regarding product safety, shipping status, and catalogue releases.</li>
             </ul>
           </div>

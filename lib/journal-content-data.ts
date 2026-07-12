@@ -12,7 +12,7 @@ export const journalContentData: Record<string, JournalArticleContent> = {
       <p>The wellness industry in India is experiencing an unprecedented growth phase, with commercial Pilates studios leading the expansion. However, for studio founders, corporate fitness directors, and hospitality procurement managers, understanding the capital requirements for Pilates equipment can be challenging. Sourcing high-quality Pilates reformers, Cadillac tables, and chairs requires balancing material longevity, shipping safety, and direct-from-manufacturer pricing.</p>
       
       <h3>Direct Sourcing vs. Importing: The Financial Reality</h3>
-      <p>Historically, Indian studios imported equipment from China, the US, or Europe. This approach introduces high freight costs, import duties (which can exceed 30%), custom clearance delays, and a lack of local support. By sourcing direct from a domestic manufacturer like Mahadev Enterprises in Rishikesh, you eliminate import fees, secure direct transport insurance, and gain access to local customization and warranty support.</p>
+      <p>Historically, Indian studios imported equipment from China, the US, or Europe. This approach introduces high freight costs, import duties (which can exceed 30%), custom clearance delays, and a lack of local support. By sourcing direct from a domestic manufacturer like Mahadev Enterprises in Dehradun, you eliminate import fees, secure direct transport insurance, and gain access to local customization and warranty support.</p>
 
       <h3>Complete Pilates Equipment Price List (2026 Estimates)</h3>
       <p>To help you prepare your initial budget, here is the pricing framework for our commercial-grade Pilates apparatus:</p>
@@ -88,7 +88,7 @@ export const journalContentData: Record<string, JournalArticleContent> = {
     faqs: [
       {
         question: "Does the price of the reformer include shipping to my city?",
-        answer: "Shipping is calculated separately based on the transit distance from our Rishikesh factory and the total order volume. We provide fully insured transport to secure your investment."
+        answer: "Shipping is calculated separately based on the transit distance from our Dehradun factory and the total order volume. We provide fully insured transport to secure your investment."
       },
       {
         question: "Do you offer financing or EMI options for studio setups?",
@@ -231,12 +231,12 @@ export const journalContentData: Record<string, JournalArticleContent> = {
     htmlContent: `
       <h2>Choosing a Manufacturer: Why Domestic Sourcing Leads in 2026</h2>
       <p>Finding a reliable Pilates equipment manufacturer in India is essential for commercial B2B buyers. A premium supplier should offer seasoned solid wood options, aircraft-grade aluminium frames, certified high-tensile springs, and robust warranties.</p>
-      <p>At Mahadev Enterprises, we manufacture our equipment in Rishikesh, Uttarakhand, combining holistic design heritage with rigorous mechanical standards to deliver export-ready quality.</p>
+      <p>At Mahadev Enterprises, we manufacture our equipment in Dehradun, Uttarakhand, combining holistic design heritage with rigorous mechanical standards to deliver export-ready quality.</p>
     `,
     faqs: [
       {
-        question: "Can I visit your factory in Rishikesh before placing a bulk order?",
-        answer: "Yes, we encourage studio owners and designers to visit our Rishikesh workshop to inspect materials, test carriage glides, and discuss custom upholstery options."
+        question: "Can I visit your factory in Dehradun before placing a bulk order?",
+        answer: "Yes, we encourage studio owners and designers to visit our Dehradun workshop to inspect materials, test carriage glides, and discuss custom upholstery options."
       }
     ]
   },
@@ -265,13 +265,13 @@ export const journalContentData: Record<string, JournalArticleContent> = {
   "valley-of-wellness-why-rishikesh-made-pilates-equipment-stands-apart": {
     slug: "valley-of-wellness-why-rishikesh-made-pilates-equipment-stands-apart",
     htmlContent: `
-      <h2>Rishikesh Craftsmanship: Blending Mindful Design with Mechanical Precision</h2>
-      <p>Rishikesh, Uttarakhand, is globally recognized as the capital of yoga and holistic health. At Mahadev Enterprises, we draw inspiration from this heritage to manufacture Pilates equipment that is both structurally silent and visually grounding.</p>
+      <h2>Dehradun Craftsmanship: Blending Mindful Design with Mechanical Precision</h2>
+      <p>Dehradun, Uttarakhand, is globally recognized as a calm and practical wellness corridor. At Mahadev Enterprises, we draw inspiration from this setting to manufacture Pilates equipment that is both structurally silent and visually grounding.</p>
       <p>Every reformer carriage is hand-calibrated, and every maple frame is hand-finished in our local workshop, ensuring exceptional attention to detail and export-ready B2B quality.</p>
     `,
     faqs: [
       {
-        question: "Do you export Rishikesh-made equipment outside India?",
+        question: "Do you export Dehradun-made equipment outside India?",
         answer: "Yes, we handle custom export orders and arrange international shipping and customs clearance support for B2B buyers."
       }
     ]

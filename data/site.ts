@@ -1,6 +1,6 @@
 export const site = {
   name: "Mahadev Enterprises",
-  slogan: "Premium Pilates equipment and wellness studio solutions from Rishikesh.",
+  slogan: "Premium Pilates equipment and wellness studio solutions from Dehradun.",
   description:
     "Mahadev Enterprises designs and supplies premium Pilates equipment, wellness products, and studio solutions for luxury yoga, fitness, hospitality, and export buyers.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://mahadeventerprisesindia.com",
@@ -8,7 +8,7 @@ export const site = {
   phone: "+91 90121 12527",
   whatsapp: "https://wa.me/919012112527",
   instagram: "https://www.instagram.com/mahadev_enterprises_india?igsh=enJqOXFhMjl5bXA=",
-  address: "Rishikesh, Uttarakhand, India",
+  address: "C-1/103 Shopping Complex, About Amway, Near SBI, Indira Nagar Colony, Dehradun",
   catalogueHref: "/catalogue/mahadev-enterprises-catalogue.pdf",
   socialImage: "/social/og-home.svg",
   heroImages: {
@@ -346,7 +346,7 @@ export const testimonials = [
     quote:
       "Mahadev Enterprises understood the balance between visual refinement and practical procurement far better than most suppliers. The custom branding option on upholstery was a huge value add.",
     name: "Vikram Mehta",
-    context: "Director of Operations, Ananda Heritage Resorts Rishikesh",
+    context: "Director of Operations, Ananda Heritage Resorts Dehradun",
   },
   {
     quote:
@@ -359,11 +359,11 @@ export const testimonials = [
 export const faqs = [
   {
     question: "What Pilates equipment does Mahadev Enterprises manufacture?",
-    answer: "Mahadev Enterprises manufactures 11 professional Pilates equipment models including maple and aluminium reformers, Cadillac trapeze tables, Wunda chairs, ladder barrels, and spine correctors. All equipment is manufactured in Rishikesh, Uttarakhand, and delivered pan-India.",
+    answer: "Mahadev Enterprises manufactures 11 professional Pilates equipment models including maple and aluminium reformers, Cadillac trapeze tables, Wunda chairs, ladder barrels, and spine correctors. All equipment is manufactured in Dehradun, Uttarakhand, and delivered pan-India.",
   },
   {
     question: "Where is Mahadev Enterprises located?",
-    answer: "Mahadev Enterprises is based in Rishikesh, Uttarakhand — India's wellness capital. We manufacture all equipment locally and ship across India.",
+    answer: "Mahadev Enterprises is based in Dehradun, Uttarakhand — India's wellness capital. We manufacture all equipment locally and ship across India.",
   },
   {
     question: "Do you deliver Pilates equipment across India?",
@@ -474,7 +474,7 @@ export const journalPosts = [
       "pilates equipment manufacturer India",
       "best pilates equipment India",
       "Indian pilates reformer brand",
-      "pilates manufacturer Rishikesh"
+      "pilates manufacturer Dehradun"
     ],
   },
   {
@@ -490,15 +490,15 @@ export const journalPosts = [
     ],
   },
   {
-    slug: "valley-of-wellness-why-rishikesh-made-pilates-equipment-stands-apart",
-    title: "Valley of Wellness: Why Rishikesh-Made Pilates Equipment Stands Apart",
+    slug: "valley-of-wellness-why-dehradun-made-pilates-equipment-stands-apart",
+    title: "Valley of Wellness: Why Dehradun-Made Pilates Equipment Stands Apart",
     summary: "The story of how Tapovan and Laxman Jhula design traditions shape our silent, high-precision Pilates apparatus.",
     date: "2026-06-14",
     keywords: [
-      "Rishikesh pilates equipment",
+      "Dehradun pilates equipment",
       "Indian made pilates equipment",
-      "pilates manufacturer Rishikesh India",
-      "wellness capital Rishikesh yoga equipment"
+      "pilates manufacturer Dehradun India",
+      "wellness capital Dehradun yoga equipment"
     ],
   },
   {
@@ -563,9 +563,9 @@ export const seoLandingPages = [
     summary: "Curated yoga props and wellness essentials with a premium brand presentation.",
   },
   {
-    slug: "wellness-product-supplier-rishikesh",
-    title: "Wellness Product Supplier in Rishikesh",
-    summary: "High-trust wellness supply with a luxury positioning from Rishikesh, India.",
+    slug: "wellness-product-supplier-dehradun",
+    title: "Wellness Product Supplier in Dehradun",
+    summary: "High-trust wellness supply with a luxury positioning from Dehradun, India.",
   },
   {
     slug: "commercial-yoga-studio-products",

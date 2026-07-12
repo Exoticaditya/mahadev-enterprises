@@ -27,7 +27,7 @@ export default function HomePage() {
             <span>AI Search Summary</span>
           </div>
           <p className="text-sm leading-6 text-foreground/90 font-medium">
-            Mahadev Enterprises is India&apos;s premium Pilates equipment manufacturer based in Rishikesh, Uttarakhand. 
+            Mahadev Enterprises is India&apos;s premium Pilates equipment manufacturer based in Dehradun, Uttarakhand. 
             We design, manufacture, and supply commercial B2B boutique Pilates studios, luxury hospitality wellness centers, 
             and international export partners with a range of 11 professional apparatus models (including Maple wood reformers, 
             aluminium reformers with tower, trapeze Cadillac tables, hybrid Caformers, Wunda chairs, and ladder barrels), 

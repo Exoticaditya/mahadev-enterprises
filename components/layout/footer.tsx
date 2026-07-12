@@ -14,7 +14,7 @@ export function Footer() {
       <div className="absolute inset-0 -z-10">
         <Image
           src="/footer/footer-sunrise.webp"
-          alt="Sunrise over the mountains near Rishikesh"
+          alt="Sunrise over the hills near Dehradun"
           fill
           className="object-cover object-bottom"
           sizes="100vw"
@@ -33,10 +33,10 @@ export function Footer() {
           <div className="space-y-4">
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-brass">Mahadev Enterprises</p>
             <p className="max-w-xl text-balance text-3xl leading-tight md:text-5xl font-serif text-white">
-              Premium Pilates equipment and wellness studio solutions from Rishikesh.
+              Premium Pilates equipment and wellness studio solutions from Dehradun.
             </p>
             <p className="max-w-2xl text-sm leading-7 text-white/80 md:text-base">
-              Rooted in the calm strength and spiritual heritage of Rishikesh, we design and manufacture Pilates apparatus that balances structural integrity with design-led precision.
+              Rooted in the calm strength and enterprise heritage of Dehradun, we design and manufacture Pilates apparatus that balances structural integrity with design-led precision.
             </p>
             <div className="flex flex-wrap items-center gap-6 pt-2">
               <CatalogueLink className="bg-white/10 text-white border-white/20 hover:border-white hover:text-white hover:bg-white/20" />
@@ -103,8 +103,8 @@ export function Footer() {
               <Link href="/pilates-equipment-pune" className="text-sm text-white/80 transition hover:text-brand-brass">
                 Pune
               </Link>
-              <Link href="/pilates-equipment-rishikesh" className="text-sm text-white/80 transition hover:text-brand-brass">
-                Rishikesh
+              <Link href="/pilates-equipment-dehradun" className="text-sm text-white/80 transition hover:text-brand-brass">
+                Dehradun
               </Link>
               <Link href="/locations" className="text-sm text-brand-brass transition hover:underline">
                 All 25 Locations →

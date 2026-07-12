@@ -17,7 +17,7 @@ export function BrandsStrip() {
           </div>
           <div className="flex flex-col items-center justify-center p-2 last:border-r-0 max-md:border-t max-md:border-border/40 max-md:border-r-0">
             <span className="font-semibold text-brand-brass">Origin</span>
-            <span className="mt-1 text-[10px] text-muted-foreground/75 normal-case font-sans">Rishikesh, India</span>
+            <span className="mt-1 text-[10px] text-muted-foreground/75 normal-case font-sans">Dehradun, India</span>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ import { BreadcrumbSchema } from "@/components/schema/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Pilates Studio Solutions India | Equipment for Every Space",
-  description: "Complete Pilates studio solutions for yoga studios, hotels, resorts, retreat centres, physiotherapy clinics & wellness brands. Custom equipment packages from Rishikesh.",
+  description: "Complete Pilates studio solutions for yoga studios, hotels, resorts, retreat centres, physiotherapy clinics & wellness brands. Custom equipment packages from Dehradun.",
   alternates: { canonical: "/solutions" },
 };
 

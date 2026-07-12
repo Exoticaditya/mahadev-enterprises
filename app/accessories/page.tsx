@@ -23,7 +23,7 @@ export default function AccessoriesPage() {
       <PageShell
         eyebrow="Accessories & Parts"
         title="Studio accessories and high-precision reformer spare parts."
-        description="Equip your wellness space with our premium studio extensions and maintenance parts. Handcrafted in our Rishikesh workshop with structural safety, material clarity, and consultative B2B dispatch support."
+        description="Equip your wellness space with our premium studio extensions and maintenance parts. Handcrafted in our Dehradun workshop with structural safety, material clarity, and consultative B2B dispatch support."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Accessories", href: "/accessories" }]}
         aiSummary="Browse commercial-grade Pilates studio accessories and replacement parts by Mahadev Enterprises. Includes solid maple wall ladders, vulcanized rubber standing plates, alignment poles, eco-friendly mat systems, calibrated steel carriage springs, double-loop cotton straps, and silent swivel pulleys."
       >

@@ -96,7 +96,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Location pages (will be populated when location pages are created)
   const locationCities = [
     "mumbai", "delhi", "bangalore", "pune", "ahmedabad", "hyderabad",
-    "chennai", "kolkata", "jaipur", "rishikesh", "gurgaon", "chandigarh",
+    "chennai", "kolkata", "jaipur", "dehradun", "gurgaon", "chandigarh",
     "surat", "noida", "navi-mumbai-thane",
   ];
   const locationStates = [

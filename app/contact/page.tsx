@@ -10,7 +10,7 @@ import { TrackingLink } from "@/components/tracking-link";
 
 export const metadata: Metadata = {
   title: "Contact Mahadev Enterprises | Get a Quote Today",
-  description: "Contact Mahadev Enterprises for Pilates equipment enquiries. WhatsApp +91 90121 12527. Email indiamahadeventerprises@gmail.com. Pan-India delivery from Rishikesh.",
+  description: "Contact Mahadev Enterprises for Pilates equipment enquiries. WhatsApp +91 90121 12527. Email indiamahadeventerprises@gmail.com. Pan-India delivery from Dehradun.",
   alternates: { canonical: "/contact" },
 };
 
@@ -107,7 +107,7 @@ export default function ContactPage() {
             <div className="luxury-card p-6 space-y-3">
               <h2 className="font-serif text-lg text-foreground">We Deliver Pan-India</h2>
               <p className="text-xs leading-5 text-muted-foreground">
-                We manufacture in Rishikesh and deliver fully insured to all major locations including Mumbai, Delhi NCR, Bengaluru, Pune, Ahmedabad, Hyderabad, and <Link href="/locations" className="text-brand-brass underline font-medium">20+ other locations</Link>.
+                We manufacture in Dehradun and deliver fully insured to all major locations including Mumbai, Delhi NCR, Bengaluru, Pune, Ahmedabad, Hyderabad, and <Link href="/locations" className="text-brand-brass underline font-medium">20+ other locations</Link>.
               </p>
             </div>
           </div>

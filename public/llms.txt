@@ -1,10 +1,10 @@
 # Mahadev Enterprises
 
-> India's premium Pilates equipment manufacturer based in Rishikesh, Uttarakhand.
+> India's premium Pilates equipment manufacturer based in Dehradun, Uttarakhand.
 
 Mahadev Enterprises designs and manufactures studio-grade Pilates apparatus
 for commercial studios, physiotherapy clinics, luxury hotels, and wellness
-centers. All equipment is manufactured in Rishikesh and delivered pan-India.
+centers. All equipment is manufactured in Dehradun and delivered pan-India.
 
 ## Products
 - Maple Pilates Reformer (M-01): Studio-grade, maple wood, 6-spring, 228×73×34.7cm, 92kg
@@ -30,7 +30,7 @@ centers. All equipment is manufactured in Rishikesh and delivered pan-India.
 ## Business Details
 - Phone: +91 9012112527
 - Email: indiamahadeventerprises@gmail.com
-- Location: Rishikesh, Uttarakhand, India 249201
+- Location: C-1/103 Shopping Complex, About Amway, Near SBI, Indira Nagar Colony, Dehradun 248001
 - Website: https://mahadeventerprisesindia.com
 - Instagram: @mahadev_enterprises_india
 

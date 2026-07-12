@@ -4,22 +4,22 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Mahadev Enterprises",
-  "description": "Premium Pilates equipment manufacturer and supplier in India. Studio-grade reformers, Cadillac tables, Wunda chairs, ladder barrels and accessories. Pan-India delivery from Rishikesh, Uttarakhand.",
+  "description": "Premium Pilates equipment manufacturer and supplier in India. Studio-grade reformers, Cadillac tables, Wunda chairs, ladder barrels and accessories. Pan-India delivery from Dehradun, Uttarakhand.",
   "url": "https://mahadeventerprisesindia.com",
   "telephone": "+919012112527",
   "email": "indiamahadeventerprises@gmail.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Rishikesh",
-    "addressLocality": "Rishikesh",
+    "streetAddress": "C-1/103 Shopping Complex, About Amway, Near SBI, Indira Nagar Colony",
+    "addressLocality": "Dehradun",
     "addressRegion": "Uttarakhand",
     "postalCode": "249201",
     "addressCountry": "IN"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "30.0869",
-    "longitude": "78.2676"
+    "latitude": "30.3165",
+    "longitude": "78.0322"
   },
   "openingHours": "Mo-Sa 09:00-18:00",
   "priceRange": "₹₹₹",
@@ -27,7 +27,7 @@ export const localBusinessSchema = {
   "paymentAccepted": "Bank Transfer, UPI, Cheque, NEFT",
   "areaServed": [
     "Mumbai", "Delhi", "Bengaluru", "Pune", "Ahmedabad",
-    "Hyderabad", "Chennai", "Kolkata", "Jaipur", "Rishikesh",
+    "Hyderabad", "Chennai", "Kolkata", "Jaipur", "Dehradun",
     "Gurgaon", "Noida", "Chandigarh", "Surat", "India"
   ],
   "sameAs": [

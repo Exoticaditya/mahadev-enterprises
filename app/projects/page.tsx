@@ -26,7 +26,7 @@ export default function ProjectsPage() {
       title="Our Featured Project Collaborations"
       description="Explore a selection of our premium custom installations for leading boutique Pilates studios, luxury wellness resorts, and holistic retreat centers."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Projects", href: "/projects" }]}
-      aiSummary="Explore case studies of Pilates studio installations completed by Mahadev Enterprises across India and internationally. Features commercial studio setups including CoreBalance Studio in Mumbai, Ananda Heritage Resort in Rishikesh, and Rostova Design Group in Dubai. See how our bespoke maple reformers, Wunda chairs, and Cadillac tables integrate into professional wellness environments."
+      aiSummary="Explore case studies of Pilates studio installations completed by Mahadev Enterprises across India and internationally. Features commercial studio setups including CoreBalance Studio in Mumbai, Ananda Heritage Resort in Dehradun, and Rostova Design Group in Dubai. See how our bespoke maple reformers, Wunda chairs, and Cadillac tables integrate into professional wellness environments."
     >
       {/* 1. Case Studies Grid */}
       <section className="relative py-14 md:py-20">
@@ -39,7 +39,7 @@ export default function ProjectsPage() {
               ["Maple Reformers (M-01)", "Ladder Barrels (M-07)", "Wunda Chairs (M-08)", "Reformer Springs"]
             ],
             [
-              "Ananda Heritage Resort, Rishikesh",
+              "Ananda Heritage Resort, Dehradun",
               "Bespoke manufacturing of custom-branded studio apparatus and organic yoga accessories, tailored for luxury resort retreat programs.",
               ["Reformer with Tower (M-02)", "Spine Correctors (M-11)", "Props Kits", "Custom Upholstery"]
             ],
@@ -78,7 +78,7 @@ export default function ProjectsPage() {
           <span className="text-[10px] font-semibold uppercase tracking-wider text-brand-brass">Custom Fit-Outs</span>
           <h2 className="text-3xl font-serif md:text-5xl text-foreground">Planning a commercial wellness space?</h2>
           <p className="text-sm leading-7 text-muted-foreground md:text-base max-w-2xl mx-auto">
-            Our Rishikesh design consultants work directly with studio owners, architects, and hospitality directors to specify apparatus sizes, arrange spatial layouts, and manufacture custom-branded upholstery packages.
+            Our Dehradun design consultants work directly with studio owners, architects, and hospitality directors to specify apparatus sizes, arrange spatial layouts, and manufacture custom-branded upholstery packages.
           </p>
           <div className="pt-4">
             <Button asChild size="lg" className="rounded-full">
